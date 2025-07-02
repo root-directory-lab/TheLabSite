@@ -1,300 +1,216 @@
-<!DOCTYPE html>
-<html lang="en-US">
-    <head>
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-        <meta name="Author" content="Zigan Wang, 王自干" />
-        <meta
-            name="description"
-            content="Zigan Wang, Homepage, 王自干,清华大学,深圳国际研究生院,应用微观,国际经济学,环境经济学,政治经济学,法律经济学,外汇,企业投资和现金管理,银行并购,国际金融,网络分析,机器学习,强化学习,自然语言处理"
-        />
-        <meta
-            name="keywords"
-            content="Zigan Wang, 王自干,清华大学,深圳国际研究生院,应用微观,国际经济学,环境经济学,政治经济学,法律经济学,外汇,企业投资和现金管理,银行并购,国际金融,网络分析,机器学习,强化学习,自然语言处理"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Zigan Wang - Associate Professor at Tsinghua University</title>
-        <link rel="stylesheet" href="style.css" type="text/css" />
-    </head>
-    <body>
-        <div id="pagecell1">
-            <div id="top">
-                <h1><a href="index.html">Zigan Wang</a></h1>
-                Associate Professor at Tsinghua University
-                <div id="top-right">
-                    <a href="index.html"> Home </a> |
-                    <a href="pub.html">Publications</a> |
-                    <a href="hiring.html">Hiring</a>
+<!doctype html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Zigan Wang, 王自干">
+    <meta name="description" content="Zigan Wang, Homepage, 王自干,清华大学,深圳国际研究生院,应用微观,国际经济学,环境经济学,政治经济学,法律经济学,外汇,企业投资和现金管理,银行并购,国际金融,网络分析,机器学习,强化学习,自然语言处理">
+    <meta name="keywords" content="Zigan Wang, 王自干,清华大学,深圳国际研究生院,应用微观,国际经济学,环境经济学,政治经济学,法律经济学,外汇,企业投资和现金管理,银行并购,国际金融,网络分析,机器学习,强化学习,自然语言处理">
+    <title>Zigan Wang - Associate Professor at Tsinghua University</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+    <style type="text/tailwindcss">
+        @theme {
+            --color-academic-blue: #005fa9;
+            --color-academic-dark-blue: #334d55;
+            --color-academic-light-blue: #006699;
+            --color-border-gray: #ccd2d2;
+        }
+    </style>
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 transition-colors duration-200">
+    <div id="pagecell1" class="max-w-[1200px] mx-auto bg-white dark:bg-gray-900">
+        <div id="top" class="w-full px-2.5 py-3.5 border-b border-gray-300 dark:border-gray-700">
+            <h1 class="text-[2em] font-bold text-academic-dark-blue dark:text-gray-100 mb-0">
+                <a href="index.html" class="hover:underline">Zigan Wang</a>
+            </h1>
+            <span class="text-gray-700 dark:text-gray-300" data-i18n="title">Associate Professor at Tsinghua University</span>
+            <div id="top-right" class="float-right space-x-4">
+                <a href="index.html" class="text-academic-blue dark:text-blue-400 hover:underline" data-i18n="nav.home">Home</a> |
+                <a href="pub.html" class="text-academic-blue dark:text-blue-400 hover:underline" data-i18n="nav.publications">Publications</a> |
+                <a href="hiring.html" class="text-academic-blue dark:text-blue-400 hover:underline" data-i18n="nav.hiring">Hiring</a>
+                <div class="inline-flex items-center space-x-2 ml-4">
+                    <button onclick="toggleTheme()" class="p-1 rounded hover:bg-gray-200 dark:hover:bg-gray-700">
+                        <svg class="w-5 h-5 hidden dark:block" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 block dark:hidden" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                        </svg>
+                    </button>
+                    <button onclick="toggleLanguage()" class="px-2 py-1 text-sm border border-gray-300 dark:border-gray-600 rounded hover:bg-gray-100 dark:hover:bg-gray-700">
+                        <span id="langToggle">中文</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex mt-2.5">
+            <div id="left" class="w-1/5 bg-white dark:bg-gray-900">
+                <img src="/assets/avatar.jpeg" alt="Zigan Wang" class="ml-7 mb-5 rounded-lg shadow-md">
+                <div class="px-5">
+                    <p class="text-sm">
+                        <strong data-i18n="research.interests">Research Interests:</strong> 
+                        <span data-i18n="research.fields">Applied microeconomics, international economics, environmental economics, political and law economics, economic networks, econometrics, Computer vision, knowledge graph, GAN.</span>
+                    </p>
+                    <p class="text-sm">
+                        <a href="mailto:wangzigan@sz.tsinghua.edu.cn" class="text-academic-blue dark:text-blue-400 hover:underline inline-flex items-center">
+                            <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                            Email
+                        </a>
+                    </p>
                 </div>
             </div>
 
-            <div id="left">
-                <img
-                    src="/assets/avatar.jpeg"
-                    alt=""
-                />
-                <div>
-                    <p>
-                        <strong>Research Interests: </strong>Applied microeconomics,
-                        international economics, environmental economics, political and law
-                        economics, economic networks, econometrics, Computer vision,
-                        knowledge graph, GAN.
-                    </p>
-                    <p>
-                        <a href="mailto:wangzigan@sz.tsinghua.edu.cn" target="_blank"
-                            ><i class="icon-share-alternitive"></i> Email</a
-                        >
-                    </p>
-                </div>
-            </div>
-
-            <div id="content">
+            <div id="content" class="w-4/5 pr-2.5">
                 <div class="feature">
-                    <h2>Research Interests</h2>
-                    <div class="story">
-                        <p>
-                            Applied microeconomics, international economics, environmental
-                            economics, political and law economics, economic networks,
-                            econometrics, Computer vision, knowledge graph, GAN.
-                        </p>
+                    <h2 class="text-xl font-bold text-academic-light-blue dark:text-blue-400 p-1.5" data-i18n="sections.research">Research Interests</h2>
+                    <div class="px-2.5">
+                        <p data-i18n="research.fields">Applied microeconomics, international economics, environmental economics, political and law economics, economic networks, econometrics, Computer vision, knowledge graph, GAN.</p>
                     </div>
                 </div>
+
                 <div class="feature">
-                    <h2>Employment</h2>
-                    <ul>
+                    <h2 class="text-xl font-bold text-academic-light-blue dark:text-blue-400 p-1.5" data-i18n="sections.employment">Employment</h2>
+                    <ul class="list-disc ml-10 space-y-2">
                         <li>
-                            Associate Professor (tenured) 2023 – Present<br />
-                            Shenzhen International Graduate School, Tsinghua University<br />
-                            School of Economics and Management, Tsinghua University (dual
-                            appointment)
+                            <span data-i18n="employment.tsinghua">Associate Professor (tenured) 2023 – Present</span><br>
+                            <span data-i18n="employment.tsinghua.school1">Shenzhen International Graduate School, Tsinghua University</span><br>
+                            <span data-i18n="employment.tsinghua.school2">School of Economics and Management, Tsinghua University (dual appointment)</span>
                         </li>
                         <li>
-                            Honorary Associate Professor in Economics 2023-2026<br />
-                            University of Queensland
+                            <span data-i18n="employment.uq">Honorary Associate Professor in Economics 2023-2026</span><br>
+                            <span data-i18n="employment.uq.school">University of Queensland</span>
                         </li>
                         <li>
-                            Assistant Professor 2015 – 2023<br />
-                            HKU Business School, The University of Hong Kong
+                            <span data-i18n="employment.hku">Assistant Professor 2015 – 2023</span><br>
+                            <span data-i18n="employment.hku.school">HKU Business School, The University of Hong Kong</span>
                         </li>
                         <li>
-                            Adjunct Professor (during Ph.D.) 2014<br />
-                            State University of New York
-                        </li>
-                    </ul>
-
-                    <h2>Education</h2>
-                    <ul>
-                        <li>
-                            Economics Ph.D. 2015, Columbia University, New York,
-                            Concentration: Finance<br />
-                            Dissertation Committee: Patrick Bolton, Ailsa Röell, José
-                            Scheinkman, Dan J. Wang, Tri Vi Dang
-                        </li>
-                        <li>
-                            Economics M.Phil. 2012 & Economics M.A. 2011, Columbia University,
-                            New York
-                        </li>
-                        <li>Economics B.A. 2009, Tsinghua University, Beijing</li>
-                        <li>
-                            National Experimental Class of Science 2005, Ministry of Education
-                            of P.R.C., Shanghai<br />
-                            Concentration: Biology, Chemistry
+                            <span data-i18n="employment.suny">Adjunct Professor (during Ph.D.) 2014</span><br>
+                            <span data-i18n="employment.suny.school">State University of New York</span>
                         </li>
                     </ul>
 
-                    <h2>Awarded Research Funds and Grants</h2>
-                    <ul>
+                    <h2 class="text-xl font-bold text-academic-light-blue dark:text-blue-400 p-1.5 mt-6" data-i18n="sections.education">Education</h2>
+                    <ul class="list-disc ml-10 space-y-2">
                         <li>
-                            HK General Research Fund (GRF), University Grants Committee,
-                            2022-2023
+                            <span data-i18n="education.phd">Economics Ph.D. 2015, Columbia University, New York, Concentration: Finance</span><br>
+                            <span data-i18n="education.phd.committee">Dissertation Committee: Patrick Bolton, Ailsa Röell, José Scheinkman, Dan J. Wang, Tri Vi Dang</span>
                         </li>
+                        <li data-i18n="education.mphil">Economics M.Phil. 2012 & Economics M.A. 2011, Columbia University, New York</li>
+                        <li data-i18n="education.ba">Economics B.A. 2009, Tsinghua University, Beijing</li>
                         <li>
-                            HK General Research Fund (GRF), University Grants Committee,
-                            2018-2019
+                            <span data-i18n="education.nec">National Experimental Class of Science 2005, Ministry of Education of P.R.C., Shanghai</span><br>
+                            <span data-i18n="education.nec.concentration">Concentration: Biology, Chemistry</span>
                         </li>
-                        <li>
-                            HK General Research Fund (ECS), University Grants Committee,
-                            2016-2017
-                        </li>
-                        <li>
-                            Interdisciplinary Knowledge Exchange Project Fund, HKU, 2016
-                        </li>
-                        <li>Matching Fund, HKU, 2015</li>
-                        <li>Seed Fund, HKU, 2015</li>
                     </ul>
 
-                    <h2>Academic Service</h2>
-                    <ol>
+                    <h2 class="text-xl font-bold text-academic-light-blue dark:text-blue-400 p-1.5 mt-6" data-i18n="sections.grants">Awarded Research Funds and Grants</h2>
+                    <ul class="list-disc ml-10 space-y-2">
+                        <li data-i18n="grants.grf2022">HK General Research Fund (GRF), University Grants Committee, 2022-2023</li>
+                        <li data-i18n="grants.grf2018">HK General Research Fund (GRF), University Grants Committee, 2018-2019</li>
+                        <li data-i18n="grants.ecs2016">HK General Research Fund (ECS), University Grants Committee, 2016-2017</li>
+                        <li data-i18n="grants.ikep">Interdisciplinary Knowledge Exchange Project Fund, HKU, 2016</li>
+                        <li data-i18n="grants.matching">Matching Fund, HKU, 2015</li>
+                        <li data-i18n="grants.seed">Seed Fund, HKU, 2015</li>
+                    </ul>
+
+                    <h2 class="text-xl font-bold text-academic-light-blue dark:text-blue-400 p-1.5 mt-6" data-i18n="sections.service">Academic Service</h2>
+                    <ol class="list-decimal ml-10 space-y-2">
                         <li>
-                            Ad-hoc referees for:<br />
-                            WFA (x3), MS (x2), RFS, RF, JBF (x4), JCF, JEF, AEJ, JIMF, JCE,
-                            etc.
+                            <span data-i18n="service.referee">Ad-hoc referees for:</span><br>
+                            WFA (x3), MS (x2), RFS, RF, JBF (x4), JCF, JEF, AEJ, JIMF, JCE, etc.
                         </li>
-                        <li>Discussant at many conferences</li>
-                        <li>Western Finance Association (WFA) Program Committee 2022</li>
-                        <li>Western Finance Association (WFA) Program Committee 2021</li>
-                        <li>
-                            Session Chair, 2019 FMA European Conference, Glasgow, UK 2019
-                        </li>
-                        <li>
-                            Master Dissertation Committee Chair, Central Univ. of Fin. and
-                            Econ., Beijing, China 2019
-                        </li>
-                        <li>
-                            Session Chair, 31st Australasian Finance and Banking Conference,
-                            Sydney, Australia 2018
-                        </li>
-                        <li>
-                            Session Chair, Shanghai Lixin Workshop on Law and Finance,
-                            Shanghai, China 2018
-                        </li>
-                        <li>
-                            Session Chair, 2018 Vietnam Symposium in Banking and Finance, Hue
-                            City, Vietnam 2018
-                        </li>
-                        <li>
-                            Trade Session Chair, China Meeting of the Econometric Society,
-                            Wuhan, China 2017
-                        </li>
+                        <li data-i18n="service.discussant">Discussant at many conferences</li>
+                        <li data-i18n="service.wfa2022">Western Finance Association (WFA) Program Committee 2022</li>
+                        <li data-i18n="service.wfa2021">Western Finance Association (WFA) Program Committee 2021</li>
+                        <li data-i18n="service.fma2019">Session Chair, 2019 FMA European Conference, Glasgow, UK 2019</li>
+                        <li data-i18n="service.master2019">Master Dissertation Committee Chair, Central Univ. of Fin. and Econ., Beijing, China 2019</li>
+                        <li data-i18n="service.afbc2018">Session Chair, 31st Australasian Finance and Banking Conference, Sydney, Australia 2018</li>
+                        <li data-i18n="service.lixin2018">Session Chair, Shanghai Lixin Workshop on Law and Finance, Shanghai, China 2018</li>
+                        <li data-i18n="service.vietnam2018">Session Chair, 2018 Vietnam Symposium in Banking and Finance, Hue City, Vietnam 2018</li>
+                        <li data-i18n="service.cmes2017">Trade Session Chair, China Meeting of the Econometric Society, Wuhan, China 2017</li>
                     </ol>
 
-                    <h2>Certificates</h2>
-                    <ul>
+                    <h2 class="text-xl font-bold text-academic-light-blue dark:text-blue-400 p-1.5 mt-6" data-i18n="sections.certificates">Certificates</h2>
+                    <ul class="list-disc ml-10 space-y-2">
                         <li>
-                            Executive Education 2016<br />
-                            Harvard Business School, Boston
+                            <span data-i18n="certificates.harvard">Executive Education 2016</span><br>
+                            <span data-i18n="certificates.harvard.school">Harvard Business School, Boston</span>
                         </li>
                         <li>
-                            Summer Session 2008 <br />
-                            UC Berkeley, California
+                            <span data-i18n="certificates.berkeley">Summer Session 2008</span><br>
+                            <span data-i18n="certificates.berkeley.school">UC Berkeley, California</span>
                         </li>
                     </ul>
 
-                    <h2>Professional Affiliations</h2>
-                    <ul>
-                        <li>American Economic Association (AEA)</li>
-                        <li>Royal Economic Society</li>
-                        <li>Econometric Society</li>
-                        <li>American Finance Association (AFA)</li>
-                        <li>European Finance Association (EFA)</li>
-                        <li>Western Finance Association (WFA)</li>
-                        <li>Association for Computing Machinery (ACM)</li>
-                        <li>Institute of Electrical and Electronics Engineers (IEEE)</li>
+                    <h2 class="text-xl font-bold text-academic-light-blue dark:text-blue-400 p-1.5 mt-6" data-i18n="sections.affiliations">Professional Affiliations</h2>
+                    <ul class="list-disc ml-10 space-y-2">
+                        <li data-i18n="affiliations.aea">American Economic Association (AEA)</li>
+                        <li data-i18n="affiliations.res">Royal Economic Society</li>
+                        <li data-i18n="affiliations.es">Econometric Society</li>
+                        <li data-i18n="affiliations.afa">American Finance Association (AFA)</li>
+                        <li data-i18n="affiliations.efa">European Finance Association (EFA)</li>
+                        <li data-i18n="affiliations.wfa">Western Finance Association (WFA)</li>
+                        <li data-i18n="affiliations.acm">Association for Computing Machinery (ACM)</li>
+                        <li data-i18n="affiliations.ieee">Institute of Electrical and Electronics Engineers (IEEE)</li>
                     </ul>
 
-                    <h2>Academic Awards and Prizes​</h2>
-                    <ol>
-                        <li>
-                            Faculty Research Postgraduate Supervision Award, The University of
-                            Hong Kong 2022
-                        </li>
-                        <li>
-                            Bureau van Dijk prize in Corporate Finance, 34th UNSW Australian
-                            Finance and Banking Conference 2021
-                        </li>
-                        <li>
-                            Faculty Research Postgraduate Supervision Award, The University of
-                            Hong Kong 2021
-                        </li>
-                        <li>
-                            Bureau van Dijk prize in Corporate Finance, 31st UNSW Australian
-                            Finance and Banking Conference 2018
-                        </li>
-                        <li>Summer Stipend, Columbia University, 2009-2015</li>
-                        <li>Faculty Fellowship, Columbia University, 2009-2015</li>
-                        <li>
-                            Meritorious Winner (top 2-12%), American Mathematical Contest in
-                            Modeling 2008
-                        </li>
-                        <li>Comprehensive Scholarship Award, Tsinghua University 2008</li>
-                        <li>First Prize, Chinese Mathematical Contest in Modeling 2007</li>
-                        <li>
-                            China Construction Bank Fellowship, Tsinghua University 2007
-                        </li>
-                        <li>First Academic Scholarship, Tsinghua University 2006</li>
-                        <li>
-                            Bronze Award, 13th National High School Biology Olympiad (Winter
-                            Camp) 2004
-                        </li>
-                        <li>
-                            3rd Place (Shanghai) and First Prize, National High School Biology
-                            Olympiad 2004
-                        </li>
-                        <li>
-                            1st Place (Nationwide) and First Prize, National Middle School
-                            Math Olympiad 2001
-                        </li>
-                        <li>
-                            3rd Place (Anhui) and First Prize, National Middle School
-                            Chemistry Olympiad 2001
-                        </li>
+                    <h2 class="text-xl font-bold text-academic-light-blue dark:text-blue-400 p-1.5 mt-6" data-i18n="sections.awards">Academic Awards and Prizes</h2>
+                    <ol class="list-decimal ml-10 space-y-2">
+                        <li data-i18n="awards.supervision2022">Faculty Research Postgraduate Supervision Award, The University of Hong Kong 2022</li>
+                        <li data-i18n="awards.vandijk2021">Bureau van Dijk prize in Corporate Finance, 34th UNSW Australian Finance and Banking Conference 2021</li>
+                        <li data-i18n="awards.supervision2021">Faculty Research Postgraduate Supervision Award, The University of Hong Kong 2021</li>
+                        <li data-i18n="awards.vandijk2018">Bureau van Dijk prize in Corporate Finance, 31st UNSW Australian Finance and Banking Conference 2018</li>
+                        <li data-i18n="awards.summer">Summer Stipend, Columbia University, 2009-2015</li>
+                        <li data-i18n="awards.faculty">Faculty Fellowship, Columbia University, 2009-2015</li>
+                        <li data-i18n="awards.mcm">Meritorious Winner (top 2-12%), American Mathematical Contest in Modeling 2008</li>
+                        <li data-i18n="awards.comprehensive">Comprehensive Scholarship Award, Tsinghua University 2008</li>
+                        <li data-i18n="awards.cumcm">First Prize, Chinese Mathematical Contest in Modeling 2007</li>
+                        <li data-i18n="awards.ccb">China Construction Bank Fellowship, Tsinghua University 2007</li>
+                        <li data-i18n="awards.academic">First Academic Scholarship, Tsinghua University 2006</li>
+                        <li data-i18n="awards.biology">Bronze Award, 13th National High School Biology Olympiad (Winter Camp) 2004</li>
+                        <li data-i18n="awards.biology2">3rd Place (Shanghai) and First Prize, National High School Biology Olympiad 2004</li>
+                        <li data-i18n="awards.math">1st Place (Nationwide) and First Prize, National Middle School Math Olympiad 2001</li>
+                        <li data-i18n="awards.chemistry">3rd Place (Anhui) and First Prize, National Middle School Chemistry Olympiad 2001</li>
                     </ol>
 
-                    <h2>University Service</h2>
-                    <ul>
-                        <li>Master of Finance FinTech Admissions Committee, HKU</li>
-                        <li>
-                            Master of Finance FinTech Curriculum Development Committee, HKU
-                        </li>
-                        <li>Faculty Information Technology Committee, HKU</li>
-                        <li>Finance Area Brown Bag Seminar Organizer, HKU</li>
+                    <h2 class="text-xl font-bold text-academic-light-blue dark:text-blue-400 p-1.5 mt-6" data-i18n="sections.uniservice">University Service</h2>
+                    <ul class="list-disc ml-10 space-y-2">
+                        <li data-i18n="uniservice.fintech">Master of Finance FinTech Admissions Committee, HKU</li>
+                        <li data-i18n="uniservice.curriculum">Master of Finance FinTech Curriculum Development Committee, HKU</li>
+                        <li data-i18n="uniservice.it">Faculty Information Technology Committee, HKU</li>
+                        <li data-i18n="uniservice.seminar">Finance Area Brown Bag Seminar Organizer, HKU</li>
                     </ul>
 
-                    <h2>Teaching Experience</h2>
-                    <ul>
-                        <li>
-                            Seminars on Advanced Topics in Finance, master, Tsinghua
-                            University 2024
-                        </li>
-                        <li>
-                            Cryptography and Network Security, master, Tsinghua University
-                            2024
-                        </li>
-                        <li>
-                            Research on Frontier Issues in Finance, master, Tsinghua
-                            University 2023
-                        </li>
-                        <li>
-                            Advanced Financial Programming and Databases, master, HKU
-                            2017-2022
-                        </li>
-                        <li>
-                            Financial Programming and Databases, undergrad, HKU 2017-2022
-                        </li>
-                        <li>Corporate Finance, undergrad, HKU 2016-2022</li>
-                        <li>
-                            Money and Banking, master and undergrad, State University of New
-                            York 2014
-                        </li>
-                        <li>
-                            Financial Management, master and undergrad, State University of
-                            New York 2014
-                        </li>
-                        <li>Microeconomics, master, Columbia University (TA) 2010</li>
-                        <li>
-                            Corporate Finance, master and undergrad, Columbia University (TA)
-                            2010-2015
-                        </li>
-                        <li>
-                            Statistics of Sustainability Management, master, Columbia
-                            University (TA) 2011
-                        </li>
-                        <li>
-                            Principles of Economics, undergrad, Columbia University (TA)
-                            2012/2011
-                        </li>
-                        <li>
-                            Principles of Economics, undergrad, Tsinghua University (TA) 2008
-                        </li>
+                    <h2 class="text-xl font-bold text-academic-light-blue dark:text-blue-400 p-1.5 mt-6" data-i18n="sections.teaching">Teaching Experience</h2>
+                    <ul class="list-disc ml-10 space-y-2">
+                        <li data-i18n="teaching.seminars">Seminars on Advanced Topics in Finance, master, Tsinghua University 2024</li>
+                        <li data-i18n="teaching.crypto">Cryptography and Network Security, master, Tsinghua University 2024</li>
+                        <li data-i18n="teaching.frontier">Research on Frontier Issues in Finance, master, Tsinghua University 2023</li>
+                        <li data-i18n="teaching.programming">Advanced Financial Programming and Databases, master, HKU 2017-2022</li>
+                        <li data-i18n="teaching.databases">Financial Programming and Databases, undergrad, HKU 2017-2022</li>
+                        <li data-i18n="teaching.corporate">Corporate Finance, undergrad, HKU 2016-2022</li>
+                        <li data-i18n="teaching.money">Money and Banking, master and undergrad, State University of New York 2014</li>
+                        <li data-i18n="teaching.financial">Financial Management, master and undergrad, State University of New York 2014</li>
+                        <li data-i18n="teaching.micro">Microeconomics, master, Columbia University (TA) 2010</li>
+                        <li data-i18n="teaching.corporate2">Corporate Finance, master and undergrad, Columbia University (TA) 2010-2015</li>
+                        <li data-i18n="teaching.statistics">Statistics of Sustainability Management, master, Columbia University (TA) 2011</li>
+                        <li data-i18n="teaching.principles">Principles of Economics, undergrad, Columbia University (TA) 2012/2011</li>
+                        <li data-i18n="teaching.principles2">Principles of Economics, undergrad, Tsinghua University (TA) 2008</li>
                     </ul>
 
-                    <h2>Placement of Supervised PhDs</h2>
-                    <ul>
-                        <li>Wang, Youan (Xiamen University, Assistant Professor, 2022)</li>
-                        <li>Yu, Luping (Xiamen University, Assistant Professor, 2021)</li>
+                    <h2 class="text-xl font-bold text-academic-light-blue dark:text-blue-400 p-1.5 mt-6" data-i18n="sections.placement">Placement of Supervised PhDs</h2>
+                    <ul class="list-disc ml-10 space-y-2">
+                        <li data-i18n="placement.wang">Wang, Youan (Xiamen University, Assistant Professor, 2022)</li>
+                        <li data-i18n="placement.yu">Yu, Luping (Xiamen University, Assistant Professor, 2021)</li>
                     </ul>
 
-                    <h2>Placement of Past RAs</h2>
-                    <ol>
+                    <h2 class="text-xl font-bold text-academic-light-blue dark:text-blue-400 p-1.5 mt-6" data-i18n="sections.ras">Placement of Past RAs</h2>
+                    <ol class="list-decimal ml-10 space-y-2">
                         <li>Chien, Ho Yin (Cornell master, Cornell PhD)</li>
                         <li>Lau, Chun Pong Conroy (HSBC, LSE master, U Chicago PhD)</li>
                         <li>Li, Yan (HKU, PhD)</li>
@@ -319,5 +235,9 @@
                 </div>
             </div>
         </div>
-    </body>
+    </div>
+
+    <script src="i18n.js"></script>
+    <script src="theme.js"></script>
+</body>
 </html>
