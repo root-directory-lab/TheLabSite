@@ -179,6 +179,20 @@ nav {
     clear: both;
 }
 
+#backToTop {
+    background-color: var(--link-color);
+    transition: all 0.2s ease;
+}
+
+#backToTop:hover {
+    background-color: var(--heading-color);
+    transform: translateY(-2px);
+}
+
+footer {
+    clear: both;
+}
+
 @media (max-width: 1200px) {
     #pagecell1 {
         width: 100%;
@@ -212,6 +226,11 @@ nav {
     nav {
         flex-wrap: wrap;
     }
+    
+    #backToTop {
+        bottom: 20px;
+        right: 20px;
+    }
 }
 
 .text-academic-blue {
@@ -240,6 +259,14 @@ nav {
 
 @media print {
     #top-right button {
+        display: none;
+    }
+    
+    #backToTop {
+        display: none !important;
+    }
+    
+    footer {
         display: none;
     }
 }
