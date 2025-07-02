@@ -31,7 +31,7 @@
                     <span class="text-gray-400">|</span>
                     <a href="pub.html" class="text-academic-blue dark:text-blue-400 hover:underline font-medium" data-i18n="nav.publications">Publications</a>
                     <span class="text-gray-400">|</span>
-                    <a href="hiring.html" class="text-academic-blue dark:text-blue-400 hover:underline font-medium" data-i18n="nav.hiring">Hiring</a>
+                    <a href="team.html" class="text-academic-blue dark:text-blue-400 hover:underline font-medium" data-i18n="nav.team">Team</a>
                     <span class="text-gray-400 mx-2">|</span>
                     <button onclick="toggleTheme()" class="p-1.5 rounded hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
                         <svg class="w-5 h-5 hidden dark:block" fill="currentColor" viewBox="0 0 20 20">
@@ -42,9 +42,11 @@
                         </svg>
                     </button>
                     <span class="text-gray-400">|</span>
-                    <button onclick="toggleLanguage()" class="px-3 py-1.5 text-sm border border-gray-300 dark:border-gray-600 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
-                        <span id="langToggle">中文</span>
-                    </button>
+                    <select id="langSelect" onchange="updateLanguage(this.value)" class="px-3 py-1 text-sm border border-gray-300 dark:border-gray-600 rounded bg-white dark:bg-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors cursor-pointer">
+                        <option value="en">English</option>
+                        <option value="zh-CN">简体中文</option>
+                        <option value="zh-TW">繁體中文</option>
+                    </select>
                 </nav>
             </div>
             <div class="clear-both"></div>
@@ -62,8 +64,8 @@
                     </div>
                     <div>
                         <a href="mailto:wangzigan@sz.tsinghua.edu.cn" class="text-academic-blue dark:text-blue-400 hover:underline inline-flex items-center text-sm">
-                            <svg class="w-4 h-4 mr-1.5" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM5 10a1 1 0 01-1 1H3a1 1 0 110-2h1a1 1 0 011 1zM8 16v-1h4v1a2 2 0 11-4 0zM12 14c.015-.34.208-.646.477-.859a4 4 0 10-4.954 0c.27.213.462.519.476.859h4.002z"></path>
+                            <svg class="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 8.5L12 5.5L15 8.5M12 5.5V15.5M5 11.5V19.5H19V11.5"/>
                             </svg>
                             Email
                         </a>

@@ -3,7 +3,7 @@
     "nav": {
         "home": "Home",
         "publications": "Publications",
-        "hiring": "Hiring"
+        "team": "Team (we are hiring)"
     },
     "research": {
         "interests": "Research Interests:",
@@ -124,7 +124,7 @@
         "wang": "Wang, Youan (Xiamen University, Assistant Professor, 2022)",
         "yu": "Yu, Luping (Xiamen University, Assistant Professor, 2021)"
     },
-    "hiring": {
+    "team": {
         "title": "Postdoctoral Recruitment",
         "section1": {
             "title": "1. Supervisor Team Introduction",

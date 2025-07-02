@@ -3,7 +3,7 @@
     "nav": {
         "home": "首页",
         "publications": "发表论文",
-        "hiring": "招聘信息"
+        "team": "团队（招聘中）"
     },
     "research": {
         "interests": "研究兴趣：",
@@ -124,7 +124,7 @@
         "wang": "Wang, Youan (厦门大学，助理教授，2022)",
         "yu": "Yu, Luping (厦门大学，助理教授，2021)"
     },
-    "hiring": {
+    "team": {
         "title": "博士后招聘启事",
         "section1": {
             "title": "一、合作导师团队介绍",

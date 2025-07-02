@@ -3,7 +3,7 @@
     "nav": {
         "home": "首頁",
         "publications": "發表論文",
-        "hiring": "招聘資訊"
+        "team": "團隊（招聘中）"
     },
     "research": {
         "interests": "研究興趣：",
@@ -124,7 +124,7 @@
         "wang": "Wang, Youan (廈門大學，助理教授，2022)",
         "yu": "Yu, Luping (廈門大學，助理教授，2021)"
     },
-    "hiring": {
+    "team": {
         "title": "博士後招聘啟事",
         "section1": {
             "title": "一、合作導師團隊介紹",
