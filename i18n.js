@@ -44,13 +44,9 @@ function updateLanguage(lang) {
     localStorage.setItem('language', lang);
     document.documentElement.lang = lang;
     
-    const langToggle = document.getElementById('langToggle');
-    if (langToggle) {
-        const langs = Object.keys(languages);
-        const currentIndex = langs.indexOf(lang);
-        const nextIndex = (currentIndex + 1) % langs.length;
-        const nextLang = langs[nextIndex];
-        langToggle.textContent = languages[nextLang];
+    const langSelect = document.getElementById('langSelect');
+    if (langSelect) {
+        langSelect.value = lang;
     }
     
     document.querySelectorAll('[data-i18n]').forEach(element => {
@@ -72,12 +68,8 @@ function updateLanguage(lang) {
     });
 }
 
-function toggleLanguage() {
-    const langs = Object.keys(languages);
-    const currentIndex = langs.indexOf(currentLang);
-    const nextIndex = (currentIndex + 1) % langs.length;
-    const newLang = langs[nextIndex];
-    updateLanguage(newLang);
+function changeLanguage(lang) {
+    updateLanguage(lang);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
