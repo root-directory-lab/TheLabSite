@@ -7,6 +7,10 @@
     --link-color: #005fa9;
     --heading-color: #334d55;
     --heading-secondary: #006699;
+    --color-academic-blue: #005fa9;
+    --color-academic-dark-blue: #334d55;
+    --color-academic-light-blue: #006699;
+    --color-border-gray: #ccd2d2;
 }
 
 .dark {
@@ -180,17 +184,46 @@ nav {
 }
 
 #backToTop {
-    background-color: var(--link-color);
+    background-color: var(--color-academic-blue);
+    color: #ffffff;
     transition: all 0.2s ease;
+    border: none;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.dark #backToTop {
+    background-color: #3b82f6;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
 }
 
 #backToTop:hover {
-    background-color: var(--heading-color);
+    background-color: var(--color-academic-dark-blue);
     transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.dark #backToTop:hover {
+    background-color: #2563eb;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
 }
 
 footer {
     clear: both;
+    background-color: #f9fafb;
+    border-top: 1px solid #e5e7eb;
+}
+
+.dark footer {
+    background-color: #111827;
+    border-top-color: #374151;
+}
+
+footer div {
+    color: #6b7280;
+}
+
+.dark footer div {
+    color: #9ca3af;
 }
 
 @media (max-width: 1200px) {
