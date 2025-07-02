@@ -1,16 +1,19 @@
 function initTheme() {
-    const savedTheme = localStorage.getItem('theme') || 'system';
-    applyTheme(savedTheme);
-    updateThemeToggle(savedTheme);
+    const savedTheme = localStorage.getItem('theme');
+    
+    if (savedTheme) {
+        applyTheme(savedTheme);
+        updateThemeToggle(savedTheme);
+    } else {
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const defaultTheme = systemPrefersDark ? 'dark' : 'light';
+        applyTheme(defaultTheme);
+        updateThemeToggle(defaultTheme);
+    }
 }
 
 function applyTheme(theme) {
-    if (theme === 'system') {
-        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        document.documentElement.classList.toggle('dark', systemPrefersDark);
-    } else {
-        document.documentElement.classList.toggle('dark', theme === 'dark');
-    }
+    document.documentElement.classList.toggle('dark', theme === 'dark');
 }
 
 function setTheme(theme) {
@@ -27,12 +30,5 @@ function updateThemeToggle(theme) {
         }
     });
 }
-
-window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-    const currentTheme = localStorage.getItem('theme') || 'system';
-    if (currentTheme === 'system') {
-        applyTheme('system');
-    }
-});
 
 document.addEventListener('DOMContentLoaded', initTheme);
