@@ -18,19 +18,23 @@
         }
     </style>
 </head>
-<body class="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 transition-colors duration-200">
-    <div id="pagecell1" class="max-w-[1200px] mx-auto bg-white dark:bg-gray-900">
-        <div id="top" class="w-full px-2.5 py-3.5 border-b border-gray-300 dark:border-gray-700">
-            <h1 class="text-[2em] font-bold text-academic-dark-blue dark:text-gray-100 mb-0">
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 transition-colors duration-200">
+    <div id="pagecell1" class="max-w-[1200px] mx-auto bg-white dark:bg-gray-800 shadow-sm">
+        <div id="top" class="w-full px-6 py-4 border-b border-gray-300 dark:border-gray-700">
+            <h1 class="text-3xl font-bold text-academic-dark-blue dark:text-gray-100 mb-1">
                 <a href="index.html" class="hover:underline">Zigan Wang</a>
             </h1>
             <span class="text-gray-700 dark:text-gray-300" data-i18n="title">Associate Professor at Tsinghua University</span>
-            <div id="top-right" class="float-right space-x-4">
-                <a href="index.html" class="text-academic-blue dark:text-blue-400 hover:underline" data-i18n="nav.home">Home</a> |
-                <a href="pub.html" class="text-academic-blue dark:text-blue-400 hover:underline" data-i18n="nav.publications">Publications</a> |
-                <a href="hiring.html" class="text-academic-blue dark:text-blue-400 hover:underline" data-i18n="nav.hiring">Hiring</a>
-                <div class="inline-flex items-center space-x-2 ml-4">
-                    <button onclick="toggleTheme()" class="p-1 rounded hover:bg-gray-200 dark:hover:bg-gray-700">
+            <div id="top-right" class="float-right mt-2">
+                <nav class="inline-flex items-center space-x-4">
+                    <a href="index.html" class="text-academic-blue dark:text-blue-400 hover:underline font-medium" data-i18n="nav.home">Home</a>
+                    <span class="text-gray-400">|</span>
+                    <a href="pub.html" class="text-academic-blue dark:text-blue-400 hover:underline font-medium" data-i18n="nav.publications">Publications</a>
+                    <span class="text-gray-400">|</span>
+                    <a href="hiring.html" class="text-academic-blue dark:text-blue-400 hover:underline font-medium" data-i18n="nav.hiring">Hiring</a>
+                </nav>
+                <div class="inline-flex items-center space-x-2 ml-6">
+                    <button onclick="toggleTheme()" class="p-1.5 rounded hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
                         <svg class="w-5 h-5 hidden dark:block" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"></path>
                         </svg>
@@ -38,92 +42,110 @@
                             <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
                         </svg>
                     </button>
-                    <button onclick="toggleLanguage()" class="px-2 py-1 text-sm border border-gray-300 dark:border-gray-600 rounded hover:bg-gray-100 dark:hover:bg-gray-700">
+                    <button onclick="toggleLanguage()" class="px-3 py-1.5 text-sm border border-gray-300 dark:border-gray-600 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
                         <span id="langToggle">中文</span>
                     </button>
                 </div>
             </div>
+            <div class="clear-both"></div>
         </div>
 
-        <div class="flex mt-2.5">
-            <div id="left" class="w-1/5 bg-white dark:bg-gray-900">
-                <img src="/assets/avatar.jpeg" alt="Zigan Wang" class="ml-7 mb-5 rounded-lg shadow-md">
-                <div class="px-5">
-                    <p class="text-sm">
-                        <strong data-i18n="research.interests">Research Interests:</strong> 
-                        <span data-i18n="research.fields">Applied microeconomics, international economics, environmental economics, political and law economics, economic networks, econometrics, Computer vision, knowledge graph, GAN.</span>
-                    </p>
-                    <p class="text-sm">
-                        <a href="mailto:wangzigan@sz.tsinghua.edu.cn" class="text-academic-blue dark:text-blue-400 hover:underline inline-flex items-center">
-                            <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+        <div class="flex mt-0">
+            <div id="left" class="w-1/4 bg-gray-50 dark:bg-gray-800 p-6">
+                <img src="/assets/avatar.jpeg" alt="Zigan Wang" class="w-full mb-6 rounded-lg shadow-md">
+                <div class="space-y-4">
+                    <div>
+                        <p class="text-sm">
+                            <strong data-i18n="research.interests">Research Interests:</strong> 
+                            <span data-i18n="research.fields">Applied microeconomics, international economics, environmental economics, political and law economics, economic networks, econometrics, Computer vision, knowledge graph, GAN.</span>
+                        </p>
+                    </div>
+                    <div>
+                        <a href="mailto:wangzigan@sz.tsinghua.edu.cn" class="text-academic-blue dark:text-blue-400 hover:underline inline-flex items-center text-sm">
+                            <svg class="w-4 h-4 mr-1.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
                             </svg>
                             Email
                         </a>
-                    </p>
+                    </div>
                 </div>
             </div>
 
-            <div id="content" class="w-4/5 pr-2.5">
+            <div id="content" class="w-3/4 p-6 bg-white dark:bg-gray-800">
                 <div class="feature">
-                    <h2 class="job-title text-2xl font-bold text-academic-light-blue dark:text-blue-400 p-1.5" data-i18n="hiring.title">Postdoctoral Recruitment</h2>
+                    <h2 class="job-title text-2xl font-bold text-academic-light-blue dark:text-blue-400 mb-6" data-i18n="hiring.title">Postdoctoral Recruitment</h2>
 
-                    <h4 class="text-lg font-bold text-academic-dark-blue dark:text-gray-100 mt-4" data-i18n="hiring.section1.title">1. Supervisor Team Introduction</h4>
-                    <p class="text-justify" data-i18n="hiring.section1.content">
-                        This recruitment team consists of professors from Tsinghua University Shenzhen Graduate School, University of Hong Kong, and Queensland University's Schools of Economics, Business, and Computer Science. The team has a solid research foundation and rich academic achievements in statistics, computer science, fintech, and data science. Team members have long been committed to interdisciplinary research in machine learning, data security, natural language processing, graph neural networks, statistical modeling, and fintech applications. The collaboration network covers multiple colleges across Tsinghua University, University of Hong Kong, and Queensland University, with a strong foundation for international cooperation. Team members have published numerous high-level papers in top international academic journals and conferences such as MS, ECMA, AER, JoE, JFE, JLE, JFQA, JIE, JRSS B, JMLR, CVPR, KDD, TKDE, TOIS, ICDE, SIGIR, ACL, AAAI, ICML, TPAMI, and have received multiple academic awards.
-                    </p>
+                    <section class="mb-8">
+                        <h4 class="text-lg font-bold text-academic-dark-blue dark:text-gray-100 mb-4" data-i18n="hiring.section1.title">1. Supervisor Team Introduction</h4>
+                        <p class="text-justify leading-relaxed" data-i18n="hiring.section1.content">
+                            This recruitment team consists of professors from Tsinghua University Shenzhen Graduate School, University of Hong Kong, and Queensland University's Schools of Economics, Business, and Computer Science. The team has a solid research foundation and rich academic achievements in statistics, computer science, fintech, and data science. Team members have long been committed to interdisciplinary research in machine learning, data security, natural language processing, graph neural networks, statistical modeling, and fintech applications. The collaboration network covers multiple colleges across Tsinghua University, University of Hong Kong, and Queensland University, with a strong foundation for international cooperation. Team members have published numerous high-level papers in top international academic journals and conferences such as MS, ECMA, AER, JoE, JFE, JLE, JFQA, JIE, JRSS B, JMLR, CVPR, KDD, TKDE, TOIS, ICDE, SIGIR, ACL, AAAI, ICML, TPAMI, and have received multiple academic awards.
+                        </p>
+                    </section>
 
-                    <h4 class="text-lg font-bold text-academic-dark-blue dark:text-gray-100 mt-4" data-i18n="hiring.section2.title">2. Recruitment Positions and Research Directions</h4>
-                    <p class="text-justify" data-i18n="hiring.section2.content">
-                        We plan to jointly recruit postdoctoral researchers, focusing on outstanding scholars with backgrounds in mathematics, statistics, computer science, and related interdisciplinary fields. Applicants must have solid mathematical, statistical, and programming abilities, with experience publishing academic papers in top international journals or conferences.
-                    </p>
-                    <p class="mt-2" data-i18n="hiring.section2.directions">Main research directions include but are not limited to:</p>
-                    <ul class="list-disc ml-10 space-y-2">
-                        <li data-i18n="hiring.section2.list.item1">Fintech and Intelligent Decision Systems: Research on the application of machine learning, big data analysis, blockchain and other technologies in intelligent financial trading, risk prediction, credit assessment, and other fields.</li>
-                        <li data-i18n="hiring.section2.list.item2">Financial Data Security and Privacy Computing: Focus on cutting-edge methods such as secure data storage, privacy protection, and federated learning for financial and sensitive data in cross-institutional and cross-border environments.</li>
-                        <li data-i18n="hiring.section2.list.item3">Data Science and AI Methodology: Focus on broader data science, statistical machine learning, deep learning algorithm optimization, interpretable AI and other theoretical method research and their applications in finance, healthcare, biological genomics, and other fields.</li>
-                        <li data-i18n="hiring.section2.list.item4">Systemic Risk and Financial Network Analysis: Use graph neural networks, multi-layer network modeling and other methods to study risk contagion mechanisms and network structure evolution within the financial system.</li>
-                        <li data-i18n="hiring.section2.list.item5">Natural Language Processing and Text Data Mining: Develop and apply NLP methods to mine key information from unstructured data such as financial texts, public opinion data, and policy documents, serving risk warning and decision support.</li>
-                        <li data-i18n="hiring.section2.list.item6">Other Interdisciplinary Frontier Issues: Including but not limited to data security, multi-party computation, algorithm fairness, AI ethics and governance, medical health data mining, and other directions.</li>
-                    </ul>
+                    <section class="mb-8">
+                        <h4 class="text-lg font-bold text-academic-dark-blue dark:text-gray-100 mb-4" data-i18n="hiring.section2.title">2. Recruitment Positions and Research Directions</h4>
+                        <p class="text-justify leading-relaxed mb-3" data-i18n="hiring.section2.content">
+                            We plan to jointly recruit postdoctoral researchers, focusing on outstanding scholars with backgrounds in mathematics, statistics, computer science, and related interdisciplinary fields. Applicants must have solid mathematical, statistical, and programming abilities, with experience publishing academic papers in top international journals or conferences.
+                        </p>
+                        <p class="font-medium mb-3" data-i18n="hiring.section2.directions">Main research directions include but are not limited to:</p>
+                        <ul class="list-disc ml-10 space-y-3">
+                            <li data-i18n="hiring.section2.list.item1">Fintech and Intelligent Decision Systems: Research on the application of machine learning, big data analysis, blockchain and other technologies in intelligent financial trading, risk prediction, credit assessment, and other fields.</li>
+                            <li data-i18n="hiring.section2.list.item2">Financial Data Security and Privacy Computing: Focus on cutting-edge methods such as secure data storage, privacy protection, and federated learning for financial and sensitive data in cross-institutional and cross-border environments.</li>
+                            <li data-i18n="hiring.section2.list.item3">Data Science and AI Methodology: Focus on broader data science, statistical machine learning, deep learning algorithm optimization, interpretable AI and other theoretical method research and their applications in finance, healthcare, biological genomics, and other fields.</li>
+                            <li data-i18n="hiring.section2.list.item4">Systemic Risk and Financial Network Analysis: Use graph neural networks, multi-layer network modeling and other methods to study risk contagion mechanisms and network structure evolution within the financial system.</li>
+                            <li data-i18n="hiring.section2.list.item5">Natural Language Processing and Text Data Mining: Develop and apply NLP methods to mine key information from unstructured data such as financial texts, public opinion data, and policy documents, serving risk warning and decision support.</li>
+                            <li data-i18n="hiring.section2.list.item6">Other Interdisciplinary Frontier Issues: Including but not limited to data security, multi-party computation, algorithm fairness, AI ethics and governance, medical health data mining, and other directions.</li>
+                        </ul>
+                    </section>
 
-                    <h4 class="text-lg font-bold text-academic-dark-blue dark:text-gray-100 mt-4" data-i18n="hiring.section3.title">3. Application Requirements</h4>
-                    <ul class="list-disc ml-10 space-y-2">
-                        <li data-i18n="hiring.section3.list.item1">Recently obtained or about to obtain a doctoral degree in management science, statistics, computer science, or related majors.</li>
-                        <li data-i18n="hiring.section3.list.item2">Published academic papers in the above research directions as first author or corresponding author in top international statistics, computer science, or management science journals or conferences (B journals or B conferences). Applicants with publications in A journals and A conferences will be given priority.</li>
-                        <li data-i18n="hiring.section3.list.item3">Good teamwork spirit and communication skills, able to conduct research independently and assist in guiding others.</li>
-                    </ul>
+                    <section class="mb-8">
+                        <h4 class="text-lg font-bold text-academic-dark-blue dark:text-gray-100 mb-4" data-i18n="hiring.section3.title">3. Application Requirements</h4>
+                        <ul class="list-disc ml-10 space-y-3">
+                            <li data-i18n="hiring.section3.list.item1">Recently obtained or about to obtain a doctoral degree in management science, statistics, computer science, or related majors.</li>
+                            <li data-i18n="hiring.section3.list.item2">Published academic papers in the above research directions as first author or corresponding author in top international statistics, computer science, or management science journals or conferences (B journals or B conferences). Applicants with publications in A journals and A conferences will be given priority.</li>
+                            <li data-i18n="hiring.section3.list.item3">Good teamwork spirit and communication skills, able to conduct research independently and assist in guiding others.</li>
+                        </ul>
+                    </section>
 
-                    <h4 class="text-lg font-bold text-academic-dark-blue dark:text-gray-100 mt-4" data-i18n="hiring.section4.title">4. Compensation and Benefits</h4>
-                    <ul class="list-disc ml-10 space-y-2">
-                        <li data-i18n="hiring.section4.list.item1">Competitive salary package, specific negotiable.</li>
-                        <li data-i18n="hiring.section4.list.item2">Competitive paper publication and patent application bonuses, up to 50% of annual salary.</li>
-                        <li data-i18n="hiring.section4.list.item3">Competitive domestic and international travel support.</li>
-                        <li data-i18n="hiring.section4.list.item4">Good research conditions and environment, supporting postdocs to apply for various research projects and international academic exchange activities.</li>
-                        <li data-i18n="hiring.section4.list.item5">During the postdoctoral period, you can enjoy research resources and welfare benefits from multiple partner universities, and expand cooperation with supervisors.</li>
-                        <li data-i18n="hiring.section4.list.item6">Based on postdoctoral work performance and research results, provide further career development opportunities, such as recommendations to partner universities.</li>
-                    </ul>
+                    <section class="mb-8">
+                        <h4 class="text-lg font-bold text-academic-dark-blue dark:text-gray-100 mb-4" data-i18n="hiring.section4.title">4. Compensation and Benefits</h4>
+                        <ul class="list-disc ml-10 space-y-3">
+                            <li data-i18n="hiring.section4.list.item1">Competitive salary package, specific negotiable.</li>
+                            <li data-i18n="hiring.section4.list.item2">Competitive paper publication and patent application bonuses, up to 50% of annual salary.</li>
+                            <li data-i18n="hiring.section4.list.item3">Competitive domestic and international travel support.</li>
+                            <li data-i18n="hiring.section4.list.item4">Good research conditions and environment, supporting postdocs to apply for various research projects and international academic exchange activities.</li>
+                            <li data-i18n="hiring.section4.list.item5">During the postdoctoral period, you can enjoy research resources and welfare benefits from multiple partner universities, and expand cooperation with supervisors.</li>
+                            <li data-i18n="hiring.section4.list.item6">Based on postdoctoral work performance and research results, provide further career development opportunities, such as recommendations to partner universities.</li>
+                        </ul>
+                    </section>
 
-                    <h4 class="text-lg font-bold text-academic-dark-blue dark:text-gray-100 mt-4" data-i18n="hiring.section5.title">5. Application Method</h4>
-                    <p data-i18n="hiring.section5.content">Please send the following application materials to wangzigan@sz.tsinghua.edu.cn, with email subject "Postdoctoral Application + Name + Research Direction":</p>
-                    <ul class="list-disc ml-10 space-y-2">
-                        <li data-i18n="hiring.section5.list.item1">Resume (including name, educational background, work experience, research experience, published papers, etc.).</li>
-                        <li data-i18n="hiring.section5.list.item2">Research proposal (briefly describe the proposed research direction and content, no more than 3 pages).</li>
-                        <li data-i18n="hiring.section5.list.item3">Contact information of two referees (including name, affiliation, position, email address, etc.).</li>
-                        <li data-i18n="hiring.section5.list.item4">Other supporting materials (published academic papers and patents).</li>
-                    </ul>
+                    <section class="mb-8">
+                        <h4 class="text-lg font-bold text-academic-dark-blue dark:text-gray-100 mb-4" data-i18n="hiring.section5.title">5. Application Method</h4>
+                        <p class="mb-3" data-i18n="hiring.section5.content">Please send the following application materials to wangzigan@sz.tsinghua.edu.cn, with email subject "Postdoctoral Application + Name + Research Direction":</p>
+                        <ul class="list-disc ml-10 space-y-3">
+                            <li data-i18n="hiring.section5.list.item1">Resume (including name, educational background, work experience, research experience, published papers, etc.).</li>
+                            <li data-i18n="hiring.section5.list.item2">Research proposal (briefly describe the proposed research direction and content, no more than 3 pages).</li>
+                            <li data-i18n="hiring.section5.list.item3">Contact information of two referees (including name, affiliation, position, email address, etc.).</li>
+                            <li data-i18n="hiring.section5.list.item4">Other supporting materials (published academic papers and patents).</li>
+                        </ul>
+                    </section>
 
-                    <h4 class="text-lg font-bold text-academic-dark-blue dark:text-gray-100 mt-4" data-i18n="hiring.section6.title">6. Work Location</h4>
-                    <p data-i18n="hiring.section6.content">
-                        Tsinghua University Shenzhen International Graduate School, Tsinghua University School of Economics and Management Shenzhen Research Institute, University of Hong Kong Business School Shenzhen Campus, Queensland University St Lucia Campus
-                    </p>
+                    <section class="mb-8">
+                        <h4 class="text-lg font-bold text-academic-dark-blue dark:text-gray-100 mb-4" data-i18n="hiring.section6.title">6. Work Location</h4>
+                        <p data-i18n="hiring.section6.content">
+                            Tsinghua University Shenzhen International Graduate School, Tsinghua University School of Economics and Management Shenzhen Research Institute, University of Hong Kong Business School Shenzhen Campus, Queensland University St Lucia Campus
+                        </p>
+                    </section>
 
-                    <h4 class="text-lg font-bold text-academic-dark-blue dark:text-gray-100 mt-4" data-i18n="hiring.section7.title">7. Contact Information</h4>
-                    <p>
-                        <span data-i18n="hiring.section7.contact">Contact: Professor Wang</span><br>
-                        <span data-i18n="hiring.section7.email">Email: wangzigan@sz.tsinghua.edu.cn</span><br>
-                        <span data-i18n="hiring.section7.welcome">We welcome outstanding doctoral graduates interested in conducting research in related fields to join our team, explore frontier issues together, and promote the development of academic research and practical applications.</span>
-                    </p>
+                    <section class="mb-8">
+                        <h4 class="text-lg font-bold text-academic-dark-blue dark:text-gray-100 mb-4" data-i18n="hiring.section7.title">7. Contact Information</h4>
+                        <div class="space-y-2">
+                            <p data-i18n="hiring.section7.contact">Contact: Professor Wang</p>
+                            <p data-i18n="hiring.section7.email">Email: wangzigan@sz.tsinghua.edu.cn</p>
+                            <p class="mt-4 leading-relaxed" data-i18n="hiring.section7.welcome">We welcome outstanding doctoral graduates interested in conducting research in related fields to join our team, explore frontier issues together, and promote the development of academic research and practical applications.</p>
+                        </div>
+                    </section>
                 </div>
             </div>
         </div>

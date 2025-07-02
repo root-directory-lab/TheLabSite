@@ -21,9 +21,9 @@
 }
 
 body {
-    font-family: Arial, 'Microsoft YaHei', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, 'Microsoft YaHei', 'PingFang SC', 'Hiragino Sans GB', 'Heiti SC', 'WenQuanYi Micro Hei', sans-serif;
     color: var(--text-primary);
-    line-height: 1.166;
+    line-height: 1.5;
     margin: 0;
     padding: 0;
     background-color: var(--bg-primary);
@@ -41,28 +41,28 @@ a:hover {
 }
 
 h1 {
-    font: bold 200% Arial, 'Microsoft YaHei', sans-serif;
+    font: bold 200% -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, 'Microsoft YaHei', sans-serif;
     color: var(--heading-color);
     margin: 0;
     padding: 0;
 }
 
 h2 {
-    font: bold 120% Arial, SimHei, sans-serif;
+    font: bold 120% -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, SimHei, sans-serif;
     color: var(--heading-secondary);
     margin: 0;
     padding: 5px;
 }
 
 .left h2 {
-    font: bold 100% Arial, SimHei, sans-serif;
+    font: bold 100% -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, SimHei, sans-serif;
     color: var(--heading-secondary);
     margin: 0;
     padding: 5px;
 }
 
 h3 {
-    font: bold 120% Arial, SimHei, sans-serif;
+    font: bold 120% -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, SimHei, sans-serif;
     color: var(--heading-color);
     margin: 10px;
     margin-left: 30px;
@@ -70,7 +70,7 @@ h3 {
 }
 
 h4 {
-    font: bold 110% Arial, SimHei, sans-serif;
+    font: bold 110% -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, SimHei, sans-serif;
     color: var(--heading-color);
     margin: 15px 0 10px 0;
     padding: 0;
@@ -83,12 +83,12 @@ h4 {
     margin-right: auto;
     width: 1200px;
     background-color: var(--bg-primary);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 }
 
 div#top {
     width: 100%;
-    padding: 10px 10px 14px 10px;
-    margin: 10px 10px 10px 10px;
+    padding: 16px 24px;
     border-bottom: 1px solid var(--border-color);
 }
 
@@ -98,26 +98,30 @@ div#top-right {
 
 div#left {
     float: left;
-    width: 20%;
-    padding: 0;
-    margin: 10px 0 0 0;
-    background-color: var(--bg-primary);
+    width: 25%;
+    padding: 24px;
+    background-color: #f9fafb;
+}
+
+.dark div#left {
+    background-color: #1f2937;
 }
 
 #left img {
-    margin-left: 30px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     transition: transform 0.2s ease;
 }
 
 #left img:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 div#content {
     float: right;
-    width: 78%;
-    padding: 0 10px 0 0;
-    margin: 10px 0 0 0;
+    width: 75%;
+    padding: 24px;
     background-color: var(--bg-primary);
 }
 
@@ -129,17 +133,16 @@ div#content {
 }
 
 li {
-    margin: 5px;
+    margin: 5px 0;
     padding: 0;
+    line-height: 1.6;
 }
 
 p {
-    margin: 10px;
-    margin-left: 10px;
-    margin-right: 0;
-    padding: 10px 0 0 0;
+    margin: 10px 0;
+    padding: 0;
     font-size: 100%;
-    line-height: 150%;
+    line-height: 1.6;
 }
 
 .author {
@@ -148,27 +151,34 @@ p {
 
 .title-blue {
     color: var(--link-color);
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .title-red {
-    color: #ff6666;
-    font-weight: bold;
+    color: #dc2626;
+    font-weight: 600;
 }
 
 .job-title {
-    margin-top: 40px;
+    margin-top: 0;
 }
 
 .dark .title-red {
-    color: #ff8888;
+    color: #ef4444;
 }
 
 button {
     transition: all 0.2s ease;
 }
 
-/* Responsive Design */
+nav {
+    font-size: 0.95rem;
+}
+
+.clear-both {
+    clear: both;
+}
+
 @media (max-width: 1200px) {
     #pagecell1 {
         width: 100%;
@@ -185,10 +195,11 @@ button {
     div#content {
         width: 100%;
         float: none;
-        padding: 0 10px;
+        padding: 16px;
     }
     
     #left img {
+        max-width: 300px;
         margin: 0 auto;
         display: block;
     }
@@ -196,6 +207,10 @@ button {
     div#top-right {
         float: none;
         margin-top: 10px;
+    }
+    
+    nav {
+        flex-wrap: wrap;
     }
 }
 
@@ -221,4 +236,10 @@ button {
 
 .dark .text-academic-light-blue {
     color: #60a5fa;
+}
+
+@media print {
+    #top-right button {
+        display: none;
+    }
 }
