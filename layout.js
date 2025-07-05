@@ -150,25 +150,47 @@ const Layout = {
     },
 
     initThemeToggle() {
-        const lightButton = document.querySelector('.theme-toggle-light');
-        const darkButton = document.querySelector('.theme-toggle-dark');
-        
-        if (lightButton && typeof window.setTheme === 'function') {
-            lightButton.addEventListener('click', () => {
+        // Ensure DOM is ready
+        const setupThemeButtons = () => {
+            const lightButton = document.querySelector('.theme-toggle-light');
+            const darkButton = document.querySelector('.theme-toggle-dark');
+            
+            if (!lightButton || !darkButton) {
+                console.error('Theme toggle buttons not found');
+                return;
+            }
+            
+            if (typeof window.setTheme !== 'function') {
+                console.error('window.setTheme function not available');
+                return;
+            }
+            
+            // Remove any existing listeners to prevent duplicates
+            const newLightButton = lightButton.cloneNode(true);
+            const newDarkButton = darkButton.cloneNode(true);
+            lightButton.parentNode.replaceChild(newLightButton, lightButton);
+            darkButton.parentNode.replaceChild(newDarkButton, darkButton);
+            
+            // Add click listeners
+            newLightButton.addEventListener('click', (e) => {
+                e.preventDefault();
                 window.setTheme('light');
             });
-        }
-        
-        if (darkButton && typeof window.setTheme === 'function') {
-            darkButton.addEventListener('click', () => {
+            
+            newDarkButton.addEventListener('click', (e) => {
+                e.preventDefault();
                 window.setTheme('dark');
             });
-        }
+            
+            // Update button states
+            if (typeof window.updateThemeToggle === 'function' && typeof window.getCurrentTheme === 'function') {
+                const currentTheme = window.getCurrentTheme();
+                window.updateThemeToggle(currentTheme);
+            }
+        };
         
-        if (typeof updateThemeToggle === 'function' && typeof getCurrentTheme === 'function') {
-            const currentTheme = getCurrentTheme();
-            updateThemeToggle(currentTheme);
-        }
+        // Run setup immediately
+        setupThemeButtons();
     },
 
     init() {
