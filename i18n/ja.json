@@ -1,0 +1,186 @@
+{
+    "title": "清華大学准教授",
+    "nav": {
+        "home": "ホーム",
+        "publications": "論文発表",
+        "team": "チーム（採用中）"
+    },
+    "research": {
+        "interests": "研究分野：",
+        "fields": "応用ミクロ経済学、国際経済学、環境経済学、政治経済学、法と経済学、経済ネットワーク、計量経済学、コンピュータビジョン、知識グラフ、GAN。"
+    },
+    "sections": {
+        "research": "研究分野",
+        "employment": "職歴",
+        "education": "学歴",
+        "grants": "研究助成金",
+        "service": "学術サービス",
+        "certificates": "資格証明書",
+        "affiliations": "所属学会",
+        "awards": "学術賞",
+        "uniservice": "大学でのサービス",
+        "teaching": "教育経験",
+        "placement": "指導博士課程学生の就職先",
+        "ras": "過去の研究助手の就職先",
+        "economics": "経済学・金融学",
+        "cs": "コンピュータサイエンス",
+        "book": "書籍の章",
+        "working": "改訂中のワーキングペーパー"
+    },
+    "employment": {
+        "tsinghua": "准教授（テニュア），2023年～現在",
+        "tsinghua.school1": "Shenzhen International Graduate School, Tsinghua University",
+        "tsinghua.school2": "School of Economics and Management, Tsinghua University（兼任）",
+        "uq": "名誉准教授（経済学），2023–2026",
+        "uq.school": "University of Queensland",
+        "hku": "助理教授，2015–2023",
+        "hku.school": "HKU Business School, The University of Hong Kong",
+        "suny": "非常勤講師（博士課程在学中），2014",
+        "suny.school": "State University of New York"
+    },
+    "education": {
+        "phd": "経済学博士，2015年，Columbia University，ニューヨーク | 専門分野：金融",
+        "phd.committee": "論文委員会：Patrick Bolton，Ailsa Röell，José Scheinkman，Dan J. Wang，Tri Vi Dang",
+        "mphil": "経済学修士（研究），2012年 & 経済学修士，2011年，Columbia University，ニューヨーク",
+        "ba": "経済学学士，2009年，Tsinghua University，北京",
+        "nec": "全国理科実験クラス，2005年，中華人民共和国教育部，上海",
+        "nec.concentration": "専門分野：生物学、化学"
+    },
+    "grants": {
+        "grf2022": "香港一般研究基金（GRF），大学教育資助委員会，2022–2023",
+        "grf2018": "香港一般研究基金（GRF），大学教育資助委員会，2018–2019",
+        "ecs2016": "香港一般研究基金（ECS），大学教育資助委員会，2016–2017",
+        "ikep": "学際的知識交流プロジェクト基金，HKU，2016",
+        "matching": "マッチング基金，HKU，2015",
+        "seed": "シード基金，HKU，2015"
+    },
+    "service": {
+        "referee": "査読者：",
+        "discussant": "多数の学会での討論者",
+        "wfa2022": "Western Finance Association (WFA) プログラム委員会，2022",
+        "wfa2021": "Western Finance Association (WFA) プログラム委員会，2021",
+        "fma2019": "セッション議長，2019 FMA European Conference，グラスゴー，英国，2019",
+        "master2019": "修士論文委員会委員長，Central Univ. of Fin. and Econ.，北京，中国，2019",
+        "afbc2018": "セッション議長，第31回 Australasian Finance and Banking Conference，シドニー，オーストラリア，2018",
+        "lixin2018": "セッション議長，Shanghai Lixin Workshop on Law and Finance，上海，中国，2018",
+        "vietnam2018": "セッション議長，2018 Vietnam Symposium in Banking and Finance，フエ市，ベトナム，2018",
+        "cmes2017": "貿易セッション議長，China Meeting of the Econometric Society，武漢，中国，2017"
+    },
+    "certificates": {
+        "harvard": "エグゼクティブ教育，2016",
+        "harvard.school": "Harvard Business School，ボストン",
+        "berkeley": "サマーセッション，2008",
+        "berkeley.school": "UC Berkeley，カリフォルニア"
+    },
+    "affiliations": {
+        "aea": "American Economic Association (AEA)",
+        "res": "Royal Economic Society",
+        "es": "Econometric Society",
+        "afa": "American Finance Association (AFA)",
+        "efa": "European Finance Association (EFA)",
+        "wfa": "Western Finance Association (WFA)",
+        "acm": "Association for Computing Machinery (ACM)",
+        "ieee": "Institute of Electrical and Electronics Engineers (IEEE)"
+    },
+    "awards": {
+        "supervision2022": "大学院生指導賞，The University of Hong Kong，2022",
+        "vandijk2021": "Bureau van Dijk 企業金融賞，第34回 UNSW Australian Finance and Banking Conference，2021",
+        "supervision2021": "大学院生指導賞，The University of Hong Kong，2021",
+        "vandijk2018": "Bureau van Dijk 企業金融賞，第31回 UNSW Australian Finance and Banking Conference，2018",
+        "summer": "夏期奨学金，Columbia University，2009–2015",
+        "faculty": "教員奨学金，Columbia University，2009–2015",
+        "mcm": "優秀賞（上位2–12%），American Mathematical Contest in Modeling，2008",
+        "comprehensive": "総合奨学金，Tsinghua University，2008",
+        "cumcm": "一等賞，Chinese Mathematical Contest in Modeling，2007",
+        "ccb": "China Construction Bank フェローシップ，Tsinghua University，2007",
+        "academic": "一等学業奨学金，Tsinghua University，2006",
+        "biology": "銅賞，第13回全国高校生物オリンピック（冬季キャンプ），2004",
+        "biology2": "第3位（上海）及び一等賞，全国高校生物オリンピック，2004",
+        "math": "第1位（全国）及び一等賞，全国中学数学オリンピック，2001",
+        "chemistry": "第3位（安徽）及び一等賞，全国中学化学オリンピック，2001"
+    },
+    "uniservice": {
+        "fintech": "金融工学修士課程入学委員会，HKU",
+        "curriculum": "金融工学修士課程カリキュラム開発委員会，HKU",
+        "it": "学部情報技術委員会，HKU",
+        "seminar": "金融分野ブラウンバッグセミナー主催者，HKU"
+    },
+    "teaching": {
+        "seminars": "金融上級トピックセミナー，修士，Tsinghua University，2024",
+        "crypto": "暗号学とネットワークセキュリティ，修士，Tsinghua University，2024",
+        "frontier": "金融フロンティア問題研究，修士，Tsinghua University，2023",
+        "programming": "上級金融プログラミングとデータベース，修士，HKU，2017–2022",
+        "databases": "金融プログラミングとデータベース，学部，HKU，2017–2022",
+        "corporate": "企業金融，学部，HKU，2016–2022",
+        "money": "貨幣と銀行，修士及び学部，State University of New York，2014",
+        "financial": "財務管理，修士及び学部，State University of New York，2014",
+        "micro": "ミクロ経済学，修士，Columbia University（TA），2010",
+        "corporate2": "企業金融，修士及び学部，Columbia University（TA），2010–2015",
+        "statistics": "持続可能性管理の統計学，修士，Columbia University（TA），2011",
+        "principles": "経済学原理，学部，Columbia University（TA），2012/2011",
+        "principles2": "経済学原理，学部，Tsinghua University（TA），2008"
+    },
+    "placement": {
+        "wang": "Wang, Youan（Xiamen University，助理教授，2022）",
+        "yu": "Yu, Luping（Xiamen University，助理教授，2021）"
+    },
+    "team": {
+        "title": "ポスドク募集",
+        "section1": {
+            "title": "1. 指導教員チームの紹介",
+            "content": "本募集チームは、Tsinghua University深圳研究生院、University of Hong Kong、およびQueensland Universityの経済学院、ビジネススクール、コンピュータサイエンス学院の教授で構成されています。チームは統計学、コンピュータサイエンス、フィンテック、データサイエンスの分野で確固たる研究基盤と豊富な学術成果を持っています。チームメンバーは長年、機械学習、データセキュリティ、自然言語処理、グラフニューラルネットワーク、統計モデリング、フィンテック応用などの学際的研究に取り組んでいます。協力ネットワークはTsinghua University、University of Hong Kong、Queensland Universityの複数の学院に及び、強固な国際協力基盤を有しています。チームメンバーはMS、ECMA、AER、JoE、JFE、JLE、JFQA、JIE、JRSS B、JMLR、CVPR、KDD、TKDE、TOIS、ICDE、SIGIR、ACL、AAAI、ICML、TPAMIなどの国際トップジャーナルと会議で多数の高水準論文を発表し、複数の学術賞を受賞しています。"
+        },
+        "section2": {
+            "title": "2. 募集職位と研究方向",
+            "content": "ポスドク研究員を共同募集し、数学、統計学、コンピュータサイエンスおよび関連する学際分野の背景を持つ優秀な研究者を重点的に募集します。応募者は確固たる数学、統計、プログラミング能力を持ち、国際的なトップジャーナルまたは会議で学術論文を発表した経験が必要です。",
+            "directions": "主な研究方向（これらに限定されません）：",
+            "list": {
+                "item1": "フィンテックとインテリジェント意思決定システム：機械学習、ビッグデータ分析、ブロックチェーンなどの技術の金融インテリジェント取引、リスク予測、信用評価などの分野での応用研究。",
+                "item2": "金融データセキュリティとプライバシー計算：クロス機関、クロスボーダー環境での金融および機密データのセキュアなデータストレージ、プライバシー保護、連合学習などの最先端手法に焦点を当てる。",
+                "item3": "データサイエンスとAI方法論：より広範なデータサイエンス、統計的機械学習、深層学習アルゴリズムの最適化、解釈可能なAIなどの理論的方法研究と、金融、医療、生物ゲノミクスなどの分野での応用に焦点を当てる。",
+                "item4": "システミックリスクと金融ネットワーク分析：グラフニューラルネットワーク、多層ネットワークモデリングなどの手法を用いて、金融システム内のリスク伝染メカニズムとネットワーク構造の進化を研究する。",
+                "item5": "自然言語処理とテキストデータマイニング：NLP手法を開発・応用し、金融テキスト、世論データ、政策文書などの非構造化データから重要な情報を抽出し、リスク警告と意思決定支援に役立てる。",
+                "item6": "その他の学際的フロンティア問題：データセキュリティ、マルチパーティ計算、アルゴリズムの公平性、AI倫理とガバナンス、医療健康データマイニングなどの方向を含むがこれらに限定されない。"
+            }
+        },
+        "section3": {
+            "title": "3. 応募要件",
+            "list": {
+                "item1": "管理科学、統計学、コンピュータサイエンスなどの関連専攻で博士号を最近取得したか、まもなく取得予定の方。",
+                "item2": "上記の研究方向で、第一著者または責任著者として国際統計学、コンピュータ、または管理科学のトップジャーナルまたは会議（BジャーナルまたはB会議）で学術論文を発表した経験がある方。AジャーナルとA会議での発表経験がある応募者を優先します。",
+                "item3": "良好なチームワーク精神とコミュニケーション能力を持ち、独立して研究を行い、他者の指導を支援できる方。"
+            }
+        },
+        "section4": {
+            "title": "4. 待遇",
+            "list": {
+                "item1": "競争力のある給与待遇を提供、詳細は面談にて。",
+                "item2": "競争力のある論文発表および特許申請ボーナスを提供、年収の最大50%まで。",
+                "item3": "競争力のある国内外出張支援を提供。",
+                "item4": "良好な研究条件と研究環境を提供し、ポスドクが各種研究プロジェクトと国際学術交流活動に申請することを支援。",
+                "item5": "ポスドク在職期間中、複数の協力大学の研究リソースと福利厚生を享受でき、協力指導教員を拡大できる。",
+                "item6": "ポスドクの業績と研究成果に基づいて、協力大学への推薦など、さらなるキャリア発展の機会を提供。"
+            }
+        },
+        "section5": {
+            "title": "5. 応募方法",
+            "content": "以下の応募書類をwangzigan@sz.tsinghua.edu.cnに送信してください。メールの件名に【ポスドク応募+氏名+研究方向】と明記してください：",
+            "list": {
+                "item1": "履歴書（氏名、学歴、職歴、研究経歴、発表論文などを含む）。",
+                "item2": "研究計画書（提案する研究方向と研究内容を簡潔に説明、3ページ以内）。",
+                "item3": "推薦者2名の連絡先（氏名、所属、役職、メールアドレスなどを含む）。",
+                "item4": "その他の証明資料（発表済みの学術論文と特許）。"
+            }
+        },
+        "section6": {
+            "title": "6. 勤務地",
+            "content": "Tsinghua University Shenzhen International Graduate School、Tsinghua University School of Economics and Management深圳研究院、University of Hong Kong Business School深圳キャンパス、Queensland University St Luciaキャンパス"
+        },
+        "section7": {
+            "title": "7. 連絡先",
+            "contact": "連絡先：Wang教授",
+            "email": "メール：wangzigan@sz.tsinghua.edu.cn",
+            "welcome": "関連分野の研究に従事することに意欲的な優秀な博士課程修了者の方々を歓迎します。私たちのチームに参加し、フロンティア問題を共に探求し、学術研究と実践応用の発展を推進しましょう。"
+        }
+    }
+}

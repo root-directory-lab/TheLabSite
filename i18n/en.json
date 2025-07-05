@@ -3,11 +3,11 @@
     "nav": {
         "home": "Home",
         "publications": "Publications",
-        "team": "Team (we are hiring)"
+        "team": "Team (We Are Hiring)"
     },
     "research": {
         "interests": "Research Interests:",
-        "fields": "Applied microeconomics, international economics, environmental economics, political and law economics, economic networks, econometrics, Computer vision, knowledge graph, GAN."
+        "fields": "Applied microeconomics, international economics, environmental economics, political and law economics, economic networks, econometrics, computer vision, knowledge graph, GAN."
     },
     "sections": {
         "research": "Research Interests",
@@ -28,48 +28,48 @@
         "working": "Working Papers Under Revision"
     },
     "employment": {
-        "tsinghua": "Associate Professor (tenured) 2023 – Present",
+        "tsinghua": "Associate Professor (Tenured), 2023 – Present",
         "tsinghua.school1": "Shenzhen International Graduate School, Tsinghua University",
-        "tsinghua.school2": "School of Economics and Management, Tsinghua University (dual appointment)",
-        "uq": "Honorary Associate Professor in Economics 2023-2026",
+        "tsinghua.school2": "School of Economics and Management, Tsinghua University (Dual Appointment)",
+        "uq": "Honorary Associate Professor in Economics, 2023–2026",
         "uq.school": "University of Queensland",
-        "hku": "Assistant Professor 2015 – 2023",
+        "hku": "Assistant Professor, 2015–2023",
         "hku.school": "HKU Business School, The University of Hong Kong",
-        "suny": "Adjunct Professor (during Ph.D.) 2014",
+        "suny": "Adjunct Professor (During Ph.D.), 2014",
         "suny.school": "State University of New York"
     },
     "education": {
-        "phd": "Economics Ph.D. 2015, Columbia University, New York, Concentration: Finance",
+        "phd": "Economics Ph.D., 2015, Columbia University, New York | Concentration: Finance",
         "phd.committee": "Dissertation Committee: Patrick Bolton, Ailsa Röell, José Scheinkman, Dan J. Wang, Tri Vi Dang",
-        "mphil": "Economics M.Phil. 2012 & Economics M.A. 2011, Columbia University, New York",
-        "ba": "Economics B.A. 2009, Tsinghua University, Beijing",
-        "nec": "National Experimental Class of Science 2005, Ministry of Education of P.R.C., Shanghai",
+        "mphil": "Economics M.Phil., 2012 & Economics M.A., 2011, Columbia University, New York",
+        "ba": "Economics B.A., 2009, Tsinghua University, Beijing",
+        "nec": "National Experimental Class of Science, 2005, Ministry of Education of P.R.C., Shanghai",
         "nec.concentration": "Concentration: Biology, Chemistry"
     },
     "grants": {
-        "grf2022": "HK General Research Fund (GRF), University Grants Committee, 2022-2023",
-        "grf2018": "HK General Research Fund (GRF), University Grants Committee, 2018-2019",
-        "ecs2016": "HK General Research Fund (ECS), University Grants Committee, 2016-2017",
+        "grf2022": "HK General Research Fund (GRF), University Grants Committee, 2022–2023",
+        "grf2018": "HK General Research Fund (GRF), University Grants Committee, 2018–2019",
+        "ecs2016": "HK General Research Fund (ECS), University Grants Committee, 2016–2017",
         "ikep": "Interdisciplinary Knowledge Exchange Project Fund, HKU, 2016",
         "matching": "Matching Fund, HKU, 2015",
         "seed": "Seed Fund, HKU, 2015"
     },
     "service": {
-        "referee": "Ad-hoc referees for:",
-        "discussant": "Discussant at many conferences",
-        "wfa2022": "Western Finance Association (WFA) Program Committee 2022",
-        "wfa2021": "Western Finance Association (WFA) Program Committee 2021",
-        "fma2019": "Session Chair, 2019 FMA European Conference, Glasgow, UK 2019",
-        "master2019": "Master Dissertation Committee Chair, Central Univ. of Fin. and Econ., Beijing, China 2019",
-        "afbc2018": "Session Chair, 31st Australasian Finance and Banking Conference, Sydney, Australia 2018",
-        "lixin2018": "Session Chair, Shanghai Lixin Workshop on Law and Finance, Shanghai, China 2018",
-        "vietnam2018": "Session Chair, 2018 Vietnam Symposium in Banking and Finance, Hue City, Vietnam 2018",
-        "cmes2017": "Trade Session Chair, China Meeting of the Econometric Society, Wuhan, China 2017"
+        "referee": "Ad-hoc Referee for:",
+        "discussant": "Discussant at Many Conferences",
+        "wfa2022": "Western Finance Association (WFA) Program Committee, 2022",
+        "wfa2021": "Western Finance Association (WFA) Program Committee, 2021",
+        "fma2019": "Session Chair, 2019 FMA European Conference, Glasgow, UK, 2019",
+        "master2019": "Master Dissertation Committee Chair, Central Univ. of Fin. and Econ., Beijing, China, 2019",
+        "afbc2018": "Session Chair, 31st Australasian Finance and Banking Conference, Sydney, Australia, 2018",
+        "lixin2018": "Session Chair, Shanghai Lixin Workshop on Law and Finance, Shanghai, China, 2018",
+        "vietnam2018": "Session Chair, 2018 Vietnam Symposium in Banking and Finance, Hue City, Vietnam, 2018",
+        "cmes2017": "Trade Session Chair, China Meeting of the Econometric Society, Wuhan, China, 2017"
     },
     "certificates": {
-        "harvard": "Executive Education 2016",
+        "harvard": "Executive Education, 2016",
         "harvard.school": "Harvard Business School, Boston",
-        "berkeley": "Summer Session 2008",
+        "berkeley": "Summer Session, 2008",
         "berkeley.school": "UC Berkeley, California"
     },
     "affiliations": {
@@ -83,21 +83,21 @@
         "ieee": "Institute of Electrical and Electronics Engineers (IEEE)"
     },
     "awards": {
-        "supervision2022": "Faculty Research Postgraduate Supervision Award, The University of Hong Kong 2022",
-        "vandijk2021": "Bureau van Dijk prize in Corporate Finance, 34th UNSW Australian Finance and Banking Conference 2021",
-        "supervision2021": "Faculty Research Postgraduate Supervision Award, The University of Hong Kong 2021",
-        "vandijk2018": "Bureau van Dijk prize in Corporate Finance, 31st UNSW Australian Finance and Banking Conference 2018",
-        "summer": "Summer Stipend, Columbia University, 2009-2015",
-        "faculty": "Faculty Fellowship, Columbia University, 2009-2015",
-        "mcm": "Meritorious Winner (top 2-12%), American Mathematical Contest in Modeling 2008",
-        "comprehensive": "Comprehensive Scholarship Award, Tsinghua University 2008",
-        "cumcm": "First Prize, Chinese Mathematical Contest in Modeling 2007",
-        "ccb": "China Construction Bank Fellowship, Tsinghua University 2007",
-        "academic": "First Academic Scholarship, Tsinghua University 2006",
-        "biology": "Bronze Award, 13th National High School Biology Olympiad (Winter Camp) 2004",
-        "biology2": "3rd Place (Shanghai) and First Prize, National High School Biology Olympiad 2004",
-        "math": "1st Place (Nationwide) and First Prize, National Middle School Math Olympiad 2001",
-        "chemistry": "3rd Place (Anhui) and First Prize, National Middle School Chemistry Olympiad 2001"
+        "supervision2022": "Faculty Research Postgraduate Supervision Award, The University of Hong Kong, 2022",
+        "vandijk2021": "Bureau van Dijk Prize in Corporate Finance, 34th UNSW Australian Finance and Banking Conference, 2021",
+        "supervision2021": "Faculty Research Postgraduate Supervision Award, The University of Hong Kong, 2021",
+        "vandijk2018": "Bureau van Dijk Prize in Corporate Finance, 31st UNSW Australian Finance and Banking Conference, 2018",
+        "summer": "Summer Stipend, Columbia University, 2009–2015",
+        "faculty": "Faculty Fellowship, Columbia University, 2009–2015",
+        "mcm": "Meritorious Winner (Top 2–12%), American Mathematical Contest in Modeling, 2008",
+        "comprehensive": "Comprehensive Scholarship Award, Tsinghua University, 2008",
+        "cumcm": "First Prize, Chinese Mathematical Contest in Modeling, 2007",
+        "ccb": "China Construction Bank Fellowship, Tsinghua University, 2007",
+        "academic": "First Academic Scholarship, Tsinghua University, 2006",
+        "biology": "Bronze Award, 13th National High School Biology Olympiad (Winter Camp), 2004",
+        "biology2": "3rd Place (Shanghai) and First Prize, National High School Biology Olympiad, 2004",
+        "math": "1st Place (Nationwide) and First Prize, National Middle School Math Olympiad, 2001",
+        "chemistry": "3rd Place (Anhui) and First Prize, National Middle School Chemistry Olympiad, 2001"
     },
     "uniservice": {
         "fintech": "Master of Finance FinTech Admissions Committee, HKU",
@@ -106,19 +106,19 @@
         "seminar": "Finance Area Brown Bag Seminar Organizer, HKU"
     },
     "teaching": {
-        "seminars": "Seminars on Advanced Topics in Finance, master, Tsinghua University 2024",
-        "crypto": "Cryptography and Network Security, master, Tsinghua University 2024",
-        "frontier": "Research on Frontier Issues in Finance, master, Tsinghua University 2023",
-        "programming": "Advanced Financial Programming and Databases, master, HKU 2017-2022",
-        "databases": "Financial Programming and Databases, undergrad, HKU 2017-2022",
-        "corporate": "Corporate Finance, undergrad, HKU 2016-2022",
-        "money": "Money and Banking, master and undergrad, State University of New York 2014",
-        "financial": "Financial Management, master and undergrad, State University of New York 2014",
-        "micro": "Microeconomics, master, Columbia University (TA) 2010",
-        "corporate2": "Corporate Finance, master and undergrad, Columbia University (TA) 2010-2015",
-        "statistics": "Statistics of Sustainability Management, master, Columbia University (TA) 2011",
-        "principles": "Principles of Economics, undergrad, Columbia University (TA) 2012/2011",
-        "principles2": "Principles of Economics, undergrad, Tsinghua University (TA) 2008"
+        "seminars": "Seminars on Advanced Topics in Finance, Master, Tsinghua University, 2024",
+        "crypto": "Cryptography and Network Security, Master, Tsinghua University, 2024",
+        "frontier": "Research on Frontier Issues in Finance, Master, Tsinghua University, 2023",
+        "programming": "Advanced Financial Programming and Databases, Master, HKU, 2017–2022",
+        "databases": "Financial Programming and Databases, Undergraduate, HKU, 2017–2022",
+        "corporate": "Corporate Finance, Undergraduate, HKU, 2016–2022",
+        "money": "Money and Banking, Master and Undergraduate, State University of New York, 2014",
+        "financial": "Financial Management, Master and Undergraduate, State University of New York, 2014",
+        "micro": "Microeconomics, Master, Columbia University (TA), 2010",
+        "corporate2": "Corporate Finance, Master and Undergraduate, Columbia University (TA), 2010–2015",
+        "statistics": "Statistics of Sustainability Management, Master, Columbia University (TA), 2011",
+        "principles": "Principles of Economics, Undergraduate, Columbia University (TA), 2012/2011",
+        "principles2": "Principles of Economics, Undergraduate, Tsinghua University (TA), 2008"
     },
     "placement": {
         "wang": "Wang, Youan (Xiamen University, Assistant Professor, 2022)",

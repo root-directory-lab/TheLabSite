@@ -1,0 +1,186 @@
+{
+    "title": "Phó Giáo sư tại Đại học Thanh Hoa",
+    "nav": {
+        "home": "Trang chủ",
+        "publications": "Công bố khoa học",
+        "team": "Nhóm nghiên cứu (Đang tuyển dụng)"
+    },
+    "research": {
+        "interests": "Lĩnh vực nghiên cứu:",
+        "fields": "Kinh tế vi mô ứng dụng, kinh tế quốc tế, kinh tế môi trường, kinh tế chính trị, kinh tế luật, mạng lưới kinh tế, kinh tế lượng, thị giác máy tính, đồ thị tri thức, GAN."
+    },
+    "sections": {
+        "research": "Lĩnh vực nghiên cứu",
+        "employment": "Kinh nghiệm làm việc",
+        "education": "Học vấn",
+        "grants": "Tài trợ và quỹ nghiên cứu",
+        "service": "Phục vụ học thuật",
+        "certificates": "Chứng chỉ",
+        "affiliations": "Hội viên chuyên nghiệp",
+        "awards": "Giải thưởng học thuật",
+        "uniservice": "Phục vụ đại học",
+        "teaching": "Kinh nghiệm giảng dạy",
+        "placement": "Vị trí việc làm của nghiên cứu sinh",
+        "ras": "Vị trí việc làm của trợ lý nghiên cứu",
+        "economics": "Kinh tế học và Tài chính",
+        "cs": "Khoa học Máy tính",
+        "book": "Chương sách",
+        "working": "Bài báo đang chỉnh sửa"
+    },
+    "employment": {
+        "tsinghua": "Phó Giáo sư (Biên chế), 2023–Hiện tại",
+        "tsinghua.school1": "Shenzhen International Graduate School, Tsinghua University",
+        "tsinghua.school2": "School of Economics and Management, Tsinghua University (Kiêm nhiệm)",
+        "uq": "Phó Giáo sư Danh dự về Kinh tế học, 2023–2026",
+        "uq.school": "University of Queensland",
+        "hku": "Trợ lý Giáo sư, 2015–2023",
+        "hku.school": "HKU Business School, The University of Hong Kong",
+        "suny": "Giảng viên thỉnh giảng (Trong thời gian làm Tiến sĩ), 2014",
+        "suny.school": "State University of New York"
+    },
+    "education": {
+        "phd": "Tiến sĩ Kinh tế học, 2015, Columbia University, New York | Chuyên ngành: Tài chính",
+        "phd.committee": "Hội đồng luận án: Patrick Bolton, Ailsa Röell, José Scheinkman, Dan J. Wang, Tri Vi Dang",
+        "mphil": "Thạc sĩ Triết học Kinh tế, 2012 & Thạc sĩ Văn học Kinh tế, 2011, Columbia University, New York",
+        "ba": "Cử nhân Kinh tế học, 2009, Tsinghua University, Bắc Kinh",
+        "nec": "Lớp Thực nghiệm Khoa học Tự nhiên Quốc gia, 2005, Bộ Giáo dục Trung Quốc, Thượng Hải",
+        "nec.concentration": "Chuyên ngành: Sinh học, Hóa học"
+    },
+    "grants": {
+        "grf2022": "Quỹ Nghiên cứu Chung Hồng Kông (GRF), Ủy ban Tài trợ Giáo dục Đại học, 2022–2023",
+        "grf2018": "Quỹ Nghiên cứu Chung Hồng Kông (GRF), Ủy ban Tài trợ Giáo dục Đại học, 2018–2019",
+        "ecs2016": "Quỹ Nghiên cứu Chung Hồng Kông (ECS), Ủy ban Tài trợ Giáo dục Đại học, 2016–2017",
+        "ikep": "Quỹ Dự án Trao đổi Kiến thức Liên ngành, HKU, 2016",
+        "matching": "Quỹ Đối ứng, HKU, 2015",
+        "seed": "Quỹ Hạt giống, HKU, 2015"
+    },
+    "service": {
+        "referee": "Phản biện cho:",
+        "discussant": "Người thảo luận tại nhiều hội nghị",
+        "wfa2022": "Ủy ban Chương trình Western Finance Association (WFA), 2022",
+        "wfa2021": "Ủy ban Chương trình Western Finance Association (WFA), 2021",
+        "fma2019": "Chủ tọa phiên, Hội nghị FMA Châu Âu 2019, Glasgow, Vương quốc Anh, 2019",
+        "master2019": "Chủ tịch Hội đồng Luận văn Thạc sĩ, Central Univ. of Fin. and Econ., Bắc Kinh, Trung Quốc, 2019",
+        "afbc2018": "Chủ tọa phiên, Hội nghị Tài chính và Ngân hàng Australasian lần thứ 31, Sydney, Úc, 2018",
+        "lixin2018": "Chủ tọa phiên, Hội thảo Shanghai Lixin về Luật và Tài chính, Thượng Hải, Trung Quốc, 2018",
+        "vietnam2018": "Chủ tọa phiên, Hội nghị Ngân hàng và Tài chính Việt Nam 2018, Huế, Việt Nam, 2018",
+        "cmes2017": "Chủ tọa phiên Thương mại, Hội nghị Kinh tế lượng Trung Quốc, Vũ Hán, Trung Quốc, 2017"
+    },
+    "certificates": {
+        "harvard": "Giáo dục Điều hành, 2016",
+        "harvard.school": "Harvard Business School, Boston",
+        "berkeley": "Khóa học mùa hè, 2008",
+        "berkeley.school": "UC Berkeley, California"
+    },
+    "affiliations": {
+        "aea": "American Economic Association (AEA)",
+        "res": "Royal Economic Society",
+        "es": "Econometric Society",
+        "afa": "American Finance Association (AFA)",
+        "efa": "European Finance Association (EFA)",
+        "wfa": "Western Finance Association (WFA)",
+        "acm": "Association for Computing Machinery (ACM)",
+        "ieee": "Institute of Electrical and Electronics Engineers (IEEE)"
+    },
+    "awards": {
+        "supervision2022": "Giải thưởng Hướng dẫn Nghiên cứu sinh, The University of Hong Kong, 2022",
+        "vandijk2021": "Giải Bureau van Dijk về Tài chính Doanh nghiệp, Hội nghị Tài chính và Ngân hàng Úc UNSW lần thứ 34, 2021",
+        "supervision2021": "Giải thưởng Hướng dẫn Nghiên cứu sinh, The University of Hong Kong, 2021",
+        "vandijk2018": "Giải Bureau van Dijk về Tài chính Doanh nghiệp, Hội nghị Tài chính và Ngân hàng Úc UNSW lần thứ 31, 2018",
+        "summer": "Học bổng mùa hè, Columbia University, 2009–2015",
+        "faculty": "Học bổng giảng viên, Columbia University, 2009–2015",
+        "mcm": "Giải Xuất sắc (top 2–12%), Cuộc thi Mô hình Toán học Mỹ, 2008",
+        "comprehensive": "Học bổng Toàn diện, Tsinghua University, 2008",
+        "cumcm": "Giải Nhất, Cuộc thi Mô hình Toán học Trung Quốc, 2007",
+        "ccb": "Học bổng China Construction Bank, Tsinghua University, 2007",
+        "academic": "Học bổng Học thuật Hạng Nhất, Tsinghua University, 2006",
+        "biology": "Giải Đồng, Olympic Sinh học Toàn quốc lần thứ 13 (Trại Đông), 2004",
+        "biology2": "Hạng 3 (Thượng Hải) và Giải Nhất, Olympic Sinh học Toàn quốc, 2004",
+        "math": "Hạng 1 (Toàn quốc) và Giải Nhất, Olympic Toán học Cấp 2 Toàn quốc, 2001",
+        "chemistry": "Hạng 3 (An Huy) và Giải Nhất, Olympic Hóa học Cấp 2 Toàn quốc, 2001"
+    },
+    "uniservice": {
+        "fintech": "Hội đồng Tuyển sinh Thạc sĩ Tài chính FinTech, HKU",
+        "curriculum": "Hội đồng Phát triển Chương trình Thạc sĩ Tài chính FinTech, HKU",
+        "it": "Ủy ban Công nghệ Thông tin Khoa, HKU",
+        "seminar": "Người tổ chức Seminar Brown Bag Khu vực Tài chính, HKU"
+    },
+    "teaching": {
+        "seminars": "Seminar về Chủ đề Nâng cao trong Tài chính, Thạc sĩ, Tsinghua University, 2024",
+        "crypto": "Mật mã học và An ninh Mạng, Thạc sĩ, Tsinghua University, 2024",
+        "frontier": "Nghiên cứu về Vấn đề Tiên phong trong Tài chính, Thạc sĩ, Tsinghua University, 2023",
+        "programming": "Lập trình Tài chính Nâng cao và Cơ sở Dữ liệu, Thạc sĩ, HKU, 2017–2022",
+        "databases": "Lập trình Tài chính và Cơ sở Dữ liệu, Cử nhân, HKU, 2017–2022",
+        "corporate": "Tài chính Doanh nghiệp, Cử nhân, HKU, 2016–2022",
+        "money": "Tiền tệ và Ngân hàng, Thạc sĩ và Cử nhân, State University of New York, 2014",
+        "financial": "Quản lý Tài chính, Thạc sĩ và Cử nhân, State University of New York, 2014",
+        "micro": "Kinh tế Vi mô, Thạc sĩ, Columbia University (TA), 2010",
+        "corporate2": "Tài chính Doanh nghiệp, Thạc sĩ và Cử nhân, Columbia University (TA), 2010–2015",
+        "statistics": "Thống kê Quản lý Bền vững, Thạc sĩ, Columbia University (TA), 2011",
+        "principles": "Nguyên lý Kinh tế học, Cử nhân, Columbia University (TA), 2012/2011",
+        "principles2": "Nguyên lý Kinh tế học, Cử nhân, Tsinghua University (TA), 2008"
+    },
+    "placement": {
+        "wang": "Wang, Youan (Xiamen University, Trợ lý Giáo sư, 2022)",
+        "yu": "Yu, Luping (Xiamen University, Trợ lý Giáo sư, 2021)"
+    },
+    "team": {
+        "title": "Tuyển dụng Nghiên cứu sinh sau Tiến sĩ",
+        "section1": {
+            "title": "1. Giới thiệu Nhóm Giáo sư Hướng dẫn",
+            "content": "Nhóm tuyển dụng này bao gồm các giáo sư từ Shenzhen Graduate School của Tsinghua University, University of Hong Kong, và các Khoa Kinh tế, Kinh doanh và Khoa học Máy tính của Queensland University. Nhóm có nền tảng nghiên cứu vững chắc và thành tựu học thuật phong phú trong các lĩnh vực thống kê, khoa học máy tính, công nghệ tài chính và khoa học dữ liệu. Các thành viên trong nhóm đã lâu dài cam kết nghiên cứu liên ngành về học máy, bảo mật dữ liệu, xử lý ngôn ngữ tự nhiên, mạng nơ-ron đồ thị, mô hình thống kê và ứng dụng công nghệ tài chính. Mạng lưới hợp tác bao phủ nhiều khoa tại Tsinghua University, University of Hong Kong và Queensland University, với nền tảng hợp tác quốc tế mạnh mẽ. Các thành viên trong nhóm đã xuất bản nhiều bài báo chất lượng cao tại các tạp chí và hội nghị học thuật quốc tế hàng đầu như MS, ECMA, AER, JoE, JFE, JLE, JFQA, JIE, JRSS B, JMLR, CVPR, KDD, TKDE, TOIS, ICDE, SIGIR, ACL, AAAI, ICML, TPAMI, và đã nhận được nhiều giải thưởng học thuật."
+        },
+        "section2": {
+            "title": "2. Vị trí Tuyển dụng và Hướng Nghiên cứu",
+            "content": "Chúng tôi dự định tuyển dụng chung các nghiên cứu sinh sau tiến sĩ, tập trung vào các học giả xuất sắc có nền tảng về toán học, thống kê, khoa học máy tính và các lĩnh vực liên ngành liên quan. Ứng viên phải có khả năng toán học, thống kê và lập trình vững chắc, có kinh nghiệm xuất bản bài báo học thuật tại các tạp chí hoặc hội nghị quốc tế hàng đầu.",
+            "directions": "Các hướng nghiên cứu chính bao gồm nhưng không giới hạn:",
+            "list": {
+                "item1": "Công nghệ Tài chính và Hệ thống Ra quyết định Thông minh: Nghiên cứu ứng dụng học máy, phân tích dữ liệu lớn, blockchain và các công nghệ khác trong giao dịch tài chính thông minh, dự báo rủi ro, đánh giá tín dụng và các lĩnh vực khác.",
+                "item2": "Bảo mật Dữ liệu Tài chính và Tính toán Bảo mật: Tập trung vào các phương pháp tiên tiến như lưu trữ dữ liệu an toàn, bảo vệ quyền riêng tư và học liên kết cho dữ liệu tài chính và nhạy cảm trong môi trường xuyên tổ chức, xuyên biên giới.",
+                "item3": "Khoa học Dữ liệu và Phương pháp luận AI: Tập trung vào khoa học dữ liệu rộng hơn, học máy thống kê, tối ưu hóa thuật toán học sâu, AI có thể giải thích và nghiên cứu phương pháp lý thuyết khác cùng ứng dụng của chúng trong tài chính, y tế, hệ gen sinh học và các lĩnh vực khác.",
+                "item4": "Rủi ro Hệ thống và Phân tích Mạng Tài chính: Sử dụng mạng nơ-ron đồ thị, mô hình mạng đa lớp và các phương pháp khác để nghiên cứu cơ chế lan truyền rủi ro và sự phát triển cấu trúc mạng trong hệ thống tài chính.",
+                "item5": "Xử lý Ngôn ngữ Tự nhiên và Khai thác Dữ liệu Văn bản: Phát triển và áp dụng các phương pháp NLP để khai thác thông tin quan trọng từ dữ liệu phi cấu trúc như văn bản tài chính, dữ liệu dư luận, tài liệu chính sách, phục vụ cảnh báo rủi ro và hỗ trợ ra quyết định.",
+                "item6": "Các Vấn đề Tiên phong Liên ngành Khác: Bao gồm nhưng không giới hạn bảo mật dữ liệu, tính toán đa bên, công bằng thuật toán, đạo đức và quản trị AI, khai thác dữ liệu y tế sức khỏe và các hướng khác."
+            }
+        },
+        "section3": {
+            "title": "3. Yêu cầu Ứng tuyển",
+            "list": {
+                "item1": "Vừa nhận hoặc sắp nhận bằng tiến sĩ trong khoa học quản lý, thống kê, khoa học máy tính hoặc các chuyên ngành liên quan.",
+                "item2": "Đã xuất bản bài báo học thuật trong các hướng nghiên cứu trên với tư cách tác giả đầu tiên hoặc tác giả liên hệ tại các tạp chí hoặc hội nghị hàng đầu quốc tế về thống kê, khoa học máy tính hoặc khoa học quản lý (tạp chí hoặc hội nghị hạng B). Ưu tiên ứng viên có công bố tại tạp chí và hội nghị hạng A.",
+                "item3": "Có tinh thần làm việc nhóm tốt và kỹ năng giao tiếp, có thể tiến hành nghiên cứu độc lập và hỗ trợ hướng dẫn người khác."
+            }
+        },
+        "section4": {
+            "title": "4. Đãi ngộ",
+            "list": {
+                "item1": "Cung cấp mức lương cạnh tranh, cụ thể thương lượng.",
+                "item2": "Cung cấp tiền thưởng cạnh tranh cho xuất bản bài báo và đăng ký bằng sáng chế, lên đến 50% lương năm.",
+                "item3": "Cung cấp hỗ trợ công tác trong và ngoài nước cạnh tranh.",
+                "item4": "Cung cấp điều kiện nghiên cứu tốt và môi trường nghiên cứu, hỗ trợ nghiên cứu sinh sau tiến sĩ đăng ký các dự án nghiên cứu và hoạt động trao đổi học thuật quốc tế.",
+                "item5": "Trong thời gian làm nghiên cứu sinh sau tiến sĩ, có thể tận hưởng tài nguyên nghiên cứu và phúc lợi từ nhiều trường đại học đối tác, và mở rộng hợp tác với các giáo sư hướng dẫn.",
+                "item6": "Dựa trên hiệu suất làm việc và kết quả nghiên cứu của nghiên cứu sinh sau tiến sĩ, cung cấp các cơ hội phát triển nghề nghiệp tiếp theo, như giới thiệu đến các trường đại học đối tác."
+            }
+        },
+        "section5": {
+            "title": "5. Cách thức Ứng tuyển",
+            "content": "Vui lòng gửi các tài liệu ứng tuyển sau đến wangzigan@sz.tsinghua.edu.cn, với tiêu đề email \"Ứng tuyển Nghiên cứu sinh sau Tiến sĩ + Họ tên + Hướng nghiên cứu\":",
+            "list": {
+                "item1": "Sơ yếu lý lịch (bao gồm họ tên, học vấn, kinh nghiệm làm việc, kinh nghiệm nghiên cứu, bài báo đã xuất bản, v.v.).",
+                "item2": "Đề xuất nghiên cứu (mô tả ngắn gọn hướng nghiên cứu và nội dung nghiên cứu dự kiến, không quá 3 trang).",
+                "item3": "Thông tin liên hệ của hai người giới thiệu (bao gồm họ tên, đơn vị, chức vụ, địa chỉ email, v.v.).",
+                "item4": "Các tài liệu hỗ trợ khác (bài báo học thuật và bằng sáng chế đã xuất bản)."
+            }
+        },
+        "section6": {
+            "title": "6. Địa điểm Làm việc",
+            "content": "Tsinghua University Shenzhen International Graduate School, Viện Nghiên cứu Shenzhen của School of Economics and Management Tsinghua University, Cơ sở Shenzhen của HKU Business School, Cơ sở St Lucia của Queensland University"
+        },
+        "section7": {
+            "title": "7. Thông tin Liên hệ",
+            "contact": "Liên hệ: Giáo sư Wang",
+            "email": "Email: wangzigan@sz.tsinghua.edu.cn",
+            "welcome": "Chúng tôi hoan nghênh các tiến sĩ xuất sắc quan tâm đến việc tiến hành nghiên cứu trong các lĩnh vực liên quan tham gia nhóm của chúng tôi, cùng nhau khám phá các vấn đề tiên phong và thúc đẩy sự phát triển của nghiên cứu học thuật và ứng dụng thực tiễn."
+        }
+    }
+}

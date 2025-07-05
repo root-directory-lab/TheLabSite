@@ -1,0 +1,186 @@
+{
+    "title": "칭화대학교 부교수",
+    "nav": {
+        "home": "홈",
+        "publications": "논문 발표",
+        "team": "팀 (채용 중)"
+    },
+    "research": {
+        "interests": "연구 분야:",
+        "fields": "응용 미시경제학, 국제경제학, 환경경제학, 정치경제학, 법경제학, 경제 네트워크, 계량경제학, 컴퓨터 비전, 지식 그래프, GAN."
+    },
+    "sections": {
+        "research": "연구 분야",
+        "employment": "경력",
+        "education": "학력",
+        "grants": "연구 기금 및 지원",
+        "service": "학술 서비스",
+        "certificates": "자격증",
+        "affiliations": "학회 회원",
+        "awards": "학술상",
+        "uniservice": "대학 서비스",
+        "teaching": "교육 경험",
+        "placement": "지도 박사과정 학생 취업",
+        "ras": "과거 연구조교 취업",
+        "economics": "경제학 및 금융학",
+        "cs": "컴퓨터 과학",
+        "book": "도서 챕터",
+        "working": "수정 중인 워킹 페이퍼"
+    },
+    "employment": {
+        "tsinghua": "부교수 (정년보장), 2023년–현재",
+        "tsinghua.school1": "Shenzhen International Graduate School, Tsinghua University",
+        "tsinghua.school2": "School of Economics and Management, Tsinghua University (겸임)",
+        "uq": "명예 경제학 부교수, 2023–2026",
+        "uq.school": "University of Queensland",
+        "hku": "조교수, 2015–2023",
+        "hku.school": "HKU Business School, The University of Hong Kong",
+        "suny": "겸임교수 (박사과정 중), 2014",
+        "suny.school": "State University of New York"
+    },
+    "education": {
+        "phd": "경제학 박사, 2015년, Columbia University, 뉴욕 | 전공: 금융",
+        "phd.committee": "논문 위원회: Patrick Bolton, Ailsa Röell, José Scheinkman, Dan J. Wang, Tri Vi Dang",
+        "mphil": "경제학 철학석사, 2012년 & 경제학 문학석사, 2011년, Columbia University, 뉴욕",
+        "ba": "경제학 학사, 2009년, Tsinghua University, 베이징",
+        "nec": "전국 이과 실험반, 2005년, 중화인민공화국 교육부, 상하이",
+        "nec.concentration": "전공: 생물학, 화학"
+    },
+    "grants": {
+        "grf2022": "홍콩 일반연구기금 (GRF), 대학교육지원위원회, 2022–2023",
+        "grf2018": "홍콩 일반연구기금 (GRF), 대학교육지원위원회, 2018–2019",
+        "ecs2016": "홍콩 일반연구기금 (ECS), 대학교육지원위원회, 2016–2017",
+        "ikep": "학제간 지식교류 프로젝트 기금, HKU, 2016",
+        "matching": "매칭 기금, HKU, 2015",
+        "seed": "시드 기금, HKU, 2015"
+    },
+    "service": {
+        "referee": "특별 심사위원:",
+        "discussant": "다수 학회 토론자",
+        "wfa2022": "Western Finance Association (WFA) 프로그램 위원회, 2022",
+        "wfa2021": "Western Finance Association (WFA) 프로그램 위원회, 2021",
+        "fma2019": "세션 의장, 2019 FMA European Conference, 글래스고, 영국, 2019",
+        "master2019": "석사논문 위원회 위원장, Central Univ. of Fin. and Econ., 베이징, 중국, 2019",
+        "afbc2018": "세션 의장, 제31회 Australasian Finance and Banking Conference, 시드니, 호주, 2018",
+        "lixin2018": "세션 의장, Shanghai Lixin Workshop on Law and Finance, 상하이, 중국, 2018",
+        "vietnam2018": "세션 의장, 2018 Vietnam Symposium in Banking and Finance, 후에시, 베트남, 2018",
+        "cmes2017": "무역 세션 의장, China Meeting of the Econometric Society, 우한, 중국, 2017"
+    },
+    "certificates": {
+        "harvard": "경영자 교육, 2016",
+        "harvard.school": "Harvard Business School, 보스턴",
+        "berkeley": "여름 세션, 2008",
+        "berkeley.school": "UC Berkeley, 캘리포니아"
+    },
+    "affiliations": {
+        "aea": "American Economic Association (AEA)",
+        "res": "Royal Economic Society",
+        "es": "Econometric Society",
+        "afa": "American Finance Association (AFA)",
+        "efa": "European Finance Association (EFA)",
+        "wfa": "Western Finance Association (WFA)",
+        "acm": "Association for Computing Machinery (ACM)",
+        "ieee": "Institute of Electrical and Electronics Engineers (IEEE)"
+    },
+    "awards": {
+        "supervision2022": "대학원생 지도상, The University of Hong Kong, 2022",
+        "vandijk2021": "Bureau van Dijk 기업금융상, 제34회 UNSW Australian Finance and Banking Conference, 2021",
+        "supervision2021": "대학원생 지도상, The University of Hong Kong, 2021",
+        "vandijk2018": "Bureau van Dijk 기업금융상, 제31회 UNSW Australian Finance and Banking Conference, 2018",
+        "summer": "여름 장학금, Columbia University, 2009–2015",
+        "faculty": "교수 장학금, Columbia University, 2009–2015",
+        "mcm": "우수상 (상위 2–12%), American Mathematical Contest in Modeling, 2008",
+        "comprehensive": "종합 장학금, Tsinghua University, 2008",
+        "cumcm": "1등상, Chinese Mathematical Contest in Modeling, 2007",
+        "ccb": "China Construction Bank 펠로우십, Tsinghua University, 2007",
+        "academic": "1등 학업 장학금, Tsinghua University, 2006",
+        "biology": "동상, 제13회 전국 고등학생 생물 올림피아드 (동계캠프), 2004",
+        "biology2": "3위 (상하이) 및 1등상, 전국 고등학생 생물 올림피아드, 2004",
+        "math": "1위 (전국) 및 1등상, 전국 중학생 수학 올림피아드, 2001",
+        "chemistry": "3위 (안후이) 및 1등상, 전국 중학생 화학 올림피아드, 2001"
+    },
+    "uniservice": {
+        "fintech": "금융공학 석사과정 입학위원회, HKU",
+        "curriculum": "금융공학 석사과정 커리큘럼 개발위원회, HKU",
+        "it": "학부 정보기술위원회, HKU",
+        "seminar": "금융 분야 브라운백 세미나 주최자, HKU"
+    },
+    "teaching": {
+        "seminars": "금융 고급 주제 세미나, 석사, Tsinghua University, 2024",
+        "crypto": "암호학 및 네트워크 보안, 석사, Tsinghua University, 2024",
+        "frontier": "금융 프론티어 문제 연구, 석사, Tsinghua University, 2023",
+        "programming": "고급 금융 프로그래밍 및 데이터베이스, 석사, HKU, 2017–2022",
+        "databases": "금융 프로그래밍 및 데이터베이스, 학부, HKU, 2017–2022",
+        "corporate": "기업금융, 학부, HKU, 2016–2022",
+        "money": "화폐와 은행, 석사 및 학부, State University of New York, 2014",
+        "financial": "재무관리, 석사 및 학부, State University of New York, 2014",
+        "micro": "미시경제학, 석사, Columbia University (TA), 2010",
+        "corporate2": "기업금융, 석사 및 학부, Columbia University (TA), 2010–2015",
+        "statistics": "지속가능성 관리 통계학, 석사, Columbia University (TA), 2011",
+        "principles": "경제학 원리, 학부, Columbia University (TA), 2012/2011",
+        "principles2": "경제학 원리, 학부, Tsinghua University (TA), 2008"
+    },
+    "placement": {
+        "wang": "Wang, Youan (Xiamen University, 조교수, 2022)",
+        "yu": "Yu, Luping (Xiamen University, 조교수, 2021)"
+    },
+    "team": {
+        "title": "박사후 연구원 모집",
+        "section1": {
+            "title": "1. 지도교수팀 소개",
+            "content": "본 모집팀은 Tsinghua University 선전연구생원, University of Hong Kong, Queensland University의 경제학원, 경영대학 및 컴퓨터과학학원 교수들로 구성되어 있습니다. 팀은 통계학, 컴퓨터과학, 핀테크 및 데이터과학 분야에서 탄탄한 연구 기반과 풍부한 학술 성과를 보유하고 있습니다. 팀 구성원들은 오랫동안 기계학습, 데이터 보안, 자연어 처리, 그래프 신경망, 통계 모델링 및 핀테크 응용 등 학제간 연구에 전념해 왔습니다. 협력 네트워크는 Tsinghua University, University of Hong Kong, Queensland University의 여러 학원을 포괄하며 우수한 국제 협력 기반을 갖추고 있습니다. 팀 구성원들은 MS, ECMA, AER, JoE, JFE, JLE, JFQA, JIE, JRSS B, JMLR, CVPR, KDD, TKDE, TOIS, ICDE, SIGIR, ACL, AAAI, ICML, TPAMI 등 국제 최고 수준의 학술지와 컨퍼런스에서 다수의 높은 수준의 논문을 발표했으며 여러 학술상을 수상했습니다."
+        },
+        "section2": {
+            "title": "2. 모집 직위 및 연구 방향",
+            "content": "박사후 연구원을 공동 모집하며, 수학, 통계학, 컴퓨터과학 및 관련 학제간 분야 배경을 가진 우수한 학자를 중점적으로 모집합니다. 지원자는 탄탄한 수학, 통계 및 프로그래밍 능력을 갖추고 있어야 하며, 국제 최고 수준의 저널이나 컨퍼런스에서 학술 논문을 발표한 경험이 있어야 합니다.",
+            "directions": "주요 연구 방향은 다음을 포함하되 이에 국한되지 않습니다:",
+            "list": {
+                "item1": "핀테크 및 지능형 의사결정 시스템: 기계학습, 빅데이터 분석, 블록체인 등 기술의 금융 지능형 거래, 위험 예측, 신용 평가 등 분야에서의 응용 연구.",
+                "item2": "금융 데이터 보안 및 프라이버시 컴퓨팅: 기관 간, 국경 간 환경에서 금융 및 민감 데이터의 안전한 데이터 저장, 프라이버시 보호 및 연합 학습 등 최첨단 방법에 중점.",
+                "item3": "데이터 과학 및 AI 방법론: 보다 광범위한 데이터 과학, 통계적 기계학습, 딥러닝 알고리즘 최적화, 설명 가능한 AI 등 이론적 방법 연구 및 금융, 의료, 생물 유전체학 등 분야에서의 응용에 중점.",
+                "item4": "시스템적 위험 및 금융 네트워크 분석: 그래프 신경망, 다층 네트워크 모델링 등 방법을 사용하여 금융 시스템 내의 위험 전염 메커니즘과 네트워크 구조 진화를 연구.",
+                "item5": "자연어 처리 및 텍스트 데이터 마이닝: NLP 방법을 개발하고 적용하여 금융 텍스트, 여론 데이터, 정책 문서 등 비정형 데이터에서 핵심 정보를 추출하여 위험 경고 및 의사결정 지원에 활용.",
+                "item6": "기타 학제간 프론티어 문제: 데이터 보안, 다자간 계산, 알고리즘 공정성, AI 윤리 및 거버넌스, 의료 건강 데이터 마이닝 등 방향을 포함하되 이에 국한되지 않음."
+            }
+        },
+        "section3": {
+            "title": "3. 지원 요건",
+            "list": {
+                "item1": "경영과학, 통계학, 컴퓨터과학 등 관련 전공에서 박사학위를 최근 취득했거나 곧 취득 예정인 자.",
+                "item2": "위 연구 방향에서 제1저자 또는 교신저자로 국제 통계학, 컴퓨터 또는 경영과학 분야 최고 수준의 저널이나 컨퍼런스(B급 저널 또는 B급 컨퍼런스)에 학술 논문을 발표한 경험이 있는 자. A급 저널 및 A급 컨퍼런스 발표 경험이 있는 지원자 우대.",
+                "item3": "우수한 팀워크 정신과 커뮤니케이션 능력을 갖추고, 독립적으로 연구를 수행하고 타인 지도를 지원할 수 있는 자."
+            }
+        },
+        "section4": {
+            "title": "4. 처우",
+            "list": {
+                "item1": "경쟁력 있는 급여 제공, 구체적인 사항은 면담 시 협의.",
+                "item2": "경쟁력 있는 논문 발표 및 특허 신청 보너스 제공, 연봉의 최대 50%까지.",
+                "item3": "경쟁력 있는 국내외 출장 지원 제공.",
+                "item4": "우수한 연구 조건과 연구 환경을 제공하며, 박사후가 각종 연구 프로젝트 및 국제 학술 교류 활동에 지원하는 것을 지원.",
+                "item5": "박사후 재직 기간 동안 여러 협력 대학의 연구 자원과 복지 혜택을 누릴 수 있으며, 협력 지도교수를 확대할 수 있음.",
+                "item6": "박사후의 업무 성과와 연구 성과에 따라 협력 대학 추천 등 추가적인 경력 개발 기회 제공."
+            }
+        },
+        "section5": {
+            "title": "5. 지원 방법",
+            "content": "다음 지원 서류를 wangzigan@sz.tsinghua.edu.cn으로 발송해 주십시오. 이메일 제목에 【박사후 지원+성명+연구방향】을 명시해 주십시오:",
+            "list": {
+                "item1": "이력서 (성명, 학력, 경력, 연구 경력, 발표 논문 등 포함).",
+                "item2": "연구 계획서 (제안하는 연구 방향과 연구 내용을 간략히 설명, 3페이지 이내).",
+                "item3": "추천인 2명의 연락처 (성명, 소속, 직위, 이메일 주소 등 포함).",
+                "item4": "기타 증명 자료 (발표된 학술 논문 및 특허)."
+            }
+        },
+        "section6": {
+            "title": "6. 근무지",
+            "content": "Tsinghua University Shenzhen International Graduate School, Tsinghua University School of Economics and Management 선전연구원, University of Hong Kong Business School 선전캠퍼스, Queensland University St Lucia 캠퍼스"
+        },
+        "section7": {
+            "title": "7. 연락처",
+            "contact": "담당자: Wang 교수",
+            "email": "이메일: wangzigan@sz.tsinghua.edu.cn",
+            "welcome": "관련 분야 연구에 관심이 있는 우수한 박사 졸업생들을 환영합니다. 우리 팀에 합류하여 함께 프론티어 문제를 탐구하고 학술 연구와 실무 응용의 발전을 추진해 나갑시다."
+        }
+    }
+}

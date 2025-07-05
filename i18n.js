@@ -4,7 +4,11 @@ let currentLang = localStorage.getItem('language') || 'en';
 const languages = {
     'en': 'English',
     'zh-CN': '简体中文',
-    'zh-TW': '繁體中文'
+    'zh-TW': '繁體中文',
+    'ja': '日本語',
+    'ko': '한국어',
+    'vi': 'Tiếng Việt',
+    'th': 'ภาษาไทย'
 };
 
 async function loadTranslation(lang) {
