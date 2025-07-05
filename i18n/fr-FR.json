@@ -28,23 +28,35 @@
         "working": "Documents de travail en révision"
     },
     "employment": {
-        "tsinghua": "Professeur Associé (titulaire), 2023 – Présent",
-        "tsinghua.school1": "Shenzhen International Graduate School, Université Tsinghua",
-        "tsinghua.school2": "School of Economics and Management, Université Tsinghua (double nomination)",
-        "uq": "Professeur Associé Honoraire en Économie, 2023–2026",
-        "uq.school": "University of Queensland",
-        "hku": "Professeur Assistant, 2015–2023",
-        "hku.school": "HKU Business School, The University of Hong Kong",
-        "suny": "Professeur Adjoint (pendant le doctorat), 2014",
-        "suny.school": "State University of New York"
+        "tsinghua": {
+            "title": "Professeur Associé (titulaire), 2023 – Présent",
+            "school1": "Shenzhen International Graduate School, Université Tsinghua",
+            "school2": "School of Economics and Management, Université Tsinghua (double nomination)"
+        },
+        "uq": {
+            "title": "Professeur Associé Honoraire en Économie, 2023–2026",
+            "school": "University of Queensland"
+        },
+        "hku": {
+            "title": "Professeur Assistant, 2015–2023",
+            "school": "HKU Business School, The University of Hong Kong"
+        },
+        "suny": {
+            "title": "Professeur Adjoint (pendant le doctorat), 2014",
+            "school": "State University of New York"
+        }
     },
     "education": {
-        "phd": "Doctorat en Économie, 2015, Columbia University, New York | Spécialisation : Finance",
-        "phd.committee": "Comité de thèse : Patrick Bolton, Ailsa Röell, José Scheinkman, Dan J. Wang, Tri Vi Dang",
+        "phd": {
+            "title": "Doctorat en Économie, 2015, Columbia University, New York | Spécialisation : Finance",
+            "committee": "Comité de thèse : Patrick Bolton, Ailsa Röell, José Scheinkman, Dan J. Wang, Tri Vi Dang"
+        },
         "mphil": "M.Phil. Économie, 2012 & M.A. Économie, 2011, Columbia University, New York",
         "ba": "Licence en Économie, 2009, Université Tsinghua, Pékin",
-        "nec": "Classe Expérimentale Nationale de Sciences, 2005, Ministère de l'Éducation de la RPC, Shanghai",
-        "nec.concentration": "Spécialisation : Biologie, Chimie"
+        "nec": {
+            "title": "Classe Expérimentale Nationale de Sciences, 2005, Ministère de l'Éducation de la RPC, Shanghai",
+            "concentration": "Spécialisation : Biologie, Chimie"
+        }
     },
     "grants": {
         "grf2022": "HK General Research Fund (GRF), Comité des subventions universitaires, 2022–2023",
@@ -67,10 +79,14 @@
         "cmes2017": "Président de session Commerce, China Meeting of the Econometric Society, Wuhan, Chine, 2017"
     },
     "certificates": {
-        "harvard": "Formation pour cadres, 2016",
-        "harvard.school": "Harvard Business School, Boston",
-        "berkeley": "Session d'été, 2008",
-        "berkeley.school": "UC Berkeley, Californie"
+        "harvard": {
+            "title": "Formation pour cadres, 2016",
+            "school": "Harvard Business School, Boston"
+        },
+        "berkeley": {
+            "title": "Session d'été, 2008",
+            "school": "UC Berkeley, Californie"
+        }
     },
     "affiliations": {
         "aea": "American Economic Association (AEA)",
@@ -124,6 +140,9 @@
         "wang": "Wang, Youan (Xiamen University, Professeur Assistant, 2022)",
         "yu": "Yu, Luping (Xiamen University, Professeur Assistant, 2021)"
     },
+    "sidebar": {
+        "toggle": "Voir les informations du profil"
+    },
     "team": {
         "title": "Recrutement Postdoctoral",
         "section1": {
@@ -164,7 +183,7 @@
         },
         "section5": {
             "title": "5. Méthode de candidature",
-            "content": "Veuillez envoyer les documents de candidature suivants à wangzigan@sz.tsinghua.edu.cn, avec l'objet de l'e-mail \"Candidature postdoctorale + Nom + Direction de recherche \" ",
+            "content": "Veuillez envoyer les documents de candidature suivants à wangzigan@sz.tsinghua.edu.cn, avec l'objet de l'e-mail \"Candidature postdoctorale + Nom + Direction de recherche\"",
             "list": {
                 "item1": "CV (incluant nom, formation, expérience professionnelle, expérience de recherche, articles publiés, etc.).",
                 "item2": "Proposition de recherche (décrire brièvement la direction et le contenu de recherche proposés, pas plus de 3 pages).",

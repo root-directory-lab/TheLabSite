@@ -28,23 +28,35 @@
         "working": "修订中的工作论文"
     },
     "employment": {
-        "tsinghua": "副教授（长聘），2023年至今",
-        "tsinghua.school1": "清华大学深圳国际研究生院",
-        "tsinghua.school2": "清华大学经济管理学院（双聘）",
-        "uq": "荣誉经济学副教授，2023–2026",
-        "uq.school": "昆士兰大学",
-        "hku": "助理教授，2015–2023",
-        "hku.school": "香港大学商学院",
-        "suny": "兼职教授（博士期间），2014",
-        "suny.school": "纽约州立大学"
+        "tsinghua": {
+            "title": "副教授（长聘），2023年至今",
+            "school1": "清华大学深圳国际研究生院",
+            "school2": "清华大学经济管理学院（双聘）"
+        },
+        "uq": {
+            "title": "荣誉经济学副教授，2023–2026",
+            "school": "昆士兰大学"
+        },
+        "hku": {
+            "title": "助理教授，2015–2023",
+            "school": "香港大学商学院"
+        },
+        "suny": {
+            "title": "兼职教授（博士期间），2014",
+            "school": "纽约州立大学"
+        }
     },
     "education": {
-        "phd": "经济学博士，2015年，哥伦比亚大学，纽约 | 专业方向：金融",
-        "phd.committee": "论文委员会：Patrick Bolton，Ailsa Röell，José Scheinkman，Dan J. Wang，Tri Vi Dang",
+        "phd": {
+            "title": "经济学博士，2015年，哥伦比亚大学，纽约 | 专业方向：金融",
+            "committee": "论文委员会：Patrick Bolton，Ailsa Röell，José Scheinkman，Dan J. Wang，Tri Vi Dang"
+        },
         "mphil": "经济学哲学硕士，2012年 & 经济学文学硕士，2011年，哥伦比亚大学，纽约",
         "ba": "经济学学士，2009年，清华大学，北京",
-        "nec": "全国理科实验班，2005年，中华人民共和国教育部，上海",
-        "nec.concentration": "专业方向：生物、化学"
+        "nec": {
+            "title": "全国理科实验班，2005年，中华人民共和国教育部，上海",
+            "concentration": "专业方向：生物、化学"
+        }
     },
     "grants": {
         "grf2022": "香港优配研究金（GRF），大学教育资助委员会，2022–2023",
@@ -67,10 +79,14 @@
         "cmes2017": "贸易会议主席，中国计量经济学会会议，中国武汉，2017"
     },
     "certificates": {
-        "harvard": "高管教育，2016",
-        "harvard.school": "哈佛商学院，波士顿",
-        "berkeley": "暑期课程，2008",
-        "berkeley.school": "加州大学伯克利分校，加利福尼亚"
+        "harvard": {
+            "title": "高管教育，2016",
+            "school": "哈佛商学院，波士顿"
+        },
+        "berkeley": {
+            "title": "暑期课程，2008",
+            "school": "加州大学伯克利分校，加利福尼亚"
+        }
     },
     "affiliations": {
         "aea": "美国经济学会（AEA）",
@@ -124,6 +140,9 @@
         "wang": "Wang, Youan（厦门大学，助理教授，2022）",
         "yu": "Yu, Luping（厦门大学，助理教授，2021）"
     },
+    "sidebar": {
+        "toggle": "查看个人资料"
+    },
     "team": {
         "title": "博士后招聘启事",
         "section1": {
@@ -164,7 +183,7 @@
         },
         "section5": {
             "title": "五、申请方式",
-            "content": "请将以下申请材料发送至wangzigan@sz.tsinghua.edu.cn，邮件主题注明 \"博士后申请+姓名+研究方向\" ",
+            "content": "请将以下申请材料发送至wangzigan@sz.tsinghua.edu.cn，邮件主题注明 \"博士后申请+姓名+研究方向\"",
             "list": {
                 "item1": "个人简历（包括姓名、教育背景、工作经历、研究经历、发表论文等）。",
                 "item2": "研究计划书（简要阐述拟开展的研究方向和研究内容，不超过3页）。",

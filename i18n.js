@@ -93,7 +93,7 @@ function updateLanguage(lang) {
         let value = translations[lang];
         
         for (const key of keys) {
-            if (value && value[key]) {
+            if (value && typeof value === 'object' && key in value) {
                 value = value[key];
             } else {
                 console.warn(`Translation missing for: ${element.getAttribute('data-i18n')} in ${lang}`);
@@ -103,6 +103,8 @@ function updateLanguage(lang) {
         
         if (typeof value === 'string') {
             element.textContent = value;
+        } else {
+            console.warn(`Translation value is not a string for: ${element.getAttribute('data-i18n')} in ${lang}`);
         }
     });
     

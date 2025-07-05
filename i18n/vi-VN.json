@@ -28,23 +28,35 @@
         "working": "Bài báo đang chỉnh sửa"
     },
     "employment": {
-        "tsinghua": "Phó Giáo sư (Biên chế), 2023–Hiện tại",
-        "tsinghua.school1": "Shenzhen International Graduate School, Tsinghua University",
-        "tsinghua.school2": "School of Economics and Management, Tsinghua University (Kiêm nhiệm)",
-        "uq": "Phó Giáo sư Danh dự về Kinh tế học, 2023–2026",
-        "uq.school": "University of Queensland",
-        "hku": "Trợ lý Giáo sư, 2015–2023",
-        "hku.school": "HKU Business School, The University of Hong Kong",
-        "suny": "Giảng viên thỉnh giảng (Trong thời gian làm Tiến sĩ), 2014",
-        "suny.school": "State University of New York"
+        "tsinghua": {
+            "title": "Phó Giáo sư (Biên chế), 2023–Hiện tại",
+            "school1": "Shenzhen International Graduate School, Tsinghua University",
+            "school2": "School of Economics and Management, Tsinghua University (Kiêm nhiệm)"
+        },
+        "uq": {
+            "title": "Phó Giáo sư Danh dự về Kinh tế học, 2023–2026",
+            "school": "University of Queensland"
+        },
+        "hku": {
+            "title": "Trợ lý Giáo sư, 2015–2023",
+            "school": "HKU Business School, The University of Hong Kong"
+        },
+        "suny": {
+            "title": "Giảng viên thỉnh giảng (Trong thời gian làm Tiến sĩ), 2014",
+            "school": "State University of New York"
+        }
     },
     "education": {
-        "phd": "Tiến sĩ Kinh tế học, 2015, Columbia University, New York | Chuyên ngành: Tài chính",
-        "phd.committee": "Hội đồng luận án: Patrick Bolton, Ailsa Röell, José Scheinkman, Dan J. Wang, Tri Vi Dang",
+        "phd": {
+            "title": "Tiến sĩ Kinh tế học, 2015, Columbia University, New York | Chuyên ngành: Tài chính",
+            "committee": "Hội đồng luận án: Patrick Bolton, Ailsa Röell, José Scheinkman, Dan J. Wang, Tri Vi Dang"
+        },
         "mphil": "Thạc sĩ Triết học Kinh tế, 2012 & Thạc sĩ Văn học Kinh tế, 2011, Columbia University, New York",
         "ba": "Cử nhân Kinh tế học, 2009, Tsinghua University, Bắc Kinh",
-        "nec": "Lớp Thực nghiệm Khoa học Tự nhiên Quốc gia, 2005, Bộ Giáo dục Trung Quốc, Thượng Hải",
-        "nec.concentration": "Chuyên ngành: Sinh học, Hóa học"
+        "nec": {
+            "title": "Lớp Thực nghiệm Khoa học Tự nhiên Quốc gia, 2005, Bộ Giáo dục Trung Quốc, Thượng Hải",
+            "concentration": "Chuyên ngành: Sinh học, Hóa học"
+        }
     },
     "grants": {
         "grf2022": "Quỹ Nghiên cứu Chung Hồng Kông (GRF), Ủy ban Tài trợ Giáo dục Đại học, 2022–2023",
@@ -67,10 +79,14 @@
         "cmes2017": "Chủ tọa phiên Thương mại, Hội nghị Kinh tế lượng Trung Quốc, Vũ Hán, Trung Quốc, 2017"
     },
     "certificates": {
-        "harvard": "Giáo dục Điều hành, 2016",
-        "harvard.school": "Harvard Business School, Boston",
-        "berkeley": "Khóa học mùa hè, 2008",
-        "berkeley.school": "UC Berkeley, California"
+        "harvard": {
+            "title": "Giáo dục Điều hành, 2016",
+            "school": "Harvard Business School, Boston"
+        },
+        "berkeley": {
+            "title": "Khóa học mùa hè, 2008",
+            "school": "UC Berkeley, California"
+        }
     },
     "affiliations": {
         "aea": "American Economic Association (AEA)",
@@ -124,6 +140,9 @@
         "wang": "Wang, Youan (Xiamen University, Trợ lý Giáo sư, 2022)",
         "yu": "Yu, Luping (Xiamen University, Trợ lý Giáo sư, 2021)"
     },
+    "sidebar": {
+        "toggle": "Xem thông tin hồ sơ"
+    },
     "team": {
         "title": "Tuyển dụng Nghiên cứu sinh sau Tiến sĩ",
         "section1": {
@@ -164,7 +183,7 @@
         },
         "section5": {
             "title": "5. Cách thức Ứng tuyển",
-            "content": "Vui lòng gửi các tài liệu ứng tuyển sau đến wangzigan@sz.tsinghua.edu.cn, với tiêu đề email \"Ứng tuyển Nghiên cứu sinh sau Tiến sĩ + Họ tên + Hướng nghiên cứu\" ",
+            "content": "Vui lòng gửi các tài liệu ứng tuyển sau đến wangzigan@sz.tsinghua.edu.cn, với tiêu đề email \"Ứng tuyển Nghiên cứu sinh sau Tiến sĩ + Họ tên + Hướng nghiên cứu\"",
             "list": {
                 "item1": "Sơ yếu lý lịch (bao gồm họ tên, học vấn, kinh nghiệm làm việc, kinh nghiệm nghiên cứu, bài báo đã xuất bản, v.v.).",
                 "item2": "Đề xuất nghiên cứu (mô tả ngắn gọn hướng nghiên cứu và nội dung nghiên cứu dự kiến, không quá 3 trang).",

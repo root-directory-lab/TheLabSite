@@ -28,23 +28,35 @@
         "working": "修訂中的工作論文"
     },
     "employment": {
-        "tsinghua": "副教授（長聘），2023年至今",
-        "tsinghua.school1": "清華大學深圳國際研究生院",
-        "tsinghua.school2": "清華大學經濟管理學院（雙聘）",
-        "uq": "榮譽經濟學副教授，2023–2026",
-        "uq.school": "昆士蘭大學",
-        "hku": "助理教授，2015–2023",
-        "hku.school": "香港大學商學院",
-        "suny": "兼職教授（博士期間），2014",
-        "suny.school": "紐約州立大學"
+        "tsinghua": {
+            "title": "副教授（長聘），2023年至今",
+            "school1": "清華大學深圳國際研究生院",
+            "school2": "清華大學經濟管理學院（雙聘）"
+        },
+        "uq": {
+            "title": "榮譽經濟學副教授，2023–2026",
+            "school": "昆士蘭大學"
+        },
+        "hku": {
+            "title": "助理教授，2015–2023",
+            "school": "香港大學商學院"
+        },
+        "suny": {
+            "title": "兼職教授（博士期間），2014",
+            "school": "紐約州立大學"
+        }
     },
     "education": {
-        "phd": "經濟學博士，2015年，哥倫比亞大學，紐約 | 專業方向：金融",
-        "phd.committee": "論文委員會：Patrick Bolton，Ailsa Röell，José Scheinkman，Dan J. Wang，Tri Vi Dang",
+        "phd": {
+            "title": "經濟學博士，2015年，哥倫比亞大學，紐約 | 專業方向：金融",
+            "committee": "論文委員會：Patrick Bolton，Ailsa Röell，José Scheinkman，Dan J. Wang，Tri Vi Dang"
+        },
         "mphil": "經濟學哲學碩士，2012年 & 經濟學文學碩士，2011年，哥倫比亞大學，紐約",
         "ba": "經濟學學士，2009年，清華大學，北京",
-        "nec": "全國理科實驗班，2005年，中華人民共和國教育部，上海",
-        "nec.concentration": "專業方向：生物、化學"
+        "nec": {
+            "title": "全國理科實驗班，2005年，中華人民共和國教育部，上海",
+            "concentration": "專業方向：生物、化學"
+        }
     },
     "grants": {
         "grf2022": "香港優配研究金（GRF），大學教育資助委員會，2022–2023",
@@ -67,10 +79,14 @@
         "cmes2017": "貿易會議主席，中國計量經濟學會會議，中國武漢，2017"
     },
     "certificates": {
-        "harvard": "高管教育，2016",
-        "harvard.school": "哈佛商學院，波士頓",
-        "berkeley": "暑期課程，2008",
-        "berkeley.school": "加州大學伯克利分校，加利福尼亞"
+        "harvard": {
+            "title": "高管教育，2016",
+            "school": "哈佛商學院，波士頓"
+        },
+        "berkeley": {
+            "title": "暑期課程，2008",
+            "school": "加州大學伯克利分校，加利福尼亞"
+        }
     },
     "affiliations": {
         "aea": "美國經濟學會（AEA）",
@@ -124,6 +140,9 @@
         "wang": "Wang, Youan（廈門大學，助理教授，2022）",
         "yu": "Yu, Luping（廈門大學，助理教授，2021）"
     },
+    "sidebar": {
+        "toggle": "查看個人資料"
+    },
     "team": {
         "title": "博士後招聘啟事",
         "section1": {
@@ -164,7 +183,7 @@
         },
         "section5": {
             "title": "五、申請方式",
-            "content": "請將以下申請材料發送至wangzigan@sz.tsinghua.edu.cn，郵件主題註明 \"博士後申請+姓名+研究方向\" ",
+            "content": "請將以下申請材料發送至wangzigan@sz.tsinghua.edu.cn，郵件主題註明 \"博士後申請+姓名+研究方向\"",
             "list": {
                 "item1": "個人簡歷（包括姓名、教育背景、工作經歷、研究經歷、發表論文等）。",
                 "item2": "研究計劃書（簡要闡述擬開展的研究方向和研究內容，不超過3頁）。",

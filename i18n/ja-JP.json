@@ -28,23 +28,35 @@
         "working": "改訂中のワーキングペーパー"
     },
     "employment": {
-        "tsinghua": "准教授（テニュア），2023年～現在",
-        "tsinghua.school1": "Shenzhen International Graduate School, Tsinghua University",
-        "tsinghua.school2": "School of Economics and Management, Tsinghua University（兼任）",
-        "uq": "名誉准教授（経済学），2023–2026",
-        "uq.school": "University of Queensland",
-        "hku": "助理教授，2015–2023",
-        "hku.school": "HKU Business School, The University of Hong Kong",
-        "suny": "非常勤講師（博士課程在学中），2014",
-        "suny.school": "State University of New York"
+        "tsinghua": {
+            "title": "准教授（テニュア），2023年～現在",
+            "school1": "Shenzhen International Graduate School, Tsinghua University",
+            "school2": "School of Economics and Management, Tsinghua University（兼任）"
+        },
+        "uq": {
+            "title": "名誉准教授（経済学），2023–2026",
+            "school": "University of Queensland"
+        },
+        "hku": {
+            "title": "助理教授，2015–2023",
+            "school": "HKU Business School, The University of Hong Kong"
+        },
+        "suny": {
+            "title": "非常勤講師（博士課程在学中），2014",
+            "school": "State University of New York"
+        }
     },
     "education": {
-        "phd": "経済学博士，2015年，Columbia University，ニューヨーク | 専門分野：金融",
-        "phd.committee": "論文委員会：Patrick Bolton，Ailsa Röell，José Scheinkman，Dan J. Wang，Tri Vi Dang",
+        "phd": {
+            "title": "経済学博士，2015年，Columbia University，ニューヨーク | 専門分野：金融",
+            "committee": "論文委員会：Patrick Bolton，Ailsa Röell，José Scheinkman，Dan J. Wang，Tri Vi Dang"
+        },
         "mphil": "経済学修士（研究），2012年 & 経済学修士，2011年，Columbia University，ニューヨーク",
         "ba": "経済学学士，2009年，Tsinghua University，北京",
-        "nec": "全国理科実験クラス，2005年，中華人民共和国教育部，上海",
-        "nec.concentration": "専門分野：生物学、化学"
+        "nec": {
+            "title": "全国理科実験クラス，2005年，中華人民共和国教育部，上海",
+            "concentration": "専門分野：生物学、化学"
+        }
     },
     "grants": {
         "grf2022": "香港一般研究基金（GRF），大学教育資助委員会，2022–2023",
@@ -67,10 +79,14 @@
         "cmes2017": "貿易セッション議長，China Meeting of the Econometric Society，武漢，中国，2017"
     },
     "certificates": {
-        "harvard": "エグゼクティブ教育，2016",
-        "harvard.school": "Harvard Business School，ボストン",
-        "berkeley": "サマーセッション，2008",
-        "berkeley.school": "UC Berkeley，カリフォルニア"
+        "harvard": {
+            "title": "エグゼクティブ教育，2016",
+            "school": "Harvard Business School，ボストン"
+        },
+        "berkeley": {
+            "title": "サマーセッション，2008",
+            "school": "UC Berkeley，カリフォルニア"
+        }
     },
     "affiliations": {
         "aea": "American Economic Association (AEA)",
@@ -123,6 +139,9 @@
     "placement": {
         "wang": "Wang, Youan（Xiamen University，助理教授，2022）",
         "yu": "Yu, Luping（Xiamen University，助理教授，2021）"
+    },
+    "sidebar": {
+        "toggle": "プロフィール情報を表示"
     },
     "team": {
         "title": "ポスドク募集",

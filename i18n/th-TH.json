@@ -28,23 +28,35 @@
         "working": "เอกสารวิจัยที่อยู่ระหว่างการแก้ไข"
     },
     "employment": {
-        "tsinghua": "รองศาสตราจารย์ (ตำแหน่งถาวร), 2023–ปัจจุบัน",
-        "tsinghua.school1": "Shenzhen International Graduate School, Tsinghua University",
-        "tsinghua.school2": "School of Economics and Management, Tsinghua University (สังกัดคู่)",
-        "uq": "รองศาสตราจารย์กิตติมศักดิ์ด้านเศรษฐศาสตร์, 2023–2026",
-        "uq.school": "University of Queensland",
-        "hku": "ผู้ช่วยศาสตราจารย์, 2015–2023",
-        "hku.school": "HKU Business School, The University of Hong Kong",
-        "suny": "อาจารย์พิเศษ (ระหว่างศึกษาปริญญาเอก), 2014",
-        "suny.school": "State University of New York"
+        "tsinghua": {
+            "title": "รองศาสตราจารย์ (ตำแหน่งถาวร), 2023–ปัจจุบัน",
+            "school1": "Shenzhen International Graduate School, Tsinghua University",
+            "school2": "School of Economics and Management, Tsinghua University (สังกัดคู่)"
+        },
+        "uq": {
+            "title": "รองศาสตราจารย์กิตติมศักดิ์ด้านเศรษฐศาสตร์, 2023–2026",
+            "school": "University of Queensland"
+        },
+        "hku": {
+            "title": "ผู้ช่วยศาสตราจารย์, 2015–2023",
+            "school": "HKU Business School, The University of Hong Kong"
+        },
+        "suny": {
+            "title": "อาจารย์พิเศษ (ระหว่างศึกษาปริญญาเอก), 2014",
+            "school": "State University of New York"
+        }
     },
     "education": {
-        "phd": "ปริญญาเอก เศรษฐศาสตร์, 2015, Columbia University, นิวยอร์ก | สาขา: การเงิน",
-        "phd.committee": "คณะกรรมการวิทยานิพนธ์: Patrick Bolton, Ailsa Röell, José Scheinkman, Dan J. Wang, Tri Vi Dang",
+        "phd": {
+            "title": "ปริญญาเอก เศรษฐศาสตร์, 2015, Columbia University, นิวยอร์ก | สาขา: การเงิน",
+            "committee": "คณะกรรมการวิทยานิพนธ์: Patrick Bolton, Ailsa Röell, José Scheinkman, Dan J. Wang, Tri Vi Dang"
+        },
         "mphil": "ปริญญาโท ปรัชญาเศรษฐศาสตร์, 2012 & ปริญญาโท ศิลปศาสตร์เศรษฐศาสตร์, 2011, Columbia University, นิวยอร์ก",
         "ba": "ปริญญาตรี เศรษฐศาสตร์, 2009, Tsinghua University, ปักกิ่ง",
-        "nec": "ชั้นเรียนทดลองวิทยาศาสตร์แห่งชาติ, 2005, กระทรวงศึกษาธิการ สาธารณรัฐประชาชนจีน, เซี่ยงไฮ้",
-        "nec.concentration": "สาขา: ชีววิทยา, เคมี"
+        "nec": {
+            "title": "ชั้นเรียนทดลองวิทยาศาสตร์แห่งชาติ, 2005, กระทรวงศึกษาธิการ สาธารณรัฐประชาชนจีน, เซี่ยงไฮ้",
+            "concentration": "สาขา: ชีววิทยา, เคมี"
+        }
     },
     "grants": {
         "grf2022": "กองทุนวิจัยทั่วไปฮ่องกง (GRF), คณะกรรมการอุดมศึกษา, 2022–2023",
@@ -67,10 +79,14 @@
         "cmes2017": "ประธานเซสชันการค้า, การประชุม China Meeting of the Econometric Society, อู่ฮั่น, จีน, 2017"
     },
     "certificates": {
-        "harvard": "การศึกษาสำหรับผู้บริหาร, 2016",
-        "harvard.school": "Harvard Business School, บอสตัน",
-        "berkeley": "เซสชันฤดูร้อน, 2008",
-        "berkeley.school": "UC Berkeley, แคลิฟอร์เนีย"
+        "harvard": {
+            "title": "การศึกษาสำหรับผู้บริหาร, 2016",
+            "school": "Harvard Business School, บอสตัน"
+        },
+        "berkeley": {
+            "title": "เซสชันฤดูร้อน, 2008",
+            "school": "UC Berkeley, แคลิฟอร์เนีย"
+        }
     },
     "affiliations": {
         "aea": "American Economic Association (AEA)",
@@ -124,6 +140,9 @@
         "wang": "Wang, Youan (Xiamen University, ผู้ช่วยศาสตราจารย์, 2022)",
         "yu": "Yu, Luping (Xiamen University, ผู้ช่วยศาสตราจารย์, 2021)"
     },
+    "sidebar": {
+        "toggle": "ดูข้อมูลโปรไฟล์"
+    },
     "team": {
         "title": "การรับสมัครนักวิจัยหลังปริญญาเอก",
         "section1": {
@@ -164,7 +183,7 @@
         },
         "section5": {
             "title": "5. วิธีการสมัคร",
-            "content": "กรุณาส่งเอกสารการสมัครต่อไปนี้ไปที่ wangzigan@sz.tsinghua.edu.cn โดยระบุหัวข้ออีเมลว่า \"การสมัครนักวิจัยหลังปริญญาเอก + ชื่อ + ทิศทางการวิจัย\" ",
+            "content": "กรุณาส่งเอกสารการสมัครต่อไปนี้ไปที่ wangzigan@sz.tsinghua.edu.cn โดยระบุหัวข้ออีเมลว่า \"การสมัครนักวิจัยหลังปริญญาเอก + ชื่อ + ทิศทางการวิจัย\"",
             "list": {
                 "item1": "ประวัติส่วนตัว (รวมถึงชื่อ ประวัติการศึกษา ประสบการณ์การทำงาน ประสบการณ์การวิจัย บทความที่ตีพิมพ์ ฯลฯ)",
                 "item2": "ข้อเสนอการวิจัย (อธิบายสั้นๆ เกี่ยวกับทิศทางการวิจัยและเนื้อหาการวิจัยที่เสนอ ไม่เกิน 3 หน้า)",

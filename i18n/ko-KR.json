@@ -28,23 +28,35 @@
         "working": "수정 중인 워킹 페이퍼"
     },
     "employment": {
-        "tsinghua": "부교수 (정년보장), 2023년–현재",
-        "tsinghua.school1": "Shenzhen International Graduate School, Tsinghua University",
-        "tsinghua.school2": "School of Economics and Management, Tsinghua University (겸임)",
-        "uq": "명예 경제학 부교수, 2023–2026",
-        "uq.school": "University of Queensland",
-        "hku": "조교수, 2015–2023",
-        "hku.school": "HKU Business School, The University of Hong Kong",
-        "suny": "겸임교수 (박사과정 중), 2014",
-        "suny.school": "State University of New York"
+        "tsinghua": {
+            "title": "부교수 (정년보장), 2023년–현재",
+            "school1": "Shenzhen International Graduate School, Tsinghua University",
+            "school2": "School of Economics and Management, Tsinghua University (겸임)"
+        },
+        "uq": {
+            "title": "명예 경제학 부교수, 2023–2026",
+            "school": "University of Queensland"
+        },
+        "hku": {
+            "title": "조교수, 2015–2023",
+            "school": "HKU Business School, The University of Hong Kong"
+        },
+        "suny": {
+            "title": "겸임교수 (박사과정 중), 2014",
+            "school": "State University of New York"
+        }
     },
     "education": {
-        "phd": "경제학 박사, 2015년, Columbia University, 뉴욕 | 전공: 금융",
-        "phd.committee": "논문 위원회: Patrick Bolton, Ailsa Röell, José Scheinkman, Dan J. Wang, Tri Vi Dang",
+        "phd": {
+            "title": "경제학 박사, 2015년, Columbia University, 뉴욕 | 전공: 금융",
+            "committee": "논문 위원회: Patrick Bolton, Ailsa Röell, José Scheinkman, Dan J. Wang, Tri Vi Dang"
+        },
         "mphil": "경제학 철학석사, 2012년 & 경제학 문학석사, 2011년, Columbia University, 뉴욕",
         "ba": "경제학 학사, 2009년, Tsinghua University, 베이징",
-        "nec": "전국 이과 실험반, 2005년, 중화인민공화국 교육부, 상하이",
-        "nec.concentration": "전공: 생물학, 화학"
+        "nec": {
+            "title": "전국 이과 실험반, 2005년, 중화인민공화국 교육부, 상하이",
+            "concentration": "전공: 생물학, 화학"
+        }
     },
     "grants": {
         "grf2022": "홍콩 일반연구기금 (GRF), 대학교육지원위원회, 2022–2023",
@@ -67,10 +79,14 @@
         "cmes2017": "무역 세션 의장, China Meeting of the Econometric Society, 우한, 중국, 2017"
     },
     "certificates": {
-        "harvard": "경영자 교육, 2016",
-        "harvard.school": "Harvard Business School, 보스턴",
-        "berkeley": "여름 세션, 2008",
-        "berkeley.school": "UC Berkeley, 캘리포니아"
+        "harvard": {
+            "title": "경영자 교육, 2016",
+            "school": "Harvard Business School, 보스턴"
+        },
+        "berkeley": {
+            "title": "여름 세션, 2008",
+            "school": "UC Berkeley, 캘리포니아"
+        }
     },
     "affiliations": {
         "aea": "American Economic Association (AEA)",
@@ -124,6 +140,9 @@
         "wang": "Wang, Youan (Xiamen University, 조교수, 2022)",
         "yu": "Yu, Luping (Xiamen University, 조교수, 2021)"
     },
+    "sidebar": {
+        "toggle": "프로필 정보 보기"
+    },
     "team": {
         "title": "박사후 연구원 모집",
         "section1": {
@@ -164,7 +183,7 @@
         },
         "section5": {
             "title": "5. 지원 방법",
-            "content": "다음 지원 서류를 wangzigan@sz.tsinghua.edu.cn으로 발송해 주십시오. 이메일 제목에 박사후 \"지원+성명+연구방향을 명시해\" 주십시오",
+            "content": "다음 지원 서류를 wangzigan@sz.tsinghua.edu.cn으로 발송해 주십시오. 이메일 제목에 \"박사후 지원+성명+연구방향\"을 명시해 주십시오",
             "list": {
                 "item1": "이력서 (성명, 학력, 경력, 연구 경력, 발표 논문 등 포함).",
                 "item2": "연구 계획서 (제안하는 연구 방향과 연구 내용을 간략히 설명, 3페이지 이내).",

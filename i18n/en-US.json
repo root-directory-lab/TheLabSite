@@ -28,23 +28,35 @@
         "working": "Working Papers Under Revision"
     },
     "employment": {
-        "tsinghua": "Associate Professor (Tenured), 2023 – Present",
-        "tsinghua.school1": "Shenzhen International Graduate School, Tsinghua University",
-        "tsinghua.school2": "School of Economics and Management, Tsinghua University (Dual Appointment)",
-        "uq": "Honorary Associate Professor in Economics, 2023–2026",
-        "uq.school": "University of Queensland",
-        "hku": "Assistant Professor, 2015–2023",
-        "hku.school": "HKU Business School, The University of Hong Kong",
-        "suny": "Adjunct Professor (During Ph.D.), 2014",
-        "suny.school": "State University of New York"
+        "tsinghua": {
+            "title": "Associate Professor (Tenured), 2023 – Present",
+            "school1": "Shenzhen International Graduate School, Tsinghua University",
+            "school2": "School of Economics and Management, Tsinghua University (Dual Appointment)"
+        },
+        "uq": {
+            "title": "Honorary Associate Professor in Economics, 2023–2026",
+            "school": "University of Queensland"
+        },
+        "hku": {
+            "title": "Assistant Professor, 2015–2023",
+            "school": "HKU Business School, The University of Hong Kong"
+        },
+        "suny": {
+            "title": "Adjunct Professor (During Ph.D.), 2014",
+            "school": "State University of New York"
+        }
     },
     "education": {
-        "phd": "Economics Ph.D., 2015, Columbia University, New York | Concentration: Finance",
-        "phd.committee": "Dissertation Committee: Patrick Bolton, Ailsa Röell, José Scheinkman, Dan J. Wang, Tri Vi Dang",
+        "phd": {
+            "title": "Economics Ph.D., 2015, Columbia University, New York | Concentration: Finance",
+            "committee": "Dissertation Committee: Patrick Bolton, Ailsa Röell, José Scheinkman, Dan J. Wang, Tri Vi Dang"
+        },
         "mphil": "Economics M.Phil., 2012 & Economics M.A., 2011, Columbia University, New York",
         "ba": "Economics B.A., 2009, Tsinghua University, Beijing",
-        "nec": "National Experimental Class of Science, 2005, Ministry of Education of P.R.C., Shanghai",
-        "nec.concentration": "Concentration: Biology, Chemistry"
+        "nec": {
+            "title": "National Experimental Class of Science, 2005, Ministry of Education of P.R.C., Shanghai",
+            "concentration": "Concentration: Biology, Chemistry"
+        }
     },
     "grants": {
         "grf2022": "HK General Research Fund (GRF), University Grants Committee, 2022–2023",
@@ -67,10 +79,14 @@
         "cmes2017": "Trade Session Chair, China Meeting of the Econometric Society, Wuhan, China, 2017"
     },
     "certificates": {
-        "harvard": "Executive Education, 2016",
-        "harvard.school": "Harvard Business School, Boston",
-        "berkeley": "Summer Session, 2008",
-        "berkeley.school": "UC Berkeley, California"
+        "harvard": {
+            "title": "Executive Education, 2016",
+            "school": "Harvard Business School, Boston"
+        },
+        "berkeley": {
+            "title": "Summer Session, 2008",
+            "school": "UC Berkeley, California"
+        }
     },
     "affiliations": {
         "aea": "American Economic Association (AEA)",
@@ -124,6 +140,9 @@
         "wang": "Wang, Youan (Xiamen University, Assistant Professor, 2022)",
         "yu": "Yu, Luping (Xiamen University, Assistant Professor, 2021)"
     },
+    "sidebar": {
+        "toggle": "View Profile Info"
+    },
     "team": {
         "title": "Postdoctoral Recruitment",
         "section1": {
@@ -164,7 +183,7 @@
         },
         "section5": {
             "title": "5. Application Method",
-            "content": "Please send the following application materials to wangzigan@sz.tsinghua.edu.cn, with email subject \"Postdoctoral Application + Name + Research Direction\" ",
+            "content": "Please send the following application materials to wangzigan@sz.tsinghua.edu.cn, with email subject \"Postdoctoral Application + Name + Research Direction\"",
             "list": {
                 "item1": "Resume (including name, educational background, work experience, research experience, published papers, etc.).",
                 "item2": "Research proposal (briefly describe the proposed research direction and content, no more than 3 pages).",
