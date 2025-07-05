@@ -1,10 +1,8 @@
 // Tailwind v4 compatible theme switcher
 (function() {
-    const savedTheme = localStorage.getItem('theme');
     const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const theme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
     
-    if (theme === 'dark') {
+    if (systemPrefersDark) {
         document.documentElement.classList.add('dark');
     }
 })();
@@ -19,7 +17,6 @@ function setTheme(theme) {
     } else {
         document.documentElement.classList.remove('dark');
     }
-    localStorage.setItem('theme', theme);
     updateThemeToggle(theme);
 }
 
@@ -27,11 +24,13 @@ function updateThemeToggle(theme) {
     const buttons = document.querySelectorAll('.theme-toggle button');
     buttons.forEach(btn => {
         if (btn.dataset.theme === theme) {
-            btn.classList.add('bg-white', 'dark:bg-gray-800', 'text-gray-900', 'dark:text-white', 'shadow-sm');
-            btn.classList.remove('text-gray-500', 'dark:text-gray-400');
+            const baseClasses = 'p-1.5 rounded-full hover:text-gray-700 dark:hover:text-gray-200';
+            const activeClasses = 'bg-white dark:bg-gray-800 text-gray-900 dark:text-white shadow-sm';
+            btn.className = `${baseClasses} ${activeClasses}`;
         } else {
-            btn.classList.remove('bg-white', 'dark:bg-gray-800', 'text-gray-900', 'dark:text-white', 'shadow-sm');
-            btn.classList.add('text-gray-500', 'dark:text-gray-400');
+            const baseClasses = 'p-1.5 rounded-full hover:text-gray-700 dark:hover:text-gray-200';
+            const inactiveClasses = 'text-gray-500 dark:text-gray-400';
+            btn.className = `${baseClasses} ${inactiveClasses}`;
         }
     });
 }
@@ -56,12 +55,6 @@ function initTheme() {
         updateThemeToggle(theme);
     });
 }
-
-window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-    if (!localStorage.getItem('theme')) {
-        setTheme(e.matches ? 'dark' : 'light');
-    }
-});
 
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', initTheme);

@@ -1,5 +1,5 @@
 let translations = {};
-let currentLang = localStorage.getItem('language') || 'en-US';
+let currentLang = 'en-US';
 
 const languages = {
     'en-US': 'English',
@@ -54,7 +54,6 @@ function updateLanguage(lang) {
     }
     
     currentLang = lang;
-    localStorage.setItem('language', lang);
     
     const htmlLang = lang.split('-')[0];
     document.documentElement.lang = htmlLang;
