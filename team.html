@@ -33,17 +33,7 @@
     <link rel="alternate" hreflang="x-default" href="https://wangzigan.com/team.html">
     
     <title>Team & Postdoctoral Recruitment - Zigan Wang | Research Positions at Tsinghua University</title>
-    <script src="theme.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script>
-        // Configure Tailwind after it loads
-        if (typeof tailwind !== 'undefined') {
-            tailwind.config = {
-                darkMode: 'class'
-            }
-        }
-    </script>
-    
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -254,68 +244,6 @@
     </button>
 
     <script src="i18n.js"></script>
-    <script>
-        function setTheme(theme) {
-            if (theme === 'dark') {
-                localStorage.theme = 'dark';
-                document.documentElement.classList.add('dark');
-            } else {
-                localStorage.theme = 'light';
-                document.documentElement.classList.remove('dark');
-            }
-            updateThemeButtons();
-        }
-
-        function updateThemeButtons() {
-            const lightBtn = document.querySelector('.theme-light-btn');
-            const darkBtn = document.querySelector('.theme-dark-btn');
-            
-            if (document.documentElement.classList.contains('dark')) {
-                lightBtn.classList.remove('bg-gray-300', 'dark:bg-gray-600');
-                darkBtn.classList.add('bg-gray-300', 'dark:bg-gray-600');
-            } else {
-                lightBtn.classList.add('bg-gray-300', 'dark:bg-gray-600');
-                darkBtn.classList.remove('bg-gray-300', 'dark:bg-gray-600');
-            }
-        }
-
-        document.addEventListener('DOMContentLoaded', () => {
-            updateThemeButtons();
-
-            const mobileMenuToggle = document.getElementById('mobileMenuToggle');
-            const mainNav = document.getElementById('mainNav');
-            
-            if (mobileMenuToggle && mainNav) {
-                mobileMenuToggle.addEventListener('click', () => {
-                    mainNav.classList.toggle('hidden');
-                });
-            }
-
-            const mobileSidebarToggle = document.getElementById('mobileSidebarToggle');
-            const sidebarContent = document.getElementById('sidebarContent');
-            
-            if (mobileSidebarToggle && sidebarContent) {
-                mobileSidebarToggle.addEventListener('click', () => {
-                    sidebarContent.classList.toggle('hidden');
-                    const isHidden = sidebarContent.classList.contains('hidden');
-                    mobileSidebarToggle.innerHTML = `<span data-i18n="sidebar.toggle">${isHidden ? 'View' : 'Hide'} Profile Info</span>`;
-                });
-            }
-
-            const backToTopButton = document.getElementById('backToTop');
-            
-            window.addEventListener('scroll', () => {
-                if (window.pageYOffset > 300) {
-                    backToTopButton.classList.remove('hidden');
-                } else {
-                    backToTopButton.classList.add('hidden');
-                }
-            });
-            
-            backToTopButton.addEventListener('click', () => {
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            });
-        });
-    </script>
+    <script src="theme.js"></script>
 </body>
 </html>
