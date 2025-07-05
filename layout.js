@@ -169,14 +169,11 @@ const Layout = {
     }
 };
 
-// Simple theme toggle function
 function toggleTheme() {
     if (document.documentElement.classList.contains('dark')) {
-        // Whenever the user explicitly chooses light mode
         localStorage.theme = 'light';
         document.documentElement.classList.remove('dark');
     } else {
-        // Whenever the user explicitly chooses dark mode
         localStorage.theme = 'dark';
         document.documentElement.classList.add('dark');
     }
