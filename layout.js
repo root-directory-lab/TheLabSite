@@ -1,19 +1,19 @@
 const Layout = {
     renderHeader() {
         return `
-            <h1 class="text-3xl font-bold text-academic-dark-blue dark:text-gray-100 mb-1">
+            <h1 class="text-3xl font-bold text-slate-800 dark:text-gray-100 mb-1">
                 <a href="index.html" class="hover:underline">Zigan Wang</a>
             </h1>
             <span class="text-gray-700 dark:text-gray-300" data-i18n="title">Associate Professor at Tsinghua University</span>
             <div id="top-right" class="float-right mt-2">
                 <nav class="inline-flex items-center space-x-2" aria-label="Main navigation">
-                    <a href="index.html" class="text-academic-blue dark:text-blue-400 hover:underline font-medium" data-i18n="nav.home">Home</a>
+                    <a href="index.html" class="text-blue-700 dark:text-blue-400 hover:underline font-medium" data-i18n="nav.home">Home</a>
                     <span class="text-gray-400" aria-hidden="true">|</span>
-                    <a href="pub.html" class="text-academic-blue dark:text-blue-400 hover:underline font-medium" data-i18n="nav.publications">Publications</a>
+                    <a href="pub.html" class="text-blue-700 dark:text-blue-400 hover:underline font-medium" data-i18n="nav.publications">Publications</a>
                     <span class="text-gray-400" aria-hidden="true">|</span>
-                    <a href="team.html" class="text-academic-blue dark:text-blue-400 hover:underline font-medium" data-i18n="nav.team">Team</a>
+                    <a href="team.html" class="text-blue-700 dark:text-blue-400 hover:underline font-medium" data-i18n="nav.team">Team</a>
                     <span class="text-gray-400 mx-2" aria-hidden="true">|</span>
-                    <select id="langSelect" onchange="changeLanguage(this.value)" aria-label="Language selection">
+                    <select id="langSelect" onchange="changeLanguage(this.value)" aria-label="Language selection" class="px-2 py-1 text-sm border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400">
                         <option value="en-US">English</option>
                         <option value="zh-CN">简体中文</option>
                         <option value="zh-TW">繁體中文</option>
@@ -30,14 +30,14 @@ const Layout = {
                         <option value="it-IT">Italiano</option>
                     </select>
                     <span class="text-gray-400 mx-2" aria-hidden="true">|</span>
-                    <div class="theme-toggle inline-flex" role="group" aria-label="Theme selection">
-                        <button data-theme="light" onclick="setTheme('light')" title="Light theme" aria-label="Switch to light theme">
-                            <svg fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                    <div class="theme-toggle inline-flex bg-gray-200 dark:bg-gray-700 rounded-full p-0.5" role="group" aria-label="Theme selection">
+                        <button data-theme="light" onclick="setTheme('light')" title="Light theme" aria-label="Switch to light theme" class="p-1.5 rounded-full text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
                                 <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"></path>
                             </svg>
                         </button>
-                        <button data-theme="dark" onclick="setTheme('dark')" title="Dark theme" aria-label="Switch to dark theme">
-                            <svg fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                        <button data-theme="dark" onclick="setTheme('dark')" title="Dark theme" aria-label="Switch to dark theme" class="p-1.5 rounded-full text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
                                 <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
                             </svg>
                         </button>
@@ -56,7 +56,7 @@ const Layout = {
 
     renderSidebar() {
         return `
-            <img src="assets/avatar.jpeg" alt="Zigan Wang - Associate Professor at Tsinghua University" class="w-full mb-6 rounded-lg shadow-md" loading="lazy">
+            <img src="assets/avatar.jpeg" alt="Zigan Wang - Associate Professor at Tsinghua University" class="w-full mb-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200" loading="lazy">
             <div class="space-y-4">
                 <div>
                     <p class="text-sm">
@@ -65,7 +65,7 @@ const Layout = {
                     </p>
                 </div>
                 <div>
-                    <a href="mailto:wangzigan@sz.tsinghua.edu.cn" class="text-academic-blue dark:text-blue-400 hover:underline inline-flex items-center text-sm">
+                    <a href="mailto:wangzigan@sz.tsinghua.edu.cn" class="text-blue-700 dark:text-blue-400 hover:underline inline-flex items-center text-sm">
                         <svg class="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M9 8.5L12 5.5L15 8.5M12 5.5V15.5M5 11.5V19.5H19V11.5"/>
                         </svg>
@@ -78,7 +78,7 @@ const Layout = {
 
     renderFooter() {
         return `
-            <div class="px-6 py-4 text-center text-sm">
+            <div class="px-6 py-4 text-center text-sm text-gray-600 dark:text-gray-400">
                 © 2025 Zigan Wang. All rights reserved.
             </div>
         `;
@@ -86,7 +86,7 @@ const Layout = {
 
     renderBackToTop() {
         return `
-            <button id="backToTop" class="fixed bottom-8 right-8 p-3 rounded-full shadow-lg hidden" aria-label="Back to top">
+            <button id="backToTop" class="fixed bottom-8 right-8 p-3 bg-blue-700 dark:bg-blue-600 text-white rounded-full shadow-lg hover:bg-blue-800 dark:hover:bg-blue-700 hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200 hidden" aria-label="Back to top">
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
                     <path fill-rule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd"></path>
                 </svg>
