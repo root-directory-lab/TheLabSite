@@ -1,19 +1,21 @@
 let translations = {};
-let currentLang = localStorage.getItem('language') || 'en';
+let currentLang = localStorage.getItem('language') || 'en_US';
 
 
 const languages = {
-    'en': 'English',
-    'zh-CN': '简体中文',
-    'zh-TW': '繁體中文',
-    'ja': '日本語',
-    'ko': '한국어',
-    'vi': 'Tiếng Việt',
-    'th': 'ภาษาไทย',
-    'de': 'Deutsch',
-    'fr': 'Français',
-    'es': 'Español',
-    'it': 'Italiano'
+    'en_US': 'English',
+    'zh_CN': '简体中文',
+    'zh_TW': '繁體中文',
+    'ja_JP': '日本語',
+    'ko_KR': '한국어',
+    'ru_RU': 'Русский',
+    'ar_SA': 'العربية',
+    'vi_VN': 'Tiếng Việt',
+    'th_TH': 'ภาษาไทย',
+    'de_DE': 'Deutsch',
+    'fr_FR': 'Français',
+    'es_ES': 'Español',
+    'it_IT': 'Italiano'
 };
 
 async function loadTranslation(lang) {
@@ -51,7 +53,9 @@ function updateLanguage(lang) {
     
     currentLang = lang;
     localStorage.setItem('language', lang);
-    document.documentElement.lang = lang;
+    
+    const htmlLang = lang.split('_')[0];
+    document.documentElement.lang = htmlLang;
     
     const langSelect = document.getElementById('langSelect');
     if (langSelect) {
@@ -75,10 +79,24 @@ function updateLanguage(lang) {
             element.textContent = value;
         }
     });
+    
+    if (lang === 'ar_SA') {
+        document.documentElement.dir = 'rtl';
+        document.body.style.direction = 'rtl';
+    } else {
+        document.documentElement.dir = 'ltr';
+        document.body.style.direction = 'ltr';
+    }
 }
 
 function changeLanguage(lang) {
     updateLanguage(lang);
+}
+
+const urlParams = new URLSearchParams(window.location.search);
+const langParam = urlParams.get('lang');
+if (langParam && languages[langParam]) {
+    currentLang = langParam;
 }
 
 document.addEventListener('DOMContentLoaded', () => {
