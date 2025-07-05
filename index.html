@@ -62,7 +62,177 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     
     <title>Zigan Wang - Associate Professor at Tsinghua University | Applied Microeconomics & Computer Science Research</title>
+    
+    <!-- Inline theme script to prevent FOUC -->
+    <script>
+        (function() {
+            const storedTheme = localStorage.getItem('theme');
+            if (storedTheme === 'dark') {
+                document.documentElement.classList.add('dark');
+            } else if (storedTheme === 'light') {
+                document.documentElement.classList.remove('dark');
+            } else if (!storedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                document.documentElement.classList.add('dark');
+            }
+        })();
+    </script>
+    
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <!-- Inline styles -->
+    <style>
+        @tailwind utilities;
+        
+        @layer base {
+            :root {
+                color-scheme: light;
+            }
+            
+            html.dark {
+                color-scheme: dark;
+            }
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, 'Microsoft YaHei', 'PingFang SC', 'Hiragino Sans GB', 'Heiti SC', 'WenQuanYi Micro Hei', sans-serif;
+        }
+        
+        body.rtl {
+            direction: rtl;
+            text-align: right;
+        }
+        
+        body.rtl #top-right {
+            float: left;
+        }
+        
+        body.rtl div#left {
+            float: right;
+        }
+        
+        body.rtl div#content {
+            float: left;
+        }
+        
+        body.rtl ul, body.rtl ol {
+            padding-right: 40px;
+            padding-left: 0;
+        }
+        
+        body.rtl .ml-10 {
+            margin-left: 0;
+            margin-right: 2.5rem;
+        }
+        
+        body.rtl .ml-8 {
+            margin-left: 0;
+            margin-right: 2rem;
+        }
+        
+        body.rtl .ml-4 {
+            margin-left: 0;
+            margin-right: 1rem;
+        }
+        
+        body.rtl .mr-1\.5 {
+            margin-right: 0;
+            margin-left: 0.375rem;
+        }
+        
+        body.rtl .space-x-2 > :not([hidden]) ~ :not([hidden]) {
+            margin-left: 0;
+            margin-right: 0.5rem;
+        }
+        
+        body.rtl nav {
+            text-align: left;
+        }
+        
+        body.rtl #langSelect {
+            direction: ltr;
+        }
+        
+        body.rtl #backToTop {
+            right: auto;
+            left: 1rem;
+        }
+        
+        @media (min-width: 768px) {
+            body.rtl #backToTop {
+                left: 2rem;
+            }
+        }
+        
+        .theme-toggle-container {
+            display: inline-flex;
+            gap: 0;
+        }
+        
+        #mainNav {
+            transition: all 0.3s ease-in-out;
+        }
+        
+        #sidebarContent {
+            transition: all 0.3s ease-in-out;
+        }
+        
+        @media (max-width: 767px) {
+            #pagecell1 {
+                max-width: 100%;
+            }
+            
+            .list-disc,
+            .list-decimal {
+                padding-left: 1.5rem;
+            }
+            
+            body.rtl .list-disc,
+            body.rtl .list-decimal {
+                padding-right: 1.5rem;
+                padding-left: 0;
+            }
+            
+            h1 {
+                font-size: 1.5rem;
+            }
+            
+            h2 {
+                font-size: 1.25rem;
+            }
+            
+            ol > li,
+            ul > li {
+                margin-bottom: 0.75rem;
+            }
+        }
+        
+        @media print {
+            #mobileMenuToggle,
+            #mobileSidebarToggle,
+            #themeToggle,
+            #langSelect,
+            #backToTop,
+            footer {
+                display: none !important;
+            }
+            
+            #mainNav,
+            #sidebarContent {
+                display: block !important;
+            }
+            
+            .flex {
+                display: block !important;
+            }
+            
+            #left,
+            #content {
+                width: 100% !important;
+                float: none !important;
+            }
+        }
+    </style>
+    
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -158,17 +328,80 @@
     }
     </script>
 
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.lug.ustc.edu.cn">
     <link rel="preconnect" href="https://fonts-gstatic.lug.ustc.edu.cn" crossorigin>
     <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
 </head>
 <body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
     <div id="pagecell1" class="max-w-[1200px] mx-auto bg-white dark:bg-gray-800 shadow-sm min-h-screen flex flex-col">
-        <header id="top" class="w-full px-4 md:px-6 py-4 border-b border-gray-300 dark:border-gray-700"></header>
+        <header id="top" class="w-full px-4 md:px-6 py-4 border-b border-gray-300 dark:border-gray-700">
+            <div class="flex justify-between items-center">
+                <div>
+                    <h1 class="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-100">Zigan Wang</h1>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">Associate Professor, Tsinghua University</p>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <!-- Language Selector -->
+                    <select id="langSelect" class="px-3 py-1 text-sm border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-200">
+                        <option value="en-US">English</option>
+                        <option value="zh-CN">简体中文</option>
+                        <option value="zh-TW">繁體中文</option>
+                        <option value="ja-JP">日本語</option>
+                        <option value="ko-KR">한국어</option>
+                    </select>
+                    
+                    <!-- Theme Toggle -->
+                    <button 
+                        id="themeToggle"
+                        onclick="window.themeManager.toggle()"
+                        class="p-2 rounded-lg bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors"
+                        aria-label="Toggle theme"
+                    >
+                        <!-- Sun Icon (Light Mode) -->
+                        <svg class="w-5 h-5 hidden dark:block text-yellow-300" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path>
+                        </svg>
+                        
+                        <!-- Moon Icon (Dark Mode) -->
+                        <svg class="w-5 h-5 block dark:hidden text-gray-700" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </header>
 
         <div class="flex flex-col md:flex-row mt-0 flex-grow">
-            <aside id="left" class="w-full md:w-1/4 bg-gray-50 dark:bg-gray-800 p-4 md:p-6"></aside>
+            <aside id="left" class="w-full md:w-1/4 bg-gray-50 dark:bg-gray-800 p-4 md:p-6 border-r border-gray-200 dark:border-gray-700">
+                <div class="mb-6">
+                    <img src="https://wangzigan.com/assets/avatar.jpeg" alt="Zigan Wang" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-gray-300 dark:border-gray-600">
+                    <h2 class="text-lg font-semibold text-center mb-2">Zigan Wang</h2>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 text-center">王自干</p>
+                </div>
+                
+                <nav>
+                    <h3 class="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2 uppercase tracking-wide">Navigation</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#research-heading" class="text-blue-600 dark:text-blue-400 hover:underline">Research Interests</a></li>
+                        <li><a href="#employment-heading" class="text-blue-600 dark:text-blue-400 hover:underline">Employment</a></li>
+                        <li><a href="#education-heading" class="text-blue-600 dark:text-blue-400 hover:underline">Education</a></li>
+                        <li><a href="#grants-heading" class="text-blue-600 dark:text-blue-400 hover:underline">Research Grants</a></li>
+                        <li><a href="#service-heading" class="text-blue-600 dark:text-blue-400 hover:underline">Academic Service</a></li>
+                        <li><a href="#awards-heading" class="text-blue-600 dark:text-blue-400 hover:underline">Awards & Prizes</a></li>
+                        <li><a href="#teaching-heading" class="text-blue-600 dark:text-blue-400 hover:underline">Teaching</a></li>
+                        <li><a href="#placement-heading" class="text-blue-600 dark:text-blue-400 hover:underline">PhD Placements</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="mt-6">
+                    <h3 class="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2 uppercase tracking-wide">Contact</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">
+                        <a href="mailto:wangzigan@sz.tsinghua.edu.cn" class="text-blue-600 dark:text-blue-400 hover:underline break-all">
+                            wangzigan@sz.tsinghua.edu.cn
+                        </a>
+                    </p>
+                </div>
+            </aside>
 
             <main id="content" class="w-full md:w-3/4 p-4 md:p-6 bg-white dark:bg-gray-800" role="main">
                 <section class="mb-6" aria-labelledby="research-heading">
@@ -362,10 +595,130 @@
             </main>
         </div>
 
-        <footer class="bg-gray-50 dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700"></footer>
+        <footer class="bg-gray-50 dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700 py-6 px-4 md:px-6">
+            <div class="text-center text-sm text-gray-600 dark:text-gray-400">
+                <p>&copy; 2025 Zigan Wang. All rights reserved.</p>
+                <p class="mt-2">
+                    <a href="https://www.tsinghua.edu.cn" class="text-blue-600 dark:text-blue-400 hover:underline">Tsinghua University</a> | 
+                    <a href="https://www.sigs.tsinghua.edu.cn" class="text-blue-600 dark:text-blue-400 hover:underline">Shenzhen International Graduate School</a>
+                </p>
+            </div>
+        </footer>
     </div>
 
-    <script src="i18n.js"></script>
-    <script src="theme.js"></script>
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-4 right-4 md:bottom-8 md:right-8 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition-colors hidden" aria-label="Back to top">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+        </svg>
+    </button>
+
+    <!-- Inline theme.js -->
+    <script>
+    (function() {
+        const THEME_KEY = 'theme';
+        const DARK_CLASS = 'dark';
+        const DARK_VALUE = 'dark';
+        const LIGHT_VALUE = 'light';
+        
+        function applyTheme() {
+            const storedTheme = localStorage.getItem(THEME_KEY);
+            
+            if (storedTheme === DARK_VALUE) {
+                document.documentElement.classList.add(DARK_CLASS);
+            } else if (storedTheme === LIGHT_VALUE) {
+                document.documentElement.classList.remove(DARK_CLASS);
+            } else if (!storedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                document.documentElement.classList.add(DARK_CLASS);
+            } else {
+                document.documentElement.classList.remove(DARK_CLASS);
+            }
+        }
+        
+        applyTheme();
+        
+        const originalSetItem = localStorage.setItem;
+        localStorage.setItem = function(key, value) {
+            const event = new Event('localStorageChange');
+            event.key = key;
+            event.newValue = value;
+            event.storageArea = localStorage;
+            
+            originalSetItem.apply(this, arguments);
+            
+            if (key === THEME_KEY) {
+                window.dispatchEvent(event);
+            }
+        };
+        
+        window.addEventListener('storage', function(e) {
+            if (e.key === THEME_KEY && e.storageArea === localStorage) {
+                applyTheme();
+            }
+        });
+        
+        window.addEventListener('localStorageChange', function(e) {
+            if (e.key === THEME_KEY) {
+                applyTheme();
+            }
+        });
+        
+        if (window.matchMedia) {
+            const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+            
+            if (mediaQuery.addEventListener) {
+                mediaQuery.addEventListener('change', function() {
+                    if (!localStorage.getItem(THEME_KEY)) {
+                        applyTheme();
+                    }
+                });
+            } else if (mediaQuery.addListener) {
+                mediaQuery.addListener(function() {
+                    if (!localStorage.getItem(THEME_KEY)) {
+                        applyTheme();
+                    }
+                });
+            }
+        }
+        
+        window.themeManager = {
+            toggle: function() {
+                const current = document.documentElement.classList.contains(DARK_CLASS);
+                localStorage.setItem(THEME_KEY, current ? LIGHT_VALUE : DARK_VALUE);
+            },
+            
+            setDark: function() {
+                localStorage.setItem(THEME_KEY, DARK_VALUE);
+            },
+            
+            setLight: function() {
+                localStorage.setItem(THEME_KEY, LIGHT_VALUE);
+            },
+            
+            clear: function() {
+                localStorage.removeItem(THEME_KEY);
+                applyTheme();
+            },
+            
+            getCurrent: function() {
+                return document.documentElement.classList.contains(DARK_CLASS) ? DARK_VALUE : LIGHT_VALUE;
+            }
+        };
+    })();
+    
+    // Back to Top functionality
+    window.addEventListener('scroll', function() {
+        const backToTop = document.getElementById('backToTop');
+        if (window.pageYOffset > 300) {
+            backToTop.classList.remove('hidden');
+        } else {
+            backToTop.classList.add('hidden');
+        }
+    });
+    
+    document.getElementById('backToTop').addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    </script>
 </body>
 </html>
