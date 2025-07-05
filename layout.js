@@ -41,23 +41,14 @@ const Layout = {
                         <option value="it-IT">Italiano</option>
                     </select>
                     <span class="hidden md:inline text-gray-400 mx-2" aria-hidden="true">|</span>
-                    <div class="flex gap-1">
-                        <button id="lightTheme" onclick="setTheme('light')" class="p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700" title="Light theme" aria-label="Switch to light theme">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"></path>
-                            </svg>
-                        </button>
-                        <button id="darkTheme" onclick="setTheme('dark')" class="p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700" title="Dark theme" aria-label="Switch to dark theme">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
-                            </svg>
-                        </button>
-                        <button id="systemTheme" onclick="setTheme('system')" class="p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700" title="System theme" aria-label="Use system theme">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z" clip-rule="evenodd"></path>
-                            </svg>
-                        </button>
-                    </div>
+                    <button id="themeToggle" onclick="toggleTheme()" class="p-2 rounded-lg bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors" aria-label="Toggle theme">
+                        <svg class="w-5 h-5 hidden dark:block" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 block dark:hidden" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                        </svg>
+                    </button>
                     <span class="hidden md:inline text-gray-400 mx-2" aria-hidden="true">|</span>
                     <a href="https://github.com/orgs/root-directory-lab" target="_blank" rel="noopener noreferrer" class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100" title="GitHub" aria-label="Visit GitHub profile">
                         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -178,48 +169,19 @@ const Layout = {
     }
 };
 
-function setTheme(theme) {
-    if (theme === 'light') {
+// Simple theme toggle function
+function toggleTheme() {
+    if (document.documentElement.classList.contains('dark')) {
+        // Whenever the user explicitly chooses light mode
         localStorage.theme = 'light';
         document.documentElement.classList.remove('dark');
-    } else if (theme === 'dark') {
+    } else {
+        // Whenever the user explicitly chooses dark mode
         localStorage.theme = 'dark';
         document.documentElement.classList.add('dark');
-    } else {
-        localStorage.removeItem('theme');
-        document.documentElement.classList.toggle(
-            'dark',
-            window.matchMedia('(prefers-color-scheme: dark)').matches
-        );
-    }
-    updateThemeButtons();
-}
-
-function updateThemeButtons() {
-    const lightBtn = document.getElementById('lightTheme');
-    const darkBtn = document.getElementById('darkTheme');
-    const systemBtn = document.getElementById('systemTheme');
-    
-    [lightBtn, darkBtn, systemBtn].forEach(btn => {
-        if (btn) btn.classList.remove('bg-gray-300', 'dark:bg-gray-600');
-    });
-    
-    if (localStorage.theme === 'light' && lightBtn) {
-        lightBtn.classList.add('bg-gray-300', 'dark:bg-gray-600');
-    } else if (localStorage.theme === 'dark' && darkBtn) {
-        darkBtn.classList.add('bg-gray-300', 'dark:bg-gray-600');
-    } else if (!localStorage.theme && systemBtn) {
-        systemBtn.classList.add('bg-gray-300', 'dark:bg-gray-600');
     }
 }
-
-window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-    if (!localStorage.theme) {
-        document.documentElement.classList.toggle('dark', e.matches);
-    }
-});
 
 document.addEventListener('DOMContentLoaded', () => {
     Layout.init();
-    updateThemeButtons();
 });
