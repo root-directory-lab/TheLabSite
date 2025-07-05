@@ -34,6 +34,10 @@ body {
     transition: background-color 0.2s ease, color 0.2s ease;
 }
 
+body.rtl {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Arial Unicode MS', 'Tahoma', sans-serif;
+}
+
 a:link,
 a:visited {
     color: var(--link-color);
@@ -69,7 +73,7 @@ h3 {
     font: bold 120% -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, SimHei, sans-serif;
     color: var(--heading-color);
     margin: 10px;
-    margin-left: 30px;
+    margin-inline-start: 30px;
     padding: 0;
 }
 
@@ -83,8 +87,7 @@ h4 {
 #pagecell1 {
     position: relative;
     top: 0;
-    margin-left: auto;
-    margin-right: auto;
+    margin-inline: auto;
     width: 1200px;
     background-color: var(--bg-primary);
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
@@ -97,11 +100,11 @@ div#top {
 }
 
 div#top-right {
-    float: right;
+    float: inline-end;
 }
 
 div#left {
-    float: left;
+    float: inline-start;
     width: 25%;
     padding: 24px;
     background-color: #f9fafb;
@@ -123,14 +126,16 @@ div#left {
 }
 
 div#content {
-    float: right;
+    float: inline-end;
     width: 75%;
     padding: 24px;
     background-color: var(--bg-primary);
 }
 
 .feature {
-    padding: 1px 1px 10px 10px;
+    padding-block: 1px 10px;
+    padding-inline-start: 10px;
+    padding-inline-end: 1px;
     font-size: 100%;
     min-height: 10px;
     height: auto;
@@ -140,6 +145,15 @@ li {
     margin: 5px 0;
     padding: 0;
     line-height: 1.6;
+}
+
+ol, ul {
+    margin-inline-start: 32px;
+    padding-inline-start: 0;
+}
+
+.rtl ol, .rtl ul {
+    margin-inline-start: 40px;
 }
 
 p {
@@ -189,6 +203,8 @@ nav {
     transition: all 0.2s ease;
     border: none;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    inset-inline-end: 2rem;
+    bottom: 2rem;
 }
 
 .dark #backToTop {
@@ -317,6 +333,63 @@ footer div {
     box-shadow: 0 0 0 2px rgba(96, 165, 250, 0.1);
 }
 
+.list-disc {
+    list-style-type: disc;
+}
+
+.list-decimal {
+    list-style-type: decimal;
+}
+
+.rtl .list-disc,
+.rtl .list-decimal {
+    padding-inline-start: 0;
+}
+
+.ml-8 {
+    margin-inline-start: 2rem;
+}
+
+.ml-10 {
+    margin-inline-start: 2.5rem;
+}
+
+svg path[stroke-linecap="round"] {
+    stroke-linecap: round;
+}
+
+.rtl nav a,
+.rtl nav span,
+.rtl nav select,
+.rtl .theme-toggle {
+    float: none;
+    display: inline-block;
+}
+
+.text-sm {
+    font-size: 0.875rem;
+}
+
+.text-xs {
+    font-size: 0.75rem;
+}
+
+.text-gray-600 {
+    color: #4b5563;
+}
+
+.dark .text-gray-600 {
+    color: #9ca3af;
+}
+
+.text-gray-400 {
+    color: #9ca3af;
+}
+
+.dark .text-gray-400 {
+    color: #6b7280;
+}
+
 @media (max-width: 1200px) {
     #pagecell1 {
         width: 100%;
@@ -367,7 +440,7 @@ footer div {
     
     #backToTop {
         bottom: 20px;
-        right: 20px;
+        inset-inline-end: 20px;
     }
 }
 

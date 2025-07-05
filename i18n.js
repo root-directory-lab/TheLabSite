@@ -1,5 +1,6 @@
 let translations = {};
-let currentLang = localStorage.getItem('language') || 'en';
+let currentLang = 'en-US';
+let isInitialized = false;
 
 const languages = {
     'en-US': 'English',
@@ -18,6 +19,8 @@ const languages = {
     'it-IT': 'Italiano'
 };
 
+const rtlLanguages = ['ar-SA', 'he-IL'];
+
 async function loadTranslation(lang) {
     try {
         const response = await fetch(`i18n/${lang}.json`);
@@ -30,6 +33,11 @@ async function loadTranslation(lang) {
 }
 
 async function initializeTranslations() {
+    if (isInitialized) return;
+    
+    const storedLang = sessionStorage.getItem('language') || 'en-US';
+    currentLang = storedLang;
+    
     for (const lang of Object.keys(languages)) {
         const translation = await loadTranslation(lang);
         if (translation) {
@@ -42,6 +50,7 @@ async function initializeTranslations() {
         return;
     }
     
+    isInitialized = true;
     updateLanguage(currentLang);
 }
 
@@ -52,8 +61,16 @@ function updateLanguage(lang) {
     }
     
     currentLang = lang;
-    localStorage.setItem('language', lang);
+    sessionStorage.setItem('language', lang);
     document.documentElement.lang = lang;
+    
+    if (rtlLanguages.includes(lang)) {
+        document.documentElement.dir = 'rtl';
+        document.body.classList.add('rtl');
+    } else {
+        document.documentElement.dir = 'ltr';
+        document.body.classList.remove('rtl');
+    }
     
     const langSelect = document.getElementById('langSelect');
     if (langSelect) {

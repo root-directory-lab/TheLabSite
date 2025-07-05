@@ -1,5 +1,5 @@
 function initTheme() {
-    const savedTheme = localStorage.getItem('theme');
+    const savedTheme = sessionStorage.getItem('theme') || localStorage.getItem('theme');
     
     if (savedTheme) {
         applyTheme(savedTheme);
@@ -17,6 +17,7 @@ function applyTheme(theme) {
 }
 
 function setTheme(theme) {
+    sessionStorage.setItem('theme', theme);
     localStorage.setItem('theme', theme);
     applyTheme(theme);
     updateThemeToggle(theme);
