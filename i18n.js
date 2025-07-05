@@ -1,6 +1,8 @@
 let translations = {};
 let currentLang = 'en-US';
 
+const LANG_KEY = 'preferred-language';
+
 const languages = {
     'en-US': 'English',
     'zh-CN': '简体中文',
@@ -19,6 +21,41 @@ const languages = {
 };
 
 const rtlLanguages = ['ar-SA', 'he-IL'];
+
+function getStoredLanguage() {
+    return localStorage.getItem(LANG_KEY);
+}
+
+function storeLanguage(lang) {
+    localStorage.setItem(LANG_KEY, lang);
+}
+
+function getInitialLanguage() {
+    const storedLang = getStoredLanguage();
+    if (storedLang && languages[storedLang]) {
+        return storedLang;
+    }
+    
+    const browserLang = navigator.language || navigator.userLanguage;
+    const exactMatch = Object.keys(languages).find(lang => lang === browserLang);
+    if (exactMatch) {
+        return exactMatch;
+    }
+    
+    const langPrefix = browserLang.split('-')[0];
+    const prefixMatch = Object.keys(languages).find(lang => lang.startsWith(langPrefix + '-'));
+    if (prefixMatch) {
+        return prefixMatch;
+    }
+    
+    const urlParams = new URLSearchParams(window.location.search);
+    const langParam = urlParams.get('lang');
+    if (langParam && languages[langParam]) {
+        return langParam;
+    }
+    
+    return 'en-US';
+}
 
 async function loadTranslation(lang) {
     try {
@@ -59,6 +96,15 @@ async function initializeTranslations() {
         }
     }
     
+    const urlParams = new URLSearchParams(window.location.search);
+    const langParam = urlParams.get('lang');
+    if (langParam && languages[langParam]) {
+        currentLang = langParam;
+        storeLanguage(langParam);
+    } else {
+        currentLang = getInitialLanguage();
+    }
+    
     updateLanguage(currentLang);
 }
 
@@ -69,6 +115,7 @@ function updateLanguage(lang) {
     }
     
     currentLang = lang;
+    storeLanguage(lang);
     
     const htmlLang = lang.split('-')[0];
     document.documentElement.lang = htmlLang;
@@ -121,12 +168,6 @@ function updateLanguage(lang) {
 
 function changeLanguage(lang) {
     updateLanguage(lang);
-}
-
-const urlParams = new URLSearchParams(window.location.search);
-const langParam = urlParams.get('lang');
-if (langParam && languages[langParam]) {
-    currentLang = langParam;
 }
 
 document.addEventListener('DOMContentLoaded', () => {

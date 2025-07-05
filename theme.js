@@ -17,6 +17,15 @@
         return document.documentElement.classList.contains('dark') ? 'dark' : 'light';
     }
     
+    function getInitialTheme() {
+        const storedTheme = getStoredTheme();
+        if (storedTheme && (storedTheme === 'light' || storedTheme === 'dark')) {
+            return storedTheme;
+        }
+        
+        return getSystemTheme();
+    }
+    
     function applyTheme(theme) {
         if (theme === 'dark') {
             document.documentElement.classList.add('dark');
@@ -46,10 +55,22 @@
     }
     
     function initializeTheme() {
-        const storedTheme = getStoredTheme();
-        const theme = storedTheme || getSystemTheme();
+        const theme = getInitialTheme();
         applyTheme(theme);
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            updateThemeToggle(theme);
+        });
     }
+    
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+        const storedTheme = getStoredTheme();
+        if (!storedTheme) {
+            const newTheme = e.matches ? 'dark' : 'light';
+            applyTheme(newTheme);
+            updateThemeToggle(newTheme);
+        }
+    });
     
     initializeTheme();
     
