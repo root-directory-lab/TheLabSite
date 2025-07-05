@@ -18,6 +18,8 @@ const languages = {
     'it-IT': 'Italiano'
 };
 
+const rtlLanguages = ['ar-SA', 'he-IL'];
+
 async function loadTranslation(lang) {
     try {
         const response = await fetch(`i18n/${lang}.json`);
@@ -62,6 +64,16 @@ function updateLanguage(lang) {
         langSelect.value = lang;
     }
     
+    if (rtlLanguages.includes(lang)) {
+        document.documentElement.dir = 'rtl';
+        document.body.classList.add('rtl');
+        document.body.classList.remove('ltr');
+    } else {
+        document.documentElement.dir = 'ltr';
+        document.body.classList.add('ltr');
+        document.body.classList.remove('rtl');
+    }
+    
     document.querySelectorAll('[data-i18n]').forEach(element => {
         const keys = element.getAttribute('data-i18n').split('.');
         let value = translations[lang];
@@ -79,14 +91,6 @@ function updateLanguage(lang) {
             element.textContent = value;
         }
     });
-    
-    if (lang === 'ar-SA') {
-        document.documentElement.dir = 'rtl';
-        document.body.style.direction = 'rtl';
-    } else {
-        document.documentElement.dir = 'ltr';
-        document.body.style.direction = 'ltr';
-    }
 }
 
 function changeLanguage(lang) {
