@@ -62,26 +62,6 @@ async function initializeTranslations() {
     updateLanguage(currentLang);
 }
 
-function getTranslationValue(translations, path) {
-    const keys = path.split('.');
-    let value = translations;
-    
-    for (let i = 0; i < keys.length; i++) {
-        const currentPath = keys.slice(0, i + 1).join('.');
-        if (value[currentPath] !== undefined) {
-            return value[currentPath];
-        }
-        
-        if (value[keys[i]]) {
-            value = value[keys[i]];
-        } else {
-            return null;
-        }
-    }
-    
-    return typeof value === 'string' ? value : null;
-}
-
 function updateLanguage(lang) {
     if (!translations[lang]) {
         console.error(`Translation not available for ${lang}`);
@@ -109,13 +89,20 @@ function updateLanguage(lang) {
     }
     
     document.querySelectorAll('[data-i18n]').forEach(element => {
-        const path = element.getAttribute('data-i18n');
-        const value = getTranslationValue(translations[lang], path);
+        const keys = element.getAttribute('data-i18n').split('.');
+        let value = translations[lang];
         
-        if (value) {
+        for (const key of keys) {
+            if (value && value[key]) {
+                value = value[key];
+            } else {
+                console.warn(`Translation missing for: ${element.getAttribute('data-i18n')} in ${lang}`);
+                return;
+            }
+        }
+        
+        if (typeof value === 'string') {
             element.textContent = value;
-        } else {
-            console.warn(`Translation missing for: ${path} in ${lang}`);
         }
     });
     
