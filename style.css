@@ -1,7 +1,3 @@
-@theme {
-    darkMode: 'class';
-}
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,7 +7,7 @@
         color-scheme: light;
     }
     
-    :root.dark {
+    html.dark {
         color-scheme: dark;
     }
 }
@@ -87,12 +83,6 @@ body.rtl #backToTop {
     }
 }
 
-* {
-    transition-property: background-color, border-color, color, fill, stroke;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 200ms;
-}
-
 #mainNav {
     transition: all 0.3s ease-in-out;
 }
@@ -134,9 +124,8 @@ body.rtl #backToTop {
 @media print {
     #mobileMenuToggle,
     #mobileSidebarToggle,
-    #top-right button,
-    #top-right select,
-    .theme-toggle,
+    #themeToggle,
+    #langSelect,
     #backToTop,
     footer {
         display: none !important;
