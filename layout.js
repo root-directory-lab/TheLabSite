@@ -110,7 +110,7 @@ const Layout = {
         });
     },
 
-init() {
+    init() {
         const header = document.getElementById('top');
         if (header) {
             header.innerHTML = this.renderHeader();
@@ -128,9 +128,6 @@ init() {
 
         document.body.insertAdjacentHTML('beforeend', this.renderBackToTop());
         this.initBackToTop();
-        
-        const theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
-        document.getElementById('pagecell1').classList.add(theme);
     }
 };
 
