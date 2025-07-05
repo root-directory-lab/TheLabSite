@@ -1,22 +1,21 @@
 let translations = {};
-let currentLang = localStorage.getItem('language') || 'en_US';
-
+let currentLang = localStorage.getItem('language') || 'en-US';
 
 const languages = {
-    'en_US': 'English',
-    'zh_CN': '简体中文',
-    'zh_TW': '繁體中文',
-    'ja_JP': '日本語',
-    'ko_KR': '한국어',
-    'ru_RU': 'Русский',
-    'ar_SA': 'العربية',
-    'he_IL': 'עברית',
-    'vi_VN': 'Tiếng Việt',
-    'th_TH': 'ภาษาไทย',
-    'de_DE': 'Deutsch',
-    'fr_FR': 'Français',
-    'es_ES': 'Español',
-    'it_IT': 'Italiano'
+    'en-US': 'English',
+    'zh-CN': '简体中文',
+    'zh-TW': '繁體中文',
+    'ja-JP': '日本語',
+    'ko-KR': '한국어',
+    'ru-RU': 'Русский',
+    'ar-SA': 'العربية',
+    'he-IL': 'עברית',
+    'vi-VN': 'Tiếng Việt',
+    'th-TH': 'ภาษาไทย',
+    'de-DE': 'Deutsch',
+    'fr-FR': 'Français',
+    'es-ES': 'Español',
+    'it-IT': 'Italiano'
 };
 
 async function loadTranslation(lang) {
@@ -55,7 +54,7 @@ function updateLanguage(lang) {
     currentLang = lang;
     localStorage.setItem('language', lang);
     
-    const htmlLang = lang.split('_')[0];
+    const htmlLang = lang.split('-')[0];
     document.documentElement.lang = htmlLang;
     
     const langSelect = document.getElementById('langSelect');
@@ -81,7 +80,7 @@ function updateLanguage(lang) {
         }
     });
     
-    if (lang === 'ar_SA') {
+    if (lang === 'ar-SA') {
         document.documentElement.dir = 'rtl';
         document.body.style.direction = 'rtl';
     } else {
