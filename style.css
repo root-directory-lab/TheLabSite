@@ -1,29 +1,17 @@
+@theme {
+    darkMode: 'class';
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @layer base {
     :root {
-        --color-bg-primary: theme(colors.white);
-        --color-bg-secondary: theme(colors.gray.50);
-        --color-bg-tertiary: theme(colors.gray.100);
-        --color-text-primary: theme(colors.gray.800);
-        --color-text-secondary: theme(colors.gray.600);
-        --color-text-tertiary: theme(colors.gray.500);
-        --color-border: theme(colors.gray.300);
-        --color-accent: theme(colors.blue.700);
-        --color-accent-hover: theme(colors.blue.800);
-        
         color-scheme: light;
     }
     
     :root.dark {
-        --color-bg-primary: theme(colors.gray.800);
-        --color-bg-secondary: theme(colors.gray.900);
-        --color-bg-tertiary: theme(colors.gray.700);
-        --color-text-primary: theme(colors.gray.200);
-        --color-text-secondary: theme(colors.gray.400);
-        --color-text-tertiary: theme(colors.gray.500);
-        --color-border: theme(colors.gray.700);
-        --color-accent: theme(colors.blue.400);
-        --color-accent-hover: theme(colors.blue.300);
-        
         color-scheme: dark;
     }
 }
