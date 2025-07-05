@@ -41,13 +41,13 @@ const Layout = {
                         <option value="it-IT">Italiano</option>
                     </select>
                     <span class="hidden md:inline text-gray-400 mx-2" aria-hidden="true">|</span>
-                    <div class="theme-toggle inline-flex bg-gray-200 dark:bg-gray-700 rounded-full p-0.5 transition-colors" role="group" aria-label="Theme selection">
-                        <button data-theme="light" title="Light theme" aria-label="Switch to light theme" class="p-1.5 rounded-full text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 transition-all">
+                    <div class="theme-toggle inline-flex bg-gray-200 dark:bg-gray-700 rounded-full p-0.5" role="group" aria-label="Theme selection">
+                        <button data-theme="light" title="Light theme" aria-label="Switch to light theme" class="theme-toggle-light p-1.5 rounded-full text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200">
                             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
                                 <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"></path>
                             </svg>
                         </button>
-                        <button data-theme="dark" title="Dark theme" aria-label="Switch to dark theme" class="p-1.5 rounded-full text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 transition-all">
+                        <button data-theme="dark" title="Dark theme" aria-label="Switch to dark theme" class="theme-toggle-dark p-1.5 rounded-full text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200">
                             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
                                 <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
                             </svg>
@@ -101,7 +101,7 @@ const Layout = {
 
     renderBackToTop() {
         return `
-            <button id="backToTop" class="fixed bottom-4 right-4 md:bottom-8 md:right-8 p-2.5 md:p-3 bg-blue-700 dark:bg-blue-600 text-white rounded-full shadow-lg hover:bg-blue-800 dark:hover:bg-blue-700 hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200 opacity-0 pointer-events-none" aria-label="Back to top">
+            <button id="backToTop" class="fixed bottom-4 right-4 md:bottom-8 md:right-8 p-2.5 md:p-3 bg-blue-700 dark:bg-blue-600 text-white rounded-full shadow-lg hover:bg-blue-800 dark:hover:bg-blue-700 hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200 hidden" aria-label="Back to top">
                 <svg class="w-4 h-4 md:w-5 md:h-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
                     <path fill-rule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd"></path>
                 </svg>
@@ -136,21 +136,61 @@ const Layout = {
     initBackToTop() {
         const backToTopButton = document.getElementById('backToTop');
         
-        const updateBackToTopVisibility = () => {
+        window.addEventListener('scroll', () => {
             if (window.pageYOffset > 300) {
-                backToTopButton.classList.remove('opacity-0', 'pointer-events-none');
-                backToTopButton.classList.add('opacity-100', 'pointer-events-auto');
+                backToTopButton.classList.remove('hidden');
             } else {
-                backToTopButton.classList.add('opacity-0', 'pointer-events-none');
-                backToTopButton.classList.remove('opacity-100', 'pointer-events-auto');
+                backToTopButton.classList.add('hidden');
             }
-        };
-        
-        window.addEventListener('scroll', updateBackToTopVisibility);
+        });
         
         backToTopButton.addEventListener('click', () => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
+    },
+
+    initThemeToggle() {
+        // Ensure DOM is ready
+        const setupThemeButtons = () => {
+            const lightButton = document.querySelector('.theme-toggle-light');
+            const darkButton = document.querySelector('.theme-toggle-dark');
+            
+            if (!lightButton || !darkButton) {
+                console.error('Theme toggle buttons not found');
+                return;
+            }
+            
+            if (typeof window.setTheme !== 'function') {
+                console.error('window.setTheme function not available');
+                return;
+            }
+            
+            // Remove any existing listeners to prevent duplicates
+            const newLightButton = lightButton.cloneNode(true);
+            const newDarkButton = darkButton.cloneNode(true);
+            lightButton.parentNode.replaceChild(newLightButton, lightButton);
+            darkButton.parentNode.replaceChild(newDarkButton, darkButton);
+            
+            // Add click listeners
+            newLightButton.addEventListener('click', (e) => {
+                e.preventDefault();
+                window.setTheme('light');
+            });
+            
+            newDarkButton.addEventListener('click', (e) => {
+                e.preventDefault();
+                window.setTheme('dark');
+            });
+            
+            // Update button states
+            if (typeof window.updateThemeToggle === 'function' && typeof window.getCurrentTheme === 'function') {
+                const currentTheme = window.getCurrentTheme();
+                window.updateThemeToggle(currentTheme);
+            }
+        };
+        
+        // Run setup immediately
+        setupThemeButtons();
     },
 
     init() {
@@ -174,6 +214,7 @@ const Layout = {
         this.initMobileMenu();
         this.initMobileSidebar();
         this.initBackToTop();
+        this.initThemeToggle();
     }
 };
 

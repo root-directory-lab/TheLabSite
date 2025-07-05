@@ -26,16 +26,6 @@
         
         color-scheme: dark;
     }
-    
-    * {
-        @apply transition-colors duration-200;
-    }
-}
-
-@layer utilities {
-    .theme-transition {
-        transition: color 200ms, background-color 200ms, border-color 200ms, fill 200ms, stroke 200ms;
-    }
 }
 
 body {
@@ -109,31 +99,18 @@ body.rtl #backToTop {
     }
 }
 
-#theme-toggle {
-    @apply relative overflow-hidden;
+* {
+    transition-property: background-color, border-color, color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 200ms;
 }
 
-#theme-toggle svg {
-    @apply transition-transform duration-500 ease-in-out;
+#mainNav {
+    transition: all 0.3s ease-in-out;
 }
 
-#theme-toggle .sun-icon {
-    @apply dark:rotate-180 dark:scale-0;
-}
-
-#theme-toggle .moon-icon {
-    @apply absolute inset-0 m-auto rotate-180 scale-0 dark:rotate-0 dark:scale-100;
-}
-
-@media (prefers-reduced-motion: reduce) {
-    * {
-        transition-duration: 0.01ms !important;
-    }
-}
-
-#mainNav,
 #sidebarContent {
-    @apply transition-all duration-300 ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 @media (max-width: 767px) {
@@ -171,7 +148,7 @@ body.rtl #backToTop {
     #mobileSidebarToggle,
     #top-right button,
     #top-right select,
-    #theme-toggle,
+    .theme-toggle,
     #backToTop,
     footer {
         display: none !important;

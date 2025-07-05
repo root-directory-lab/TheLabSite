@@ -19,24 +19,32 @@
     
     function getInitialTheme() {
         const storedTheme = getStoredTheme();
-        return (storedTheme === 'light' || storedTheme === 'dark') ? storedTheme : getSystemTheme();
+        if (storedTheme && (storedTheme === 'light' || storedTheme === 'dark')) {
+            return storedTheme;
+        }
+        
+        return getSystemTheme();
     }
     
     function applyTheme(theme) {
-        document.documentElement.classList.toggle('dark', theme === 'dark');
-        document.documentElement.setAttribute('data-theme', theme);
+        if (theme === 'dark') {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
     }
     
     function updateThemeToggle(theme) {
-        document.querySelectorAll('.theme-toggle button').forEach(btn => {
-            const isActive = btn.dataset.theme === theme;
-            btn.classList.toggle('bg-white', isActive && theme === 'light');
-            btn.classList.toggle('dark:bg-gray-800', isActive);
-            btn.classList.toggle('text-gray-900', isActive && theme === 'light');
-            btn.classList.toggle('dark:text-white', isActive);
-            btn.classList.toggle('shadow-sm', isActive);
-            btn.classList.toggle('text-gray-500', !isActive);
-            btn.classList.toggle('dark:text-gray-400', !isActive);
+        const buttons = document.querySelectorAll('.theme-toggle button');
+        buttons.forEach(btn => {
+            const baseClasses = 'p-1.5 rounded-full hover:text-gray-700 dark:hover:text-gray-200';
+            if (btn.dataset.theme === theme) {
+                const activeClasses = 'bg-white dark:bg-gray-800 text-gray-900 dark:text-white shadow-sm';
+                btn.className = `${baseClasses} ${activeClasses}`;
+            } else {
+                const inactiveClasses = 'text-gray-500 dark:text-gray-400';
+                btn.className = `${baseClasses} ${inactiveClasses}`;
+            }
         });
     }
     
@@ -52,18 +60,12 @@
         
         document.addEventListener('DOMContentLoaded', () => {
             updateThemeToggle(theme);
-            
-            document.addEventListener('click', (e) => {
-                const themeButton = e.target.closest('.theme-toggle button');
-                if (themeButton && themeButton.dataset.theme) {
-                    setTheme(themeButton.dataset.theme);
-                }
-            });
         });
     }
     
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-        if (!getStoredTheme()) {
+        const storedTheme = getStoredTheme();
+        if (!storedTheme) {
             const newTheme = e.matches ? 'dark' : 'light';
             applyTheme(newTheme);
             updateThemeToggle(newTheme);
@@ -73,6 +75,6 @@
     initializeTheme();
     
     window.setTheme = setTheme;
-    window.getCurrentTheme = getCurrentTheme;
     window.updateThemeToggle = updateThemeToggle;
+    window.getCurrentTheme = getCurrentTheme;
 })();
