@@ -29,16 +29,16 @@
     },
     "employment": {
         "tsinghua": {
-            "title": "Associate Professor (Tenured), 2023 – Present",
+            "title": "Associate Professor (Tenured), 2023 - Present",
             "school1": "Shenzhen International Graduate School, Tsinghua University",
             "school2": "School of Economics and Management, Tsinghua University (Dual Appointment)"
         },
         "uq": {
-            "title": "Honorary Associate Professor in Economics, 2023–2026",
+            "title": "Honorary Associate Professor in Economics, 2023-2026",
             "school": "University of Queensland"
         },
         "hku": {
-            "title": "Assistant Professor, 2015–2023",
+            "title": "Assistant Professor, 2015-2023",
             "school": "HKU Business School, The University of Hong Kong"
         },
         "suny": {
@@ -59,9 +59,9 @@
         }
     },
     "grants": {
-        "grf2022": "HK General Research Fund (GRF), University Grants Committee, 2022–2023",
-        "grf2018": "HK General Research Fund (GRF), University Grants Committee, 2018–2019",
-        "ecs2016": "HK General Research Fund (ECS), University Grants Committee, 2016–2017",
+        "grf2022": "HK General Research Fund (GRF), University Grants Committee, 2022-2023",
+        "grf2018": "HK General Research Fund (GRF), University Grants Committee, 2018-2019",
+        "ecs2016": "HK General Research Fund (ECS), University Grants Committee, 2016-2017",
         "ikep": "Interdisciplinary Knowledge Exchange Project Fund, HKU, 2016",
         "matching": "Matching Fund, HKU, 2015",
         "seed": "Seed Fund, HKU, 2015"
@@ -103,9 +103,9 @@
         "vandijk2021": "Bureau van Dijk Prize in Corporate Finance, 34th UNSW Australian Finance and Banking Conference, 2021",
         "supervision2021": "Faculty Research Postgraduate Supervision Award, The University of Hong Kong, 2021",
         "vandijk2018": "Bureau van Dijk Prize in Corporate Finance, 31st UNSW Australian Finance and Banking Conference, 2018",
-        "summer": "Summer Stipend, Columbia University, 2009–2015",
-        "faculty": "Faculty Fellowship, Columbia University, 2009–2015",
-        "mcm": "Meritorious Winner (Top 2–12%), American Mathematical Contest in Modeling, 2008",
+        "summer": "Summer Stipend, Columbia University, 2009-2015",
+        "faculty": "Faculty Fellowship, Columbia University, 2009-2015",
+        "mcm": "Meritorious Winner (Top 2-12%), American Mathematical Contest in Modeling, 2008",
         "comprehensive": "Comprehensive Scholarship Award, Tsinghua University, 2008",
         "cumcm": "First Prize, Chinese Mathematical Contest in Modeling, 2007",
         "ccb": "China Construction Bank Fellowship, Tsinghua University, 2007",
@@ -125,13 +125,13 @@
         "seminars": "Seminars on Advanced Topics in Finance, Master, Tsinghua University, 2024",
         "crypto": "Cryptography and Network Security, Master, Tsinghua University, 2024",
         "frontier": "Research on Frontier Issues in Finance, Master, Tsinghua University, 2023",
-        "programming": "Advanced Financial Programming and Databases, Master, HKU, 2017–2022",
-        "databases": "Financial Programming and Databases, Undergraduate, HKU, 2017–2022",
-        "corporate": "Corporate Finance, Undergraduate, HKU, 2016–2022",
+        "programming": "Advanced Financial Programming and Databases, Master, HKU, 2017-2022",
+        "databases": "Financial Programming and Databases, Undergraduate, HKU, 2017-2022",
+        "corporate": "Corporate Finance, Undergraduate, HKU, 2016-2022",
         "money": "Money and Banking, Master and Undergraduate, State University of New York, 2014",
         "financial": "Financial Management, Master and Undergraduate, State University of New York, 2014",
         "micro": "Microeconomics, Master, Columbia University (TA), 2010",
-        "corporate2": "Corporate Finance, Master and Undergraduate, Columbia University (TA), 2010–2015",
+        "corporate2": "Corporate Finance, Master and Undergraduate, Columbia University (TA), 2010-2015",
         "statistics": "Statistics of Sustainability Management, Master, Columbia University (TA), 2011",
         "principles": "Principles of Economics, Undergraduate, Columbia University (TA), 2012/2011",
         "principles2": "Principles of Economics, Undergraduate, Tsinghua University (TA), 2008"
