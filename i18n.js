@@ -22,12 +22,38 @@ const languages = {
 
 const rtlLanguages = ['ar-SA', 'he-IL'];
 
+const localStorageAvailable = () => {
+    try {
+        const x = '__storage_test__';
+        localStorage.setItem(x, x);
+        localStorage.removeItem(x);
+        return true;
+    } catch (e) {
+        return false;
+    }
+};
+
+const memoryStorage = {
+    data: {},
+    getItem(key) {
+        return this.data[key] || null;
+    },
+    setItem(key, value) {
+        this.data[key] = value;
+    },
+    removeItem(key) {
+        delete this.data[key];
+    }
+};
+
+const storage = localStorageAvailable() ? localStorage : memoryStorage;
+
 function getStoredLanguage() {
-    return localStorage.getItem(LANG_KEY);
+    return storage.getItem(LANG_KEY);
 }
 
 function storeLanguage(lang) {
-    localStorage.setItem(LANG_KEY, lang);
+    storage.setItem(LANG_KEY, lang);
 }
 
 function getInitialLanguage() {
