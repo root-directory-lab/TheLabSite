@@ -44,6 +44,21 @@ async function initializeTranslations() {
         return;
     }
     
+    const fallbackTranslations = {
+        'sidebar': {
+            'toggle': 'View Profile Info'
+        }
+    };
+    
+    for (const lang of Object.keys(translations)) {
+        if (!translations[lang].sidebar) {
+            translations[lang].sidebar = {};
+        }
+        if (!translations[lang].sidebar.toggle) {
+            translations[lang].sidebar.toggle = fallbackTranslations.sidebar.toggle;
+        }
+    }
+    
     updateLanguage(currentLang);
 }
 
@@ -90,6 +105,16 @@ function updateLanguage(lang) {
             element.textContent = value;
         }
     });
+    
+    const mobileSidebarToggle = document.getElementById('mobileSidebarToggle');
+    const sidebarContent = document.getElementById('sidebarContent');
+    if (mobileSidebarToggle && sidebarContent) {
+        const isHidden = sidebarContent.classList.contains('hidden');
+        const toggleText = translations[lang].sidebar && translations[lang].sidebar.toggle 
+            ? translations[lang].sidebar.toggle 
+            : 'View Profile Info';
+        mobileSidebarToggle.innerHTML = `<span data-i18n="sidebar.toggle">${isHidden ? toggleText : toggleText.replace('View', 'Hide')}</span>`;
+    }
 }
 
 function changeLanguage(lang) {

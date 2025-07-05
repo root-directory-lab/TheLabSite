@@ -60,7 +60,13 @@ body.rtl #langSelect {
 
 body.rtl #backToTop {
     right: auto;
-    left: 2rem;
+    left: 1rem;
+}
+
+@media (min-width: 768px) {
+    body.rtl #backToTop {
+        left: 2rem;
+    }
 }
 
 * {
@@ -69,12 +75,67 @@ body.rtl #backToTop {
     transition-duration: 200ms;
 }
 
+#mainNav {
+    transition: all 0.3s ease-in-out;
+}
+
+#sidebarContent {
+    transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 767px) {
+    #pagecell1 {
+        max-width: 100%;
+    }
+    
+    .list-disc,
+    .list-decimal {
+        padding-left: 1.5rem;
+    }
+    
+    body.rtl .list-disc,
+    body.rtl .list-decimal {
+        padding-right: 1.5rem;
+        padding-left: 0;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    h2 {
+        font-size: 1.25rem;
+    }
+    
+    ol > li,
+    ul > li {
+        margin-bottom: 0.75rem;
+    }
+}
+
 @media print {
+    #mobileMenuToggle,
+    #mobileSidebarToggle,
     #top-right button,
     #top-right select,
     .theme-toggle,
     #backToTop,
     footer {
         display: none !important;
+    }
+    
+    #mainNav,
+    #sidebarContent {
+        display: block !important;
+    }
+    
+    .flex {
+        display: block !important;
+    }
+    
+    #left,
+    #content {
+        width: 100% !important;
+        float: none !important;
     }
 }
