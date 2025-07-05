@@ -10,6 +10,7 @@ const languages = {
     'ko_KR': '한국어',
     'ru_RU': 'Русский',
     'ar_SA': 'العربية',
+    'he_IL': 'עברית',
     'vi_VN': 'Tiếng Việt',
     'th_TH': 'ภาษาไทย',
     'de_DE': 'Deutsch',
