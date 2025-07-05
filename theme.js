@@ -57,23 +57,17 @@
     function initializeTheme() {
         const theme = getInitialTheme();
         applyTheme(theme);
-        
-        document.addEventListener('DOMContentLoaded', () => {
-            updateThemeToggle(theme);
-        });
     }
     
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
         const storedTheme = getStoredTheme();
         if (!storedTheme) {
             const newTheme = e.matches ? 'dark' : 'light';
-            applyTheme(newTheme);
-            updateThemeToggle(newTheme);
+            setTheme(newTheme);
         }
     });
     
     initializeTheme();
-    
     window.setTheme = setTheme;
     window.updateThemeToggle = updateThemeToggle;
     window.getCurrentTheme = getCurrentTheme;

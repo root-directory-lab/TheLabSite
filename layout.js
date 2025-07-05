@@ -42,12 +42,12 @@ const Layout = {
                     </select>
                     <span class="hidden md:inline text-gray-400 mx-2" aria-hidden="true">|</span>
                     <div class="theme-toggle inline-flex bg-gray-200 dark:bg-gray-700 rounded-full p-0.5" role="group" aria-label="Theme selection">
-                        <button data-theme="light" title="Light theme" aria-label="Switch to light theme" class="theme-toggle-light p-1.5 rounded-full text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200">
+                        <button data-theme="light" title="Light theme" aria-label="Switch to light theme" class="p-1.5 rounded-full text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200">
                             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
                                 <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"></path>
                             </svg>
                         </button>
-                        <button data-theme="dark" title="Dark theme" aria-label="Switch to dark theme" class="theme-toggle-dark p-1.5 rounded-full text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200">
+                        <button data-theme="dark" title="Dark theme" aria-label="Switch to dark theme" class="p-1.5 rounded-full text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200">
                             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
                                 <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
                             </svg>
@@ -150,47 +150,28 @@ const Layout = {
     },
 
     initThemeToggle() {
-        // Ensure DOM is ready
-        const setupThemeButtons = () => {
-            const lightButton = document.querySelector('.theme-toggle-light');
-            const darkButton = document.querySelector('.theme-toggle-dark');
-            
-            if (!lightButton || !darkButton) {
-                console.error('Theme toggle buttons not found');
-                return;
-            }
-            
-            if (typeof window.setTheme !== 'function') {
-                console.error('window.setTheme function not available');
-                return;
-            }
-            
-            // Remove any existing listeners to prevent duplicates
-            const newLightButton = lightButton.cloneNode(true);
-            const newDarkButton = darkButton.cloneNode(true);
-            lightButton.parentNode.replaceChild(newLightButton, lightButton);
-            darkButton.parentNode.replaceChild(newDarkButton, darkButton);
-            
-            // Add click listeners
-            newLightButton.addEventListener('click', (e) => {
-                e.preventDefault();
-                window.setTheme('light');
-            });
-            
-            newDarkButton.addEventListener('click', (e) => {
-                e.preventDefault();
-                window.setTheme('dark');
-            });
-            
-            // Update button states
-            if (typeof window.updateThemeToggle === 'function' && typeof window.getCurrentTheme === 'function') {
-                const currentTheme = window.getCurrentTheme();
-                window.updateThemeToggle(currentTheme);
-            }
-        };
-        
-        // Run setup immediately
-        setupThemeButtons();
+        // Use the more robust `data-theme` attribute for selection
+        const lightButton = document.querySelector('button[data-theme="light"]');
+        const darkButton = document.querySelector('button[data-theme="dark"]');
+
+        if (!lightButton || !darkButton) {
+            console.error('Theme toggle buttons not found in the DOM.');
+            return;
+        }
+
+        // Ensure the global functions from theme.js are available
+        if (typeof window.setTheme !== 'function' || typeof window.updateThemeToggle !== 'function' || typeof window.getCurrentTheme !== 'function') {
+            console.error('Theme functions are not available on the window object. Make sure theme.js is loaded correctly.');
+            return;
+        }
+
+        // Add click listeners to the buttons
+        lightButton.addEventListener('click', () => window.setTheme('light'));
+        darkButton.addEventListener('click', () => window.setTheme('dark'));
+
+        // Set the initial visual state of the toggle. This is crucial because theme.js
+        // applies the theme before these buttons are rendered by layout.js.
+        window.updateThemeToggle(window.getCurrentTheme());
     },
 
     init() {
