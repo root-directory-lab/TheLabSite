@@ -194,7 +194,12 @@
         },
         "section6": {
             "title": "6. สถานที่ทำงาน",
-            "content": "Tsinghua University Shenzhen International Graduate School, สถาบันวิจัยเซินเจิ้นของ School of Economics and Management Tsinghua University, วิทยาเขตเซินเจิ้นของ HKU Business School, วิทยาเขต St Lucia ของ Queensland University"
+            "list": {
+                "item1": "Tsinghua University Shenzhen International Graduate School",
+                "item2": "สถาบันวิจัยเซินเจิ้นของ School of Economics and Management Tsinghua University",
+                "item3": "วิทยาเขตเซินเจิ้นของ HKU Business School",
+                "item4": "วิทยาเขต St Lucia ของ Queensland University"
+            }
         },
         "section7": {
             "title": "7. ข้อมูลติดต่อ",

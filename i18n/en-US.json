@@ -194,7 +194,12 @@
         },
         "section6": {
             "title": "6. Work Location",
-            "content": "Tsinghua University Shenzhen International Graduate School, Tsinghua University School of Economics and Management Shenzhen Research Institute, University of Hong Kong Business School Shenzhen Campus, Queensland University St Lucia Campus"
+            "list": {
+                "item1": "Tsinghua University Shenzhen International Graduate School",
+                "item2": "Tsinghua University School of Economics and Management Shenzhen Research Institute",
+                "item3": "University of Hong Kong Business School Shenzhen Campus",
+                "item4": "Queensland University St Lucia Campus"
+            }
         },
         "section7": {
             "title": "7. Contact Information",

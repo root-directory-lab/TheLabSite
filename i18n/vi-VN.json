@@ -194,7 +194,12 @@
         },
         "section6": {
             "title": "6. Địa điểm Làm việc",
-            "content": "Tsinghua University Shenzhen International Graduate School, Viện Nghiên cứu Shenzhen của School of Economics and Management Tsinghua University, Cơ sở Shenzhen của HKU Business School, Cơ sở St Lucia của Queensland University"
+            "list": {
+                "item1": "Tsinghua University Shenzhen International Graduate School",
+                "item2": "Viện Nghiên cứu Shenzhen của School of Economics and Management Tsinghua University",
+                "item3": "Cơ sở Shenzhen của HKU Business School",
+                "item4": "Cơ sở St Lucia của Queensland University"
+            }
         },
         "section7": {
             "title": "7. Thông tin Liên hệ",

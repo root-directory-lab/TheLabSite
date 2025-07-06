@@ -194,7 +194,12 @@
         },
         "section6": {
             "title": "6. Lugar de trabajo",
-            "content": "Escuela de Posgrado Internacional de Shenzhen de la Universidad Tsinghua, Instituto de Investigación de Shenzhen de la Escuela de Economía y Gestión de la Universidad Tsinghua, Campus de Shenzhen de la Escuela de Negocios de la Universidad de Hong Kong, Campus St Lucia de la Universidad de Queensland"
+            "list": {
+                "item1": "Escuela de Posgrado Internacional de Shenzhen de la Universidad Tsinghua",
+                "item2": "Instituto de Investigación de Shenzhen de la Escuela de Economía y Gestión de la Universidad Tsinghua",
+                "item3": "Campus de Shenzhen de la Escuela de Negocios de la Universidad de Hong Kong",
+                "item4": "Campus St Lucia de la Universidad de Queensland"
+            }
         },
         "section7": {
             "title": "7. Información de contacto",

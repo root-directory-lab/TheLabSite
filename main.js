@@ -83,7 +83,7 @@
 
         sidebar: `
         <aside class="w-full md:w-80 lg:w-96 bg-gray-50 dark:bg-gray-800 p-6 md:border-r border-gray-300 dark:border-gray-700">
-            <img src="assets/avatar.webp" alt="Professor Zigan Wang - Associate Professor at Tsinghua University" class="w-48 h-48 mx-auto mb-6 rounded-lg shadow-md hover:shadow-lg transition-shadow object-cover" loading="lazy" width="192" height="192">
+            <img src="assets/avatar.webp" alt="Professor Zigan Wang - Associate Professor at Tsinghua University" class="w-48 h-48 mx-auto mb-6 rounded-lg shadow-md hover:shadow-lg hover:scale-110 transition-all duration-300 object-cover avatar-image" loading="lazy" width="192" height="192" data-original="assets/avatar.webp" data-hover="assets/smile.webp">
             <div class="space-y-4">
                 <div>
                     <p class="text-sm leading-relaxed">
@@ -341,6 +341,23 @@
                 btn.dataset.initialized = 'true';
             }
         });
+        
+        // Avatar hover effect
+        const avatarImage = document.querySelector('.avatar-image');
+        if (avatarImage && !avatarImage.dataset.initialized) {
+            const originalSrc = avatarImage.dataset.original;
+            const hoverSrc = avatarImage.dataset.hover;
+            
+            avatarImage.addEventListener('mouseenter', () => {
+                avatarImage.src = hoverSrc;
+            });
+            
+            avatarImage.addEventListener('mouseleave', () => {
+                avatarImage.src = originalSrc;
+            });
+            
+            avatarImage.dataset.initialized = 'true';
+        }
     }
 
     async function changeLanguage(lang) {

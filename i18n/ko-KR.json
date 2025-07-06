@@ -194,7 +194,12 @@
         },
         "section6": {
             "title": "6. 근무지",
-            "content": "Tsinghua University Shenzhen International Graduate School, Tsinghua University School of Economics and Management 선전연구원, University of Hong Kong Business School 선전캠퍼스, Queensland University St Lucia 캠퍼스"
+            "list": {
+                "item1": "Tsinghua University Shenzhen International Graduate School",
+                "item2": "Tsinghua University School of Economics and Management 선전연구원",
+                "item3": "University of Hong Kong Business School 선전캠퍼스",
+                "item4": "Queensland University St Lucia 캠퍼스"
+            }
         },
         "section7": {
             "title": "7. 연락처",
