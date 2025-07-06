@@ -3,7 +3,8 @@
     "nav": {
         "home": "ホーム",
         "publications": "論文発表",
-        "team": "チーム（採用中）"
+        "team": "チーム（採用中）",
+        "analytics": "アナリティクス"
     },
     "research": {
         "interests": "研究分野：",

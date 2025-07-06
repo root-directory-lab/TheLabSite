@@ -3,7 +3,8 @@
     "nav": {
         "home": "首頁",
         "publications": "發表論文",
-        "team": "團隊（招聘中）"
+        "team": "團隊（招聘中）",
+        "analytics": "訪問統計"
     },
     "research": {
         "interests": "研究興趣：",

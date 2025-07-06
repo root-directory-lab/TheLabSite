@@ -3,7 +3,8 @@
     "nav": {
         "home": "首页",
         "publications": "发表论文",
-        "team": "团队（招聘中）"
+        "team": "团队（招聘中）",
+        "analytics": "访问统计"
     },
     "research": {
         "interests": "研究兴趣：",

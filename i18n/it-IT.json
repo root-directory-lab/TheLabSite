@@ -3,7 +3,8 @@
     "nav": {
         "home": "Home",
         "publications": "Pubblicazioni",
-        "team": "Team (Stiamo assumendo)"
+        "team": "Team (Stiamo assumendo)",
+        "analytics": "Analitica"
     },
     "research": {
         "interests": "Interessi di ricerca:",
