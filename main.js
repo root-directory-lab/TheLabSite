@@ -1,3 +1,19 @@
+function initBackToTop() {
+    const backToTopButton = document.getElementById('backToTop');
+    
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 0) {
+            backToTopButton.classList.remove('hidden');
+        } else {
+            backToTopButton.classList.add('hidden');
+        }
+    }, { passive: true });
+    
+    backToTopButton.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+}
+
 function initTheme() {
     const savedTheme = sessionStorage.getItem('theme') || localStorage.getItem('theme');
     
@@ -7,13 +23,14 @@ function initTheme() {
     } else {
         const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
         const defaultTheme = systemPrefersDark ? 'dark' : 'light';
+        localStorage.setItem('theme', defaultTheme);
         applyTheme(defaultTheme);
         updateThemeToggle(defaultTheme);
     }
 }
 
 function applyTheme(theme) {
-    document.documentElement.classList.toggle('dark', theme === 'dark');
+    document.documentElement.setAttribute('data-theme', theme);
 }
 
 function setTheme(theme) {
@@ -32,4 +49,7 @@ function updateThemeToggle(theme) {
     });
 }
 
-document.addEventListener('DOMContentLoaded', initTheme);
+document.addEventListener('DOMContentLoaded', function() {
+    initTheme();
+    initBackToTop();
+});
