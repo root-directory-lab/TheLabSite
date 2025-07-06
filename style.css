@@ -261,6 +261,8 @@ nav a, nav span, nav select, nav .theme-toggle, nav > * {
     padding: 2px;
     gap: 2px;
     align-items: center;
+    opacity: 1;
+    visibility: visible;
 }
 
 .dark .theme-toggle {
@@ -370,7 +372,8 @@ nav a, nav span, nav select, nav .theme-toggle, nav > * {
 }
 
 svg {
-    display: block;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 svg path {
@@ -504,6 +507,28 @@ svg path {
     transition-duration: 150ms;
 }
 
+.transition-all {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+.duration-200 {
+    transition-duration: 200ms;
+}
+
+.bottom-8 {
+    bottom: 2rem;
+}
+
+.right-8 {
+    right: 2rem;
+}
+
+.p-3 {
+    padding: 0.75rem;
+}
+
 .w-5 {
     width: 1.25rem;
 }
@@ -512,7 +537,7 @@ svg path {
     height: 1.25rem;
 }
 
-.rtl #backToTop {
+.rtl .right-8 {
     right: auto;
     left: 2rem;
 }

@@ -1,5 +1,6 @@
 let translations = {};
-let currentLang = localStorage.getItem('language') || 'en-US';
+let currentLang = 'en-US';
+let isInitialized = false;
 
 const languages = {
     'en-US': 'English',
@@ -32,6 +33,11 @@ async function loadTranslation(lang) {
 }
 
 async function initializeTranslations() {
+    if (isInitialized) return;
+    
+    const storedLang = sessionStorage.getItem('language') || 'en-US';
+    currentLang = storedLang;
+    
     for (const lang of Object.keys(languages)) {
         const translation = await loadTranslation(lang);
         if (translation) {
@@ -44,6 +50,7 @@ async function initializeTranslations() {
         return;
     }
     
+    isInitialized = true;
     updateLanguage(currentLang);
 }
 
@@ -54,7 +61,7 @@ function updateLanguage(lang) {
     }
     
     currentLang = lang;
-    localStorage.setItem('language', lang);
+    sessionStorage.setItem('language', lang);
     document.documentElement.lang = lang;
     
     if (rtlLanguages.includes(lang)) {
