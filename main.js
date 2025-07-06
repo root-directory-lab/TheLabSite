@@ -81,7 +81,7 @@
 
         sidebar: `
         <aside class="w-full md:w-80 lg:w-96 bg-gray-50 dark:bg-gray-800 p-6 md:border-r border-gray-300 dark:border-gray-700">
-            <img src="assets/avatar.jpeg" alt="Zigan Wang" class="w-48 h-48 mx-auto mb-6 rounded-lg shadow-md hover:shadow-lg transition-shadow object-cover" loading="lazy">
+            <img src="assets/avatar.webp" alt="Zigan Wang" class="w-48 h-48 mx-auto mb-6 rounded-lg shadow-md hover:shadow-lg transition-shadow object-cover" loading="lazy">
             <div class="space-y-4">
                 <div>
                     <p class="text-sm leading-relaxed">
