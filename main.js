@@ -44,7 +44,7 @@
                     <h1 class="text-3xl font-bold text-primary-dark dark:text-gray-100 mb-1">
                         <a href="index.html" class="hover:underline">Zigan Wang</a>
                     </h1>
-                    <span class="text-gray-700 dark:text-gray-300" data-i18n="title">Associate Professor at Tsinghua University</span>
+                    <p class="text-gray-700 dark:text-gray-300" data-i18n="title">Associate Professor at Tsinghua University</p>
                 </div>
                 <nav class="flex flex-wrap items-center gap-2 text-sm">
                     <a href="index.html" class="text-primary dark:text-blue-400 hover:underline font-medium" data-i18n="nav.home">Home</a>
@@ -83,7 +83,7 @@
 
         sidebar: `
         <aside class="w-full md:w-80 lg:w-96 bg-gray-50 dark:bg-gray-800 p-6 md:border-r border-gray-300 dark:border-gray-700">
-            <img src="assets/avatar.webp" alt="Zigan Wang" class="w-48 h-48 mx-auto mb-6 rounded-lg shadow-md hover:shadow-lg transition-shadow object-cover" loading="lazy">
+            <img src="assets/avatar.webp" alt="Professor Zigan Wang - Associate Professor at Tsinghua University" class="w-48 h-48 mx-auto mb-6 rounded-lg shadow-md hover:shadow-lg transition-shadow object-cover" loading="lazy" width="192" height="192">
             <div class="space-y-4">
                 <div>
                     <p class="text-sm leading-relaxed">
@@ -93,7 +93,7 @@
                 </div>
                 <div>
                     <a href="mailto:wangzigan@sz.tsinghua.edu.cn" class="text-primary dark:text-blue-400 hover:underline inline-flex items-center text-sm">
-                        <svg class="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                        <svg class="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/>
                         </svg>
                         Email
