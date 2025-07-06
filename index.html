@@ -1,3 +1,4 @@
+<!-- Path: index.html -->
 <!doctype html>
 <html lang="en-US">
 <head>
@@ -53,84 +54,14 @@
     </style>
 </head>
 
-<body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 transition-colors duration-200 antialiased rtl:font-arabic">
-    <div class="max-w-[1200px] mx-auto bg-white dark:bg-gray-800 shadow-sm min-h-screen flex flex-col">
-        <header class="w-full px-6 py-4 border-b border-gray-300 dark:border-gray-700">
-            <div class="flex flex-col md:flex-row md:items-center md:justify-between">
-                <div>
-                    <h1 class="text-3xl font-bold text-primary-dark dark:text-gray-100 mb-1">
-                        <a href="index.html" class="hover:underline">Zigan Wang</a>
-                    </h1>
-                    <span class="text-gray-700 dark:text-gray-300" data-i18n="title">Associate Professor at Tsinghua University</span>
-                </div>
-                <nav class="mt-4 md:mt-0 flex flex-wrap items-center gap-2 text-sm rtl:flex-row-reverse">
-                    <a href="index.html" class="text-primary dark:text-blue-400 hover:underline font-medium" data-i18n="nav.home">Home</a>
-                    <span class="text-gray-400">|</span>
-                    <a href="pub.html" class="text-primary dark:text-blue-400 hover:underline font-medium" data-i18n="nav.publications">Publications</a>
-                    <span class="text-gray-400">|</span>
-                    <a href="team.html" class="text-primary dark:text-blue-400 hover:underline font-medium" data-i18n="nav.team">Team (We Are Hiring)</a>
-                    <span class="text-gray-400">|</span>
-                    <select id="langSelect" onchange="changeLanguage(this.value)" aria-label="Language selection" class="px-2 py-1 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-sm focus:outline-none focus:ring-2 focus:ring-primary dark:focus:ring-blue-400 focus:border-transparent">
-                        <option value="en-US">English</option>
-                        <option value="zh-CN">简体中文</option>
-                        <option value="zh-TW">繁體中文</option>
-                        <option value="ja-JP">日本語</option>
-                        <option value="ko-KR">한국어</option>
-                        <option value="ru-RU">Русский</option>
-                        <option value="ar-SA">العربية</option>
-                        <option value="he-IL">עברית</option>
-                        <option value="vi-VN">Tiếng Việt</option>
-                        <option value="th-TH">ภาษาไทย</option>
-                        <option value="de-DE">Deutsch</option>
-                        <option value="fr-FR">Français</option>
-                        <option value="es-ES">Español</option>
-                        <option value="it-IT">Italiano</option>
-                    </select>
-                    <span class="text-gray-400">|</span>
-                    <div class="theme-toggle inline-flex bg-gray-200 dark:bg-gray-600 rounded-full p-0.5">
-                        <button data-theme="light" onclick="setTheme('light')" title="Light theme" aria-label="Switch to light theme" class="p-1.5 rounded-full text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 transition-colors">
-                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"></path>
-                            </svg>
-                        </button>
-                        <button data-theme="dark" onclick="setTheme('dark')" title="Dark theme" aria-label="Switch to dark theme" class="p-1.5 rounded-full text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 transition-colors">
-                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
-                            </svg>
-                        </button>
-                    </div>
-                    <span class="text-gray-400">|</span>
-                    <a href="https://github.com/orgs/root-directory-lab" target="_blank" class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100" title="GitHub">
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                        </svg>
-                    </a>
-                </nav>
-            </div>
-        </header>
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 transition-colors duration-200 antialiased">
+    <div class="max-w-7xl mx-auto bg-white dark:bg-gray-800 shadow-sm min-h-screen flex flex-col">
+        <div id="header"></div>
 
         <div class="flex flex-col md:flex-row flex-grow">
-            <aside class="w-full md:w-1/4 bg-gray-50 dark:bg-gray-800 p-6">
-                <img src="assets/avatar.jpeg" alt="Zigan Wang" class="w-full max-w-[300px] mx-auto mb-6 rounded-lg shadow-md hover:shadow-lg transition-shadow" loading="lazy">
-                <div class="space-y-4">
-                    <div>
-                        <p class="text-sm">
-                            <strong data-i18n="research.interests">Research Interests:</strong> 
-                            <span data-i18n="research.fields">Applied Microeconomics, International Economics, Environmental Economics, Political and Law Economics, Economic Networks, Econometrics, Computer Vision, Knowledge Graph, GAN.</span>
-                        </p>
-                    </div>
-                    <div>
-                        <a href="mailto:wangzigan@sz.tsinghua.edu.cn" class="text-primary dark:text-blue-400 hover:underline inline-flex items-center text-sm">
-                            <svg class="w-4 h-4 mr-1.5 rtl:mr-0 rtl:ml-1.5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 8.5L12 5.5L15 8.5M12 5.5V15.5M5 11.5V19.5H19V11.5"/>
-                            </svg>
-                            Email
-                        </a>
-                    </div>
-                </div>
-            </aside>
+            <div id="sidebar"></div>
 
-            <main class="w-full md:w-3/4 p-6 bg-white dark:bg-gray-800">
+            <main class="flex-1 p-6 md:p-8 lg:p-10 bg-white dark:bg-gray-800">
                 <section class="mb-8">
                     <h2 class="text-xl font-bold text-section dark:text-blue-400 mb-4" data-i18n="sections.research">Research Interests</h2>
                     <div class="px-2">
@@ -140,7 +71,7 @@
 
                 <section class="mb-8">
                     <h2 class="text-xl font-bold text-section dark:text-blue-400 mb-4" data-i18n="sections.employment">Employment</h2>
-                    <ul class="list-disc ml-8 rtl:mr-8 rtl:ml-0 space-y-3">
+                    <ul class="list-disc ml-6 space-y-3">
                         <li>
                             <span data-i18n="employment.tsinghua.title">Associate Professor (Tenured), 2023 - Present</span><br>
                             <span class="text-gray-600 dark:text-gray-400" data-i18n="employment.tsinghua.school1">Shenzhen International Graduate School, Tsinghua University</span><br>
@@ -163,7 +94,7 @@
 
                 <section class="mb-8">
                     <h2 class="text-xl font-bold text-section dark:text-blue-400 mb-4" data-i18n="sections.education">Education</h2>
-                    <ul class="list-disc ml-8 rtl:mr-8 rtl:ml-0 space-y-3">
+                    <ul class="list-disc ml-6 space-y-3">
                         <li>
                             <span data-i18n="education.phd.title">Economics Ph.D., 2015, Columbia University, New York | Concentration: Finance</span><br>
                             <span class="text-gray-600 dark:text-gray-400" data-i18n="education.phd.committee">Dissertation Committee: Patrick Bolton, Ailsa Röell, José Scheinkman, Dan J. Wang, Tri Vi Dang</span>
@@ -179,7 +110,7 @@
 
                 <section class="mb-8">
                     <h2 class="text-xl font-bold text-section dark:text-blue-400 mb-4" data-i18n="sections.grants">Awarded Research Funds and Grants</h2>
-                    <ul class="list-disc ml-8 rtl:mr-8 rtl:ml-0 space-y-2">
+                    <ul class="list-disc ml-6 space-y-2">
                         <li data-i18n="grants.grf2022">HK General Research Fund (GRF), University Grants Committee, 2022-2023</li>
                         <li data-i18n="grants.grf2018">HK General Research Fund (GRF), University Grants Committee, 2018-2019</li>
                         <li data-i18n="grants.ecs2016">HK General Research Fund (ECS), University Grants Committee, 2016-2017</li>
@@ -191,7 +122,7 @@
 
                 <section class="mb-8">
                     <h2 class="text-xl font-bold text-section dark:text-blue-400 mb-4" data-i18n="sections.service">Academic Service</h2>
-                    <ol class="list-decimal ml-8 rtl:mr-8 rtl:ml-0 space-y-2">
+                    <ol class="list-decimal ml-6 space-y-2">
                         <li>
                             <span data-i18n="service.referee">Ad-hoc Referee for:</span><br>
                             <span class="text-gray-600 dark:text-gray-400">WFA (x3), MS (x2), RFS, RF, JBF (x4), JCF, JEF, AEJ, JIMF, JCE, etc.</span>
@@ -210,7 +141,7 @@
 
                 <section class="mb-8">
                     <h2 class="text-xl font-bold text-section dark:text-blue-400 mb-4" data-i18n="sections.certificates">Certificates</h2>
-                    <ul class="list-disc ml-8 rtl:mr-8 rtl:ml-0 space-y-2">
+                    <ul class="list-disc ml-6 space-y-2">
                         <li>
                             <span data-i18n="certificates.harvard.title">Executive Education, 2016</span><br>
                             <span class="text-gray-600 dark:text-gray-400" data-i18n="certificates.harvard.school">Harvard Business School, Boston</span>
@@ -224,7 +155,7 @@
 
                 <section class="mb-8">
                     <h2 class="text-xl font-bold text-section dark:text-blue-400 mb-4" data-i18n="sections.affiliations">Professional Affiliations</h2>
-                    <ul class="list-disc ml-8 rtl:mr-8 rtl:ml-0 space-y-1">
+                    <ul class="list-disc ml-6 space-y-1">
                         <li data-i18n="affiliations.aea">American Economic Association (AEA)</li>
                         <li data-i18n="affiliations.res">Royal Economic Society</li>
                         <li data-i18n="affiliations.es">Econometric Society</li>
@@ -238,7 +169,7 @@
 
                 <section class="mb-8">
                     <h2 class="text-xl font-bold text-section dark:text-blue-400 mb-4" data-i18n="sections.awards">Academic Awards and Prizes</h2>
-                    <ol class="list-decimal ml-8 rtl:mr-8 rtl:ml-0 space-y-2">
+                    <ol class="list-decimal ml-6 space-y-2">
                         <li data-i18n="awards.supervision2022">Faculty Research Postgraduate Supervision Award, The University of Hong Kong, 2022</li>
                         <li data-i18n="awards.vandijk2021">Bureau van Dijk Prize in Corporate Finance, 34th UNSW Australian Finance and Banking Conference, 2021</li>
                         <li data-i18n="awards.supervision2021">Faculty Research Postgraduate Supervision Award, The University of Hong Kong, 2021</li>
@@ -259,7 +190,7 @@
 
                 <section class="mb-8">
                     <h2 class="text-xl font-bold text-section dark:text-blue-400 mb-4" data-i18n="sections.uniservice">University Service</h2>
-                    <ul class="list-disc ml-8 rtl:mr-8 rtl:ml-0 space-y-1">
+                    <ul class="list-disc ml-6 space-y-1">
                         <li data-i18n="uniservice.fintech">Master of Finance FinTech Admissions Committee, HKU</li>
                         <li data-i18n="uniservice.curriculum">Master of Finance FinTech Curriculum Development Committee, HKU</li>
                         <li data-i18n="uniservice.it">Faculty Information Technology Committee, HKU</li>
@@ -269,7 +200,7 @@
 
                 <section class="mb-8">
                     <h2 class="text-xl font-bold text-section dark:text-blue-400 mb-4" data-i18n="sections.teaching">Teaching Experience</h2>
-                    <ul class="list-disc ml-8 rtl:mr-8 rtl:ml-0 space-y-2">
+                    <ul class="list-disc ml-6 space-y-2">
                         <li data-i18n="teaching.seminars">Seminars on Advanced Topics in Finance, Master, Tsinghua University, 2024</li>
                         <li data-i18n="teaching.crypto">Cryptography and Network Security, Master, Tsinghua University, 2024</li>
                         <li data-i18n="teaching.frontier">Research on Frontier Issues in Finance, Master, Tsinghua University, 2023</li>
@@ -288,7 +219,7 @@
 
                 <section class="mb-8">
                     <h2 class="text-xl font-bold text-section dark:text-blue-400 mb-4" data-i18n="sections.placement">Placement of Supervised PhDs</h2>
-                    <ul class="list-disc ml-8 rtl:mr-8 rtl:ml-0 space-y-2">
+                    <ul class="list-disc ml-6 space-y-2">
                         <li data-i18n="placement.wang">Wang, Youan (Xiamen University, Assistant Professor, 2022)</li>
                         <li data-i18n="placement.yu">Yu, Luping (Xiamen University, Assistant Professor, 2021)</li>
                     </ul>
@@ -296,7 +227,7 @@
 
                 <section class="mb-8">
                     <h2 class="text-xl font-bold text-section dark:text-blue-400 mb-4" data-i18n="sections.ras">Placement of Past RAs</h2>
-                    <ol class="list-decimal ml-8 rtl:mr-8 rtl:ml-0 space-y-1">
+                    <ol class="list-decimal ml-6 space-y-1">
                         <li>Chien, Ho Yin (Cornell master, Cornell PhD)</li>
                         <li>Lau, Chun Pong Conroy (HSBC, LSE master, U Chicago PhD)</li>
                         <li>Li, Yan (HKU, PhD)</li>
@@ -322,19 +253,12 @@
             </main>
         </div>
 
-        <footer class="bg-gray-50 dark:bg-gray-900 border-t border-gray-300 dark:border-gray-700">
-            <div class="px-6 py-4 text-center text-sm text-gray-600 dark:text-gray-400">
-                © 2025 Zigan Wang. All rights reserved.
-            </div>
-        </footer>
+        <div id="footer"></div>
     </div>
 
-    <button id="backToTop" class="fixed bottom-8 right-8 rtl:left-8 rtl:right-auto p-3 rounded-full shadow-lg hidden bg-primary dark:bg-blue-600 text-white hover:bg-primary-dark dark:hover:bg-blue-700 hover:scale-105 transition-all duration-200" aria-label="Back to top">
-        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-            <path fill-rule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd"></path>
-        </svg>
-    </button>
+    <div id="back-to-top"></div>
 
+    <script src="components.js"></script>
     <script src="i18n.js" defer></script>
     <script src="main.js" defer></script>
 </body>

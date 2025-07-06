@@ -56,169 +56,99 @@
         }
     </style>
 </head>
-<body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 transition-colors duration-200 antialiased rtl:font-arabic">
-    <div class="max-w-[1200px] mx-auto bg-white dark:bg-gray-800 shadow-sm min-h-screen flex flex-col">
-        <header class="w-full px-6 py-4 border-b border-gray-300 dark:border-gray-700">
-            <div class="flex flex-col md:flex-row md:items-center md:justify-between">
-                <div>
-                    <h1 class="text-3xl font-bold text-primary-dark dark:text-gray-100 mb-1">
-                        <a href="index.html" class="hover:underline">Zigan Wang</a>
-                    </h1>
-                    <span class="text-gray-700 dark:text-gray-300" data-i18n="title">Associate Professor at Tsinghua University</span>
-                </div>
-                <nav class="mt-4 md:mt-0 flex flex-wrap items-center gap-2 text-sm rtl:flex-row-reverse">
-                    <a href="index.html" class="text-primary dark:text-blue-400 hover:underline font-medium" data-i18n="nav.home">Home</a>
-                    <span class="text-gray-400">|</span>
-                    <a href="pub.html" class="text-primary dark:text-blue-400 hover:underline font-medium" data-i18n="nav.publications">Publications</a>
-                    <span class="text-gray-400">|</span>
-                    <a href="team.html" class="text-primary dark:text-blue-400 hover:underline font-medium" data-i18n="nav.team">Team (We Are Hiring)</a>
-                    <span class="text-gray-400">|</span>
-                    <select id="langSelect" onchange="changeLanguage(this.value)" aria-label="Language selection" class="px-2 py-1 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-sm focus:outline-none focus:ring-2 focus:ring-primary dark:focus:ring-blue-400 focus:border-transparent">
-                        <option value="en-US">English</option>
-                        <option value="zh-CN">简体中文</option>
-                        <option value="zh-TW">繁體中文</option>
-                        <option value="ja-JP">日本語</option>
-                        <option value="ko-KR">한국어</option>
-                        <option value="ru-RU">Русский</option>
-                        <option value="ar-SA">العربية</option>
-                        <option value="he-IL">עברית</option>
-                        <option value="vi-VN">Tiếng Việt</option>
-                        <option value="th-TH">ภาษาไทย</option>
-                        <option value="de-DE">Deutsch</option>
-                        <option value="fr-FR">Français</option>
-                        <option value="es-ES">Español</option>
-                        <option value="it-IT">Italiano</option>
-                    </select>
-                    <span class="text-gray-400">|</span>
-                    <div class="theme-toggle inline-flex bg-gray-200 dark:bg-gray-600 rounded-full p-0.5">
-                        <button data-theme="light" onclick="setTheme('light')" title="Light theme" aria-label="Switch to light theme" class="p-1.5 rounded-full text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 transition-colors">
-                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"></path>
-                            </svg>
-                        </button>
-                        <button data-theme="dark" onclick="setTheme('dark')" title="Dark theme" aria-label="Switch to dark theme" class="p-1.5 rounded-full text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 transition-colors">
-                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
-                            </svg>
-                        </button>
-                    </div>
-                    <span class="text-gray-400">|</span>
-                    <a href="https://github.com/orgs/root-directory-lab" target="_blank" class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100" title="GitHub">
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                        </svg>
-                    </a>
-                </nav>
-            </div>
-        </header>
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 transition-colors duration-200 antialiased">
+    <div class="max-w-7xl mx-auto bg-white dark:bg-gray-800 shadow-sm min-h-screen flex flex-col">
+        <div id="header"></div>
 
         <div class="flex flex-col md:flex-row flex-grow">
-            <aside class="w-full md:w-1/4 bg-gray-50 dark:bg-gray-800 p-6">
-                <img src="assets/avatar.jpeg" alt="Zigan Wang" class="w-full max-w-[300px] mx-auto mb-6 rounded-lg shadow-md hover:shadow-lg transition-shadow" loading="lazy">
-                <div class="space-y-4">
-                    <div>
-                        <p class="text-sm">
-                            <strong data-i18n="research.interests">Research Interests:</strong> 
-                            <span data-i18n="research.fields">Applied Microeconomics, International Economics, Environmental Economics, Political and Law Economics, Economic Networks, Econometrics, Computer Vision, Knowledge Graph, GAN.</span>
-                        </p>
-                    </div>
-                    <div>
-                        <a href="mailto:wangzigan@sz.tsinghua.edu.cn" class="text-primary dark:text-blue-400 hover:underline inline-flex items-center text-sm">
-                            <svg class="w-4 h-4 mr-1.5 rtl:mr-0 rtl:ml-1.5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 8.5L12 5.5L15 8.5M12 5.5V15.5M5 11.5V19.5H19V11.5"/>
-                            </svg>
-                            Email
-                        </a>
-                    </div>
-                </div>
-            </aside>
+            <div id="sidebar"></div>
 
-            <main class="w-full md:w-3/4 p-6 bg-white dark:bg-gray-800">
+            <main class="flex-1 p-6 md:p-8 lg:p-10 bg-white dark:bg-gray-800">
                 <section class="mb-8">
-                    <h2 class="text-xl font-bold text-section dark:text-blue-400 p-2 mb-4" data-i18n="sections.economics">Economics and Finance</h2>
-                    <ol class="list-decimal ml-10 rtl:mr-10 rtl:ml-0 space-y-3">
-                        <li class="text-sm">
+                    <h2 class="text-xl font-bold text-section dark:text-blue-400 mb-6" data-i18n="sections.economics">Economics and Finance</h2>
+                    <ol class="list-decimal ml-6 space-y-4">
+                        <li class="text-sm leading-relaxed">
                             "<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3725784" target="_blank" class="text-primary dark:text-blue-400 hover:underline font-semibold">The Power of the People: Labor Unions and Corporate Social Responsibility</a>" (with Amanda Heitz and Youan Wang), Forthcoming, Review of Finance. (ABDC A*)
                         </li>
-                        <li class="text-sm">
+                        <li class="text-sm leading-relaxed">
                             "<a href="https://dx.doi.org/10.2139/ssrn.3866124" target="_blank" class="text-primary dark:text-blue-400 hover:underline font-semibold">Do Share Repurchases Facilitate Movement Towards Target Capital Structure? International Evidence</a>" (with Qie Yin and Luping Yu), Journal of Empirical Finance, 77 (2024): 101498. (ABDC A)
                         </li>
-                        <li class="text-sm">
+                        <li class="text-sm leading-relaxed">
                             "<a href="https://www.cambridge.org/core/journals/journal-of-financial-and-quantitative-analysis/article/media-sentiment-and-currency-reversals/84CEB4F2EEE1521C3C694F547AC35A0B" target="_blank" class="text-primary dark:text-blue-400 hover:underline font-semibold">Media Sentiment and Currency Reversals</a>" (with Ilias Filippou and Mark P. Taylor), Journal of Financial and Quantitative Analysis, 59, no. 3 (2024): 1401-1429 (ABDC A*)
                         </li>
-                        <li class="text-sm">
+                        <li class="text-sm leading-relaxed">
                             "<a href="https://www.sciencedirect.com/science/article/pii/S0304407622000471" target="_blank" class="text-primary dark:text-blue-400 hover:underline font-semibold">The Out-of-Sample Performance of Carry Trades</a>" (with Po-Hsuan Hsu, Yan Li, and Mark P. Taylor), Journal of International Money and Finance, Vol. 143, May 2024, 103042. (ABDC A)
                         </li>
-                        <li class="text-sm">
+                        <li class="text-sm leading-relaxed">
                             "<a href="https://www.sciencedirect.com/science/article/pii/S0304407622000471" target="_blank" class="text-primary dark:text-blue-400 hover:underline font-semibold">Estimation and Inference of Treatment Effects with L2-Boosting in High-Dimensional Settings</a>" (with Jannis Kueck, Ye Luo and Martin Spindler), Journal of Econometrics, Vol. 234(2), June 2023, pp. 714-731. (ABDC A*)
                         </li>
-                        <li class="text-sm">
+                        <li class="text-sm leading-relaxed">
                             "<a href="https://pubsonline.informs.org/doi/abs/10.1287/mnsc.2020.3931" target="_blank" class="text-primary dark:text-blue-400 hover:underline font-semibold">Corporate Political Connections and Favorable Environmental Regulatory Enforcement</a>" (with Amanda Heitz and Youan Wang), Management Science, Vol. 69(12), December 2023, pp. 7838-7859. (ABDC A*)
                         </li>
-                        <li class="text-sm">
+                        <li class="text-sm leading-relaxed">
                             "<a href="https://www.sciencedirect.com/science/article/pii/S0929119922000955" target="_blank" class="text-primary dark:text-blue-400 hover:underline font-semibold">The Role of Financial Constraints in Firm Investment Under Pollution Abatement Regulation</a>" (with Tri Vi Dang and Youan Wang), Journal of Corporate Finance, Vol. 76, October 2022, 102252. (ABDC A*)
                         </li>
-                        <li class="text-sm">
+                        <li class="text-sm leading-relaxed">
                             "<a href="https://www.sciencedirect.com/science/article/pii/S0022199622000393" target="_blank" class="text-primary dark:text-blue-400 hover:underline font-semibold">Currency Volatility and Global Technological Innovation</a>" (with Po-Hsuan Hsu, Mark P. Taylor and Qi Xu), Journal of International Economics, Vol. 137, July 2022, 103607. (ABDC A*)
                         </li>
-                        <li class="text-sm">
+                        <li class="text-sm leading-relaxed">
                             "<a href="https://www.sciencedirect.com/science/article/pii/S0261560621000838" target="_blank" class="text-primary dark:text-blue-400 hover:underline font-semibold">The Real Effects of Exchange Rate Risk on Corporate Investment: International Evidence</a>" (with Mark P. Taylor and Qi Xu), Journal of International Money and Finance, October 2021, Vol. 117. (ABDC A)<br>
-                            <span class="text-xs text-gray-600 dark:text-gray-400 ml-4 rtl:mr-4 rtl:ml-0">Media Coverage: Mingpao Daily (Finance, Education), Hong Kong Commercial Daily</span>
+                            <span class="text-xs text-gray-600 dark:text-gray-400 ml-4">Media Coverage: Mingpao Daily (Finance, Education), Hong Kong Commercial Daily</span>
                         </li>
-                        <li class="text-sm">
+                        <li class="text-sm leading-relaxed">
                             "<a href="https://www.sciencedirect.com/science/article/pii/S0304405X2030283X" target="_blank" class="text-primary dark:text-blue-400 hover:underline font-semibold">Real Effects of Share Repurchases Legalization on Corporate Behaviors</a>" (with Qie Yin and Luping Yu), Journal of Financial Economics, Vol. 140(1), April 2021, pp. 197-219. (ABDC A*)<br>
-                            <span class="text-xs text-gray-600 dark:text-gray-400 ml-4 rtl:mr-4 rtl:ml-0">Reprint: Harvard Law School Program on Corporate Governance</span>
+                            <span class="text-xs text-gray-600 dark:text-gray-400 ml-4">Reprint: Harvard Law School Program on Corporate Governance</span>
                         </li>
-                        <li class="text-sm">
+                        <li class="text-sm leading-relaxed">
                             "<a href="https://pubsonline.informs.org/doi/abs/10.1287/mnsc.2019.3428" target="_blank" class="text-primary dark:text-blue-400 hover:underline font-semibold">Bank Networks and Acquisitions</a>" (with Ross Levine and Chen Lin), Management Science, Vol. 66(11), November 2020, pp. 5216-5241. (ABDC A*)<br>
-                            <span class="text-xs text-gray-600 dark:text-gray-400 ml-4 rtl:mr-4 rtl:ml-0">Media Coverage: Vox EU, HKU Bulletin</span>
+                            <span class="text-xs text-gray-600 dark:text-gray-400 ml-4">Media Coverage: Vox EU, HKU Bulletin</span>
                         </li>
-                        <li class="text-sm">
+                        <li class="text-sm leading-relaxed">
                             "<a href="https://doi.org/10.33423/jaf.v18i3.409" target="_blank" class="text-primary dark:text-blue-400 hover:underline font-semibold">Housing Bubble in the United States</a>", 2018, Volume 18(5), Journal of Accounting and Finance, with Youwei Zhu (First-year Ph.D. term paper)
                         </li>
-                        <li class="text-sm">
+                        <li class="text-sm leading-relaxed">
                             "<a href="http://www.na-businesspress.com/JAF/JAF17-7/ChienWW_17_7_.pdf" target="_blank" class="text-primary dark:text-blue-400 hover:underline font-semibold">When Does a New Market Become Efficient? Evidence from an Emerging Index Futures Market</a>", 2017, 17(7), 86-103. Journal of Accounting and Finance, with Wen-Wen Chien, Roger Mayer and Youwei Zhu (Second-year Ph.D. term paper)
                         </li>
-                        <li class="text-sm">
+                        <li class="text-sm leading-relaxed">
                             "<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2765673" target="_blank" class="text-primary dark:text-blue-400 hover:underline font-semibold">Technical Trading: Is it still Beating the Foreign Exchange Market?</a>" (with Po-Hsuan Hsu and Mark P. Taylor), Journal of International Economics, Vol. 102, September 2016, pp. 188-208. (ABDC A*)
                         </li>
-                        <li class="text-sm">
+                        <li class="text-sm leading-relaxed">
                             "<a href="https://clutejournals.com/index.php/JBER/article/view/8530" target="_blank" class="text-primary dark:text-blue-400 hover:underline font-semibold">Stock Market, Economic Performance and Presidential Elections</a>", 2014, Volume 12(2), Journal of Business & Economics Research, with Wen-Wen Chien and Roger Mayer (Third-year Ph.D. writing)
                         </li>
                     </ol>
                 </section>
 
                 <section class="mb-8">
-                    <h2 class="text-xl font-bold text-section dark:text-blue-400 p-2 mb-4" data-i18n="sections.cs">Computer Science</h2>
-                    <ol class="list-decimal ml-10 rtl:mr-10 rtl:ml-0 space-y-3">
-                        <li class="text-sm">
+                    <h2 class="text-xl font-bold text-section dark:text-blue-400 mb-6" data-i18n="sections.cs">Computer Science</h2>
+                    <ol class="list-decimal ml-6 space-y-4">
+                        <li class="text-sm leading-relaxed">
                             "<a href="https://doi.org/10.1145/3637528.3671997" target="_blank" class="text-primary dark:text-blue-400 hover:underline font-semibold">DiffusionE: Reasoning on knowledge graphs via Diffusion-based Graph Neural Networks</a>" (with Zongsheng Cao, Jing Li, and Jinliang Li), Accepted at 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD 2024), CCF-A
                         </li>
-                        <li class="text-sm">
+                        <li class="text-sm leading-relaxed">
                             "<a href="https://doi.org/10.1109/BIBM58861.2023.10385266" target="_blank" class="text-primary dark:text-blue-400 hover:underline font-semibold">AVS-Net: Attention-based Variable Splitting Network for P-MRI Acceleration</a>" (with Yue Zhang, Jing Li, Jinming Duan and Jinliang Li), 2023 IEEE International Conference on Bioinformatics and Biomedicine (BIBM) (pp. 1682-1689), CCF-B
                         </li>
-                        <li class="text-sm">
+                        <li class="text-sm leading-relaxed">
                             "<span class="text-primary dark:text-blue-400 font-semibold">AdvDenoise: Fast Generation Framework of Universal and Robust Adversarial Patches Using Denoise</span>" (with Jing Li and Jinliang Li), Accepted at 2024 IEEE / CVF Computer Vision and Pattern Recognition Conference (CVPR 2024) Workshops, CCF-AW
                         </li>
                     </ol>
                 </section>
 
                 <section class="mb-8">
-                    <h2 class="text-xl font-bold text-section dark:text-blue-400 p-2 mb-4" data-i18n="sections.book">Book Chapter</h2>
-                    <ol class="list-decimal ml-10 rtl:mr-10 rtl:ml-0 space-y-3">
-                        <li class="text-sm">
+                    <h2 class="text-xl font-bold text-section dark:text-blue-400 mb-6" data-i18n="sections.book">Book Chapter</h2>
+                    <ol class="list-decimal ml-6 space-y-4">
+                        <li class="text-sm leading-relaxed">
                             An Overview of Corporate Governance, Policies and Public Listing of Chinese State-owned Enterprises Reform, in "<a href="https://books.google.com/books?hl=zh-CN&lr=&id=5qK6CgAAQBAJ&oi=fnd&pg=PR5&dq=Corporate+Governance+and+Corporate+Social+Responsibility:+Emerging+Markets+Focus&ots=09POFNr84k&sig=HbCINjv-RoSweZUVtbRkUwNxxZQ" target="_blank" class="text-primary dark:text-blue-400 hover:underline font-semibold">Corporate Governance and Corporate Social Responsibility: Emerging Markets Focus</a>", July 2014, edited by S. Boubaker and D.K Nguyen. World Scientific Publishing
                         </li>
                     </ol>
                 </section>
 
                 <section class="mb-8">
-                    <h2 class="text-xl font-bold text-section dark:text-blue-400 p-2 mb-4" data-i18n="sections.working">Working Papers Under Revision</h2>
-                    <ol class="list-decimal ml-10 rtl:mr-10 rtl:ml-0 space-y-3">
-                        <li class="text-sm">
+                    <h2 class="text-xl font-bold text-section dark:text-blue-400 mb-6" data-i18n="sections.working">Working Papers Under Revision</h2>
+                    <ol class="list-decimal ml-6 space-y-4">
+                        <li class="text-sm leading-relaxed">
                             "<span class="text-primary dark:text-blue-400 font-semibold">Bank Liquidity, Credit Supply and the Environment</span>" (with Ross Levine, Chen Lin and Wensi Xie) Reject & Resubmit at Review of Economics and Statistics (ABDC A*)
                         </li>
-                        <li class="text-sm">
+                        <li class="text-sm leading-relaxed">
                             "<span class="text-primary dark:text-blue-400 font-semibold">The Unprofitability of Post-publication Carry Trades</span>" (with Yan Li, Po-Hsuan Hsu and Mark P. Taylor) Revise & Resubmit at Journal of Empirical Finance (ABDC A)
                         </li>
                     </ol>
@@ -226,19 +156,12 @@
             </main>
         </div>
 
-        <footer class="bg-gray-50 dark:bg-gray-900 border-t border-gray-300 dark:border-gray-700">
-            <div class="px-6 py-4 text-center text-sm text-gray-600 dark:text-gray-400">
-                © 2025 Zigan Wang. All rights reserved.
-            </div>
-        </footer>
+        <div id="footer"></div>
     </div>
 
-    <button id="backToTop" class="fixed bottom-8 right-8 rtl:left-8 rtl:right-auto p-3 rounded-full shadow-lg hidden bg-primary dark:bg-blue-600 text-white hover:bg-primary-dark dark:hover:bg-blue-700 hover:scale-105 transition-all duration-200" aria-label="Back to top">
-        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-            <path fill-rule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd"></path>
-        </svg>
-    </button>
+    <div id="back-to-top"></div>
 
+    <script src="components.js"></script>
     <script src="i18n.js" defer></script>
     <script src="main.js" defer></script>
 </body>
